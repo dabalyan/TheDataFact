@@ -15,7 +15,7 @@
 <div class="pollutants-list">
   <div *ngFor="let pollutant of pollutants"
        [class.active]="pollutant === aqiPollutant"
-       (click)="selectPollutant(pollutant)">{{pollutant}}</div>
+       (click)="selectPollutant(pollutant)">{{pollutant === 'pm25' ? 'PM2.5' : pollutant.toUpperCase()}}</div>
 </div>
 
 <header>
