@@ -1,0 +1,25 @@
+<!--h1><input placeholder="search"/> And Add the full description in title attr for every source and category</h1-->
+<header>
+  <h1>
+    A non-exhaustive list of sources whose reliability and use on Wikipedia are frequently discussed.<a
+    class="original-source"
+    href="https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources"
+    target="_blank"
+    rel="noopener"></a>
+  </h1>
+</header>
+
+<ng-container *ngFor="let group of groups; let i = index">
+  <div class="container group-{{i}}">
+    <div class="group-info"><img [src]="groupInfo[i].image"/> {{groupInfo[i].name}}</div>
+    <a *ngFor="let source of group"
+       [title]="source.name"
+       [href]="source.link"
+       target="_blank"
+       rel="noopener">
+      <img [src]="source.image || source.image2"/><span class="source-name">{{
+      source.name
+      }}</span>
+    </a>
+  </div>
+</ng-container>

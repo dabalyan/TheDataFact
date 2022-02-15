@@ -1,0 +1,91 @@
+$multiplier: 1;
+
+body, html {
+  //width: $multiplier * 100vw;
+  //height: $multiplier * 100vh;
+  //height: 100%;
+}
+
+app-wikipedia-sources-reliability-index {
+  //font-family: monospace;
+
+  header {
+    padding: min(10vh, 10vw);
+  }
+
+  .container {
+    width: 100%;
+    border: $multiplier * 6px solid;
+    border-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    background: var(--color);
+  }
+
+  .container:last-child {
+    border-bottom: $multiplier * 6px solid;
+  }
+
+  .container > * {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 8px;
+    margin: 2px;
+    //backdrop-filter: contrast(1.4);
+    background-color: rgb(255 255 255 / 65%);
+  }
+
+  .container img {
+    max-height: $multiplier * 1.6em;
+  }
+
+  .group-info {
+    min-width: 30%;
+    margin-top: -1px !important;
+    margin-left: -1px !important;
+    gap: $multiplier * 14px;
+    flex-grow: 0;
+    justify-content: flex-start !important;
+
+    background: rgba(255, 255, 255, .9) !important;
+    box-shadow: 0 0 0 4px black;
+
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: $multiplier * 2.1em;
+    text-transform: uppercase;
+    line-height: 1em;
+
+    img {
+      height: 1em;
+      width: 1em;
+    }
+  }
+
+  .source-name {
+    display: none;
+  }
+
+  .group-0 {
+    --color: limegreen;
+  }
+
+  .group-1 {
+    --color: #d1d12b;
+  }
+
+  .group-2 {
+    --color: #ff6000;
+  }
+
+  .group-3 {
+    --color: red;
+  }
+
+  .group-4 {
+    --color: #a000a9;
+  }
+}

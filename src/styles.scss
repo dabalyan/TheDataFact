@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background-color: rgba(0, 0, 0, .16)
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 'Source Sans Pro', sans-serif;
+}
+
+body {
+  --active-color: #1fc356;
+}

@@ -1,0 +1,36 @@
+<!--<table>
+  <thead>
+  <tr>
+    <th *ngFor="let date of dates">{{date | date}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let dataSet of data; let i = index">
+    <td>{{stationNames[i]}}</td>
+    <td *ngFor="let date of dates" [class.empty]="!dataSet[date]?.pm25">{{dataSet[date]?.pm25}}</td>
+  </tr>
+  </tbody>
+</table>-->
+
+<div class="pollutants-list">
+  <div *ngFor="let pollutant of pollutants"
+       [class.active]="pollutant === aqiPollutant"
+       (click)="selectPollutant(pollutant)">{{pollutant}}</div>
+</div>
+
+<header>
+  <h1>
+    Delhi's AQI({{aqiPollutant === 'pm25' ? 'PM2.5' : aqiPollutant.toUpperCase()}}) During Diwali Season.<a
+    class="original-source"
+    href="https://aqicn.org/"
+    target="_blank"
+    rel="noopener"></a>
+  </h1>
+</header>
+
+<highcharts-chart
+  *ngFor="let config of allChartsConfig"
+  (chartInstance)="chart = $event"
+  [Highcharts]="Highcharts"
+  [options]="config"
+></highcharts-chart>
