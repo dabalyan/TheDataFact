@@ -1,0 +1,56 @@
+app-home {
+  header {
+    padding: min(10vh, 10vw);
+    text-transform: uppercase;
+  }
+
+  .home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: min(4vh, 4vw);
+    gap: min(4vh, 4vw);
+  }
+
+  .app-nav__item {
+    position: relative;
+    align-self: unset;
+
+    flex-grow: 1;
+    min-width: 300px;
+    height: 36vh;
+    font-size: min(3vh, 8vw);
+    text-shadow: 0 0 black;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    transition: 2s background-position linear;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:hover {
+      background-position: left center;
+
+      > * {
+        backdrop-filter: blur(0);
+      }
+    }
+
+    > * {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      padding: min(2vw, 2vh);
+      background-color: rgb(255 255 255 / 80%);
+      backdrop-filter: blur(4px);
+      transition: .3s backdrop-filter linear;
+    }
+  }
+}

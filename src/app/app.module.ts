@@ -13,13 +13,14 @@ import {IndiaRoadsAndHighwaysComponent} from './india-roads-and-highways/india-r
 import {
   IndiaVehiclesAndAccidentsComponent
 } from './india-vehicles-and-accidents/india-vehicles-and-accidents.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   {path: 'wikipedia-sources-reliability-index', component: WikipediaSourcesReliabilityIndexComponent},
   {path: 'delhi-aqi-during-diwali-season', component: DelhiAqiComponent},
   {path: 'india-roads-highways-expressways', component: IndiaRoadsAndHighwaysComponent},
   {path: 'india-vehicles-and-accidents', component: IndiaVehiclesAndAccidentsComponent},
-  {path: '', redirectTo: 'wikipedia-sources-reliability-index', pathMatch: 'full'},
+  {path: '', component: HomeComponent},
   {path: '**', redirectTo: ''}
 ]
 
@@ -30,7 +31,8 @@ const routes: Routes = [
     WikipediaSourcesReliabilityIndexComponent,
     SourceRefDirective,
     IndiaRoadsAndHighwaysComponent,
-    IndiaVehiclesAndAccidentsComponent
+    IndiaVehiclesAndAccidentsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

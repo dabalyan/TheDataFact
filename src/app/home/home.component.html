@@ -1,0 +1,33 @@
+<header>
+  <h1>
+    <ng-container *ngFor="let text of quote; let last = last">{{text}}<br *ngIf="!last"></ng-container>
+  </h1>
+</header>
+
+<div class="home-nav">
+  <a class="app-nav__item"
+     [style.background-position]="'top'"
+     [style.background-image]="'url(assets/home/wikipedia-logo.svg)'"
+     routerLink="/wikipedia-sources-reliability-index"
+     routerLinkActive="active">
+    <span>Wikipedia Reliability Index</span>
+  </a>
+  <a class="app-nav__item"
+     [style.background-image]="'url(assets/home/delhi-lotus-temple.jpg)'"
+     routerLink="/delhi-aqi-during-diwali-season"
+     routerLinkActive="active">
+    <span>Delhi's AQI Around Diwali</span>
+  </a>
+  <a class="app-nav__item"
+     [style.background-image]="'url(assets/home/himalaya-road.jpg)'"
+     routerLink="/india-roads-highways-expressways"
+     routerLinkActive="active">
+    <span>India's Roads</span>
+  </a>
+  <a class="app-nav__item"
+     [style.background-image]="'url(assets/home/tata-safari.png)'"
+     routerLink="/india-vehicles-and-accidents"
+     routerLinkActive="active">
+    <span>India's Vehicles and Accidents</span>
+  </a>
+</div>
