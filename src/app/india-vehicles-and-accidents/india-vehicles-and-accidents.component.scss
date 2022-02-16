@@ -1,0 +1,28 @@
+$multiplier: 1;
+$gap: min(30px, 3vw);
+
+body, html {
+  //width: $multiplier * 100vw;
+  //height: $multiplier * 100vh;
+}
+
+app-india-vehicles-and-accidents {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-evenly;
+  gap: $gap;
+
+  header {
+    padding: min(8vh, 8vw);
+    padding-bottom: calc(min(8vh, 8vw) - #{$gap});
+  }
+
+  highcharts-chart {
+    display: block;
+    width: 30%;
+    //height: 35%;
+    flex-grow: 1;
+    min-width: 400px;
+  }
+}

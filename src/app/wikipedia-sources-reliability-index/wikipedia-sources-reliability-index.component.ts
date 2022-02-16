@@ -484,7 +484,7 @@ export class WikipediaSourcesReliabilityIndexComponent {
         'status': '✅ Generally Reliable',
         'title': 'The Jewish Chronicle - Wikipedia',
         'image2': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFvW6kg84Yqz4Exeqoz3JizgE6lXR3fhglh_Ika2qjMfoMhen5ihIqIA4lJGZAx9797w&usqp=CAU',
-        'image': 'http://www.bettikvah.org/images/jewishchronicle.png'
+        'image': 'https://www.respublica.org.uk/wp-content/uploads/2017/07/Jewish-Chronicle.jpg'
       },
       {
         'name': 'Kirkus Reviews',

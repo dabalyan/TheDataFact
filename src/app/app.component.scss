@@ -14,17 +14,14 @@ app-root {
     text-decoration: none;
     color: inherit;
 
-    &.original-source {
+    &.source-ref {
       position: relative;
       font-size: .5em;
-      top: -1.2em;
+      top: -.8em;
       left: -.4em;
+      letter-spacing: -.2em;
       white-space: nowrap;
-
-      &:empty::after {
-        content: '[s]';
-        color: var(--active-color);
-      }
+      color: var(--active-color);
     }
   }
 
@@ -33,7 +30,7 @@ app-root {
     font-size: min(16px, 4vw);
     background-color: #000;
     color: white;
-    padding: 0 min(6px, 2vw);
+    padding: 0 min(6px, 2vw) 0 0;
     gap: min(12px, 2vw);
     align-items: center;
 
@@ -42,6 +39,7 @@ app-root {
       align-items: center;
       transition: .3s color linear, .3s transform linear;
       padding: min(8px, 2vw);
+      align-self: stretch;
 
       &.active {
         color: var(--active-color);
@@ -52,5 +50,15 @@ app-root {
     .spacer {
       flex-grow: 1;
     }
+  }
+
+  .app-logo {
+    font-family: "Source Sans Pro", Helvertica, sans-serif;
+    background: #1ebe51; // #3431ff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: min(8px, 1vw);
+    letter-spacing: .05em;
+    position: relative;
   }
 }

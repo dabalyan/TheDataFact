@@ -2,6 +2,9 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {parse} from 'csv-parse/sync';
 import * as Highcharts from 'highcharts';
 import {ActivatedRoute, Router} from '@angular/router';
+import {COLORS} from '../app.meta';
+import {SIZE_MULTIPLIER} from '../utils/constants';
+import {verticalPlotLineConfig} from '../utils/highcharts-helpers';
 
 type AqiSummary = { pm25: number, pm10: number, date: string, o3: number, no2: number, so2: number, co: number };
 type AqiPollutant = Exclude<keyof AqiSummary, 'date'>
@@ -16,7 +19,6 @@ const DATA_FILES = [
 ];
 const LEAP_YEAR = 2020; // random leap year for max 366 days
 const START_DATE = '2020-10-01';
-const SIZE_MULTIPLIER = 1;
 
 const formatPollutant = pollutant => pollutant === 'pm25' ? 'PM2.5' : pollutant.toUpperCase();
 
@@ -40,7 +42,7 @@ const generateChartOptions = (series, plotLines, yAxisLabel, yAxisMax, pollutant
     borderWidth: 0,
     backgroundColor: 'transparent',
     style: {
-      fontFamily: 'monospace' || 'Source Sans Pro',
+      fontFamily: 'monospace',
     },
   },
   mapNavigation: {
@@ -191,17 +193,10 @@ export class DelhiAqiComponent implements OnInit {
     }, {});
 
     this.data = [aggregate];
-    const colors = [
-      '#1fc356',
-      '#c233e3',
-      '#d2ba21',
-      '#ff5b16',
-      '#4051e7',
-      '#ba194c',
-      '#24efe8',
-    ]
 
-    const diwaliDates = ['2014-10-23', '2015-11-11', '2016-10-30', '2017-10-19', '2018-11-07', '2019-10-27', '2020-11-14', '2021-11-04'];
+    const diwaliDates = [
+      '2014-10-23', '2015-11-11', '2016-10-30', '2017-10-19', '2018-11-07', '2019-10-27', '2020-11-14', '2021-11-04'
+    ];
 
     this.allChartsConfig = ([2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014] || this.years).map((year, i) => {
       const countingDay = new Date(START_DATE);
@@ -214,24 +209,10 @@ export class DelhiAqiComponent implements OnInit {
         const currentYearDateKey = `${year}-${isoMonthDay.join('-')}`;
 
         if (diwaliDates.includes(currentYearDateKey)) {
-          xAxisDiwaliPlotLines = {
-            color: '#000' || colors[i],
-            width: SIZE_MULTIPLIER,
+          xAxisDiwaliPlotLines = verticalPlotLineConfig({
             value: xAxisIndex,
-            label: {
-              text: `Diwali ${localiseDate(countingDay)}`,
-              align: 'left',
-              x: -SIZE_MULTIPLIER * 20,
-              y: SIZE_MULTIPLIER * 14,
-              useHTML: true,
-              style: {
-                fontSize: SIZE_MULTIPLIER * 13 + 'px',
-                writingMode: 'vertical-lr',
-                transform: '',
-                fontWeight: 'bold'
-              }
-            }
-          } as any;
+            text: `Diwali ${localiseDate(countingDay)}`
+          }) as any;
         }
 
         seriesData.push({
@@ -244,12 +225,16 @@ export class DelhiAqiComponent implements OnInit {
         xAxisIndex++;
       }
 
-      return [[{
-        // turboThreshold: 366,
-        name: `${year}`,
-        data: seriesData,
-        color: colors[i],
-      }], [xAxisDiwaliPlotLines], year]
+      return [
+        [
+          {
+            // turboThreshold: 366,
+            name: `${year}`,
+            data: seriesData,
+            color: COLORS[i],
+          }
+        ], [xAxisDiwaliPlotLines], year
+      ]
     }).map(([series, plotLines, year]) => generateChartOptions(
       series,
       plotLines,

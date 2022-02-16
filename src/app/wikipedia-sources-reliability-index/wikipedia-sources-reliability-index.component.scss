@@ -7,8 +7,6 @@ body, html {
 }
 
 app-wikipedia-sources-reliability-index {
-  //font-family: monospace;
-
   header {
     padding: min(10vh, 10vw);
   }
@@ -53,7 +51,6 @@ app-wikipedia-sources-reliability-index {
     background: rgba(255, 255, 255, .9) !important;
     box-shadow: 0 0 0 4px black;
 
-    font-family: monospace;
     font-weight: bolder;
     font-size: $multiplier * 2.1em;
     text-transform: uppercase;

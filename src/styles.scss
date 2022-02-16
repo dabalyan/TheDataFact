@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -22,4 +24,9 @@ body, html {
 
 body {
   --active-color: #1fc356;
+}
+
+h1 {
+  font-family: monospace;
+  letter-spacing: -.02em;
 }

@@ -1,0 +1,13 @@
+<header>
+  <h1>
+    India's Registered Vehicles, and Road Accidents.<a
+    appSourceRef="https://morth.nic.in/annual-report"></a>
+  </h1>
+</header>
+
+<highcharts-chart
+  *ngFor="let config of allChartsConfig"
+  (chartInstance)="chart = $event"
+  [Highcharts]="Highcharts"
+  [options]="config"
+></highcharts-chart>
