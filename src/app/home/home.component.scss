@@ -18,7 +18,8 @@ app-home {
     align-self: unset;
 
     flex-grow: 1;
-    min-width: 300px;
+    width: 25vw;
+    max-width: 25vw;
     height: 36vh;
     font-size: min(3vh, 8vw);
     text-shadow: 0 0 black;
@@ -27,8 +28,13 @@ app-home {
     background-size: cover;
     background-position: left bottom;
     transition: 2s background-position linear;
-    border-radius: 10px;
+    box-shadow: 0 0 0 1px #d4d4d4;
     overflow: hidden;
+
+    &.contain {
+      background-position: center;
+      background-size: contain;
+    }
 
     &:hover {
       background-position: left center;

@@ -1,0 +1,13 @@
+<header>
+  <h1>
+    Terrorism Fatalities in India.<a
+    appSourceRef="https://www.satp.org/datasheet-terrorist-attack/fatalities/india"></a>
+  </h1>
+</header>
+
+<highcharts-chart
+  *ngFor="let config of allChartsConfig"
+  (chartInstance)="chart = $event"
+  [Highcharts]="Highcharts"
+  [options]="config"
+></highcharts-chart>

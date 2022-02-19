@@ -14,12 +14,14 @@ import {
   IndiaVehiclesAndAccidentsComponent
 } from './india-vehicles-and-accidents/india-vehicles-and-accidents.component';
 import {HomeComponent} from './home/home.component';
+import {TerrorismInIndiaComponent} from './terrorism-in-india/terrorism-in-india.component';
 
 const routes: Routes = [
   {path: 'wikipedia-sources-reliability-index', component: WikipediaSourcesReliabilityIndexComponent},
   {path: 'delhi-aqi-during-diwali-season', component: DelhiAqiComponent},
   {path: 'india-roads-highways-expressways', component: IndiaRoadsAndHighwaysComponent},
   {path: 'india-vehicles-and-accidents', component: IndiaVehiclesAndAccidentsComponent},
+  {path: 'terrorism-in-india', component: TerrorismInIndiaComponent},
   {path: '', component: HomeComponent},
   {path: '**', redirectTo: ''}
 ]
@@ -32,7 +34,8 @@ const routes: Routes = [
     SourceRefDirective,
     IndiaRoadsAndHighwaysComponent,
     IndiaVehiclesAndAccidentsComponent,
-    HomeComponent
+    HomeComponent,
+    TerrorismInIndiaComponent
   ],
   imports: [
     BrowserModule,

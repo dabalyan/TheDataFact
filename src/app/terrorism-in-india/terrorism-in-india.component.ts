@@ -1,9 +1,9 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import * as Highcharts from 'highcharts';
 import {ActivatedRoute, Router} from '@angular/router';
-import {SIZE_MULTIPLIER} from '../utils/constants';
-import {centralGovernments, roadNetworkOfIndia} from './india-roads-and-highways.data';
 import {COLORS} from '../app.meta';
+import {SIZE_MULTIPLIER} from '../utils/constants';
+import {importantPeriods, yearlyTerrorismFatalities} from './terrorism-in-india.data';
 import {verticalPlotLineConfig} from '../utils/highcharts-helpers';
 
 const generateChartOptions = (series, plotLines, yAxisLabel, dashStyle?): Highcharts.Options => ({
@@ -33,12 +33,16 @@ const generateChartOptions = (series, plotLines, yAxisLabel, dashStyle?): Highch
       marker: {enabled: false},
       lineWidth: SIZE_MULTIPLIER * 2,
       dashStyle,
+      dataLabels: {
+        // enabled: true
+      }
     },
     column: {
       borderWidth: 0,
-      pointWidth: SIZE_MULTIPLIER * 2,
+      pointWidth: SIZE_MULTIPLIER * 4,
+      opacity: .9,
       dataLabels: {
-        enabled: true
+        // enabled: true
       }
     }
   },
@@ -90,20 +94,23 @@ const generateChartOptions = (series, plotLines, yAxisLabel, dashStyle?): Highch
     },
   },
   tooltip: {
+    shared: true,
+    useHTML: true,
     formatter: function () {
-      return `Total <b>Length</b> in <b>${this.x}</b>: <b>${this.y.toLocaleString()}</b> km`;
+      const formatter = that => `<tr><td>${that.series.name}</td> <td><b>${that.y.toLocaleString()}</b></td></tr>`
+      return `Fatalities in <b>${this.x}</b><br><br> <table>` + (this.points || [this]).map(formatter).join('') + '</table>';
     }
   },
   series
 });
 
 @Component({
-  selector: 'app-roads-and-highways',
-  templateUrl: './india-roads-and-highways.component.html',
-  styleUrls: ['./india-roads-and-highways.component.scss'],
+  selector: 'app-terrorism-in-india',
+  templateUrl: './terrorism-in-india.component.html',
+  styleUrls: ['./terrorism-in-india.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class IndiaRoadsAndHighwaysComponent implements OnInit {
+export class TerrorismInIndiaComponent implements OnInit {
   readonly Highcharts: typeof Highcharts = Highcharts;
   chart: Highcharts.Chart;
   allChartsConfig = [];
@@ -118,39 +125,29 @@ export class IndiaRoadsAndHighwaysComponent implements OnInit {
   }
 
   async resetInit(): Promise<void> {
-    const expresswaysSeries = {name: 'Expressways', data: [], color: COLORS[0]};
-    const expresswaysUnderConstructionSeries = {
-      name: 'Under Construction',
-      data: [],
-      color: COLORS[0],
-      dashStyle: 'shortdash'
-    };
-    const nationalHighwaysSeries = {name: 'National Highways', data: [], color: COLORS[1]};
-    const stateHighwaysSeries = {name: 'State Highways', data: [], color: COLORS[2]};
-    const ruralRoadsSeries = {name: 'Rural Roads', data: [], color: COLORS[4]};
-    const urbanRoadsSeries = {name: 'Urban Roads', data: [], color: COLORS[5]};
-    const projectRoadsSeries = {name: 'Project Roads', data: [], color: COLORS[3]};
-    const districtRoadsSeries = {name: 'Other/PWD/District Roads', data: [], color: COLORS[6]};
-    const totalSeries = {name: 'Total', data: [], color: COLORS[0]};
-    const allSeriesDict = {
-      expresswaysSeries,
-      expresswaysUnderConstructionSeries,
-      nationalHighwaysSeries,
-      stateHighwaysSeries,
-      urbanRoadsSeries,
-      ruralRoadsSeries,
-      projectRoadsSeries,
-      districtRoadsSeries,
-      totalSeries
-    };
-    const allSeriesList = Object.values(allSeriesDict);
-    const allSeriesNames = Object.keys(allSeriesDict);
+    const killedSeries = {name: 'Civilians and Security Personal', data: [], color: COLORS[0]};
+    const civiliansKilledSeries = {name: 'Civilians', data: [], color: COLORS[1]};
+    const securityForcesKilledSeries = {name: 'Security Personal', data: [], color: COLORS[2]};
+    const terroristsKilledSeries = {name: 'Terrorists', data: [], color: '#000'};
+    const unspecifiedKilledSeries = {name: 'Unspecified', data: [], color: COLORS[4]};
+    const totalSeries = {name: 'Total', data: [], color: COLORS[5]};
 
-    roadNetworkOfIndia.forEach((yearlySummary, i) => {
-      allSeriesNames.forEach(seriesName => {
+    const fatalitiesSeriesDict = {
+      killedSeries,
+      civiliansKilledSeries,
+      securityForcesKilledSeries,
+      terroristsKilledSeries,
+      unspecifiedKilledSeries,
+      // totalSeries
+    };
+    const fatalitiesSeriesList = Object.values(fatalitiesSeriesDict);
+    const fatalitiesSeriesNames = Object.keys(fatalitiesSeriesDict);
+
+    yearlyTerrorismFatalities.forEach((yearlySummary, i) => {
+      fatalitiesSeriesNames.forEach(seriesName => {
         const dataKey = seriesName.replace('Series', '');
         if (yearlySummary[dataKey]) {
-          allSeriesDict[seriesName].data.push({
+          fatalitiesSeriesDict[seriesName].data.push({
             x: yearlySummary.year,
             y: yearlySummary[dataKey]
           })
@@ -158,24 +155,12 @@ export class IndiaRoadsAndHighwaysComponent implements OnInit {
       })
     });
 
-    const plotLines = (add2001 = false) => (add2001 ? [
-      {
-        year: 2001,
-        government: 'Atal Era'
-      }
-    ] : []).concat(centralGovernments)
-           .map(gov => verticalPlotLineConfig({
-             value: gov.year,
-             text: gov.government
-           })) as any;
+    const plotLines = importantPeriods.map(({year: value, name: text}) => verticalPlotLineConfig({value, text})) as any;
 
-    this.allChartsConfig = allSeriesList
-      .filter(s => s !== expresswaysUnderConstructionSeries)
-      .map(series => generateChartOptions(
-        [
-          series,
-          ...(series === expresswaysSeries ? [expresswaysUnderConstructionSeries] : [])
-        ],
-        plotLines(series === expresswaysUnderConstructionSeries), `Length (KM)`));
+    this.allChartsConfig.push(generateChartOptions([killedSeries, terroristsKilledSeries], plotLines, `Fatalities`));
+    this.allChartsConfig.push(generateChartOptions([
+      civiliansKilledSeries, securityForcesKilledSeries
+    ], plotLines, `Fatalities`));
+    this.allChartsConfig.push(generateChartOptions(fatalitiesSeriesList.filter(s => s !== killedSeries), plotLines, `Fatalities`));
   }
 }

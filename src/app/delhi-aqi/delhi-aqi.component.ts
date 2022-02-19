@@ -211,7 +211,9 @@ export class DelhiAqiComponent implements OnInit {
         if (diwaliDates.includes(currentYearDateKey)) {
           xAxisDiwaliPlotLines = verticalPlotLineConfig({
             value: xAxisIndex,
-            text: `Diwali ${localiseDate(countingDay)}`
+            text: `Diwali ${localiseDate(countingDay)}`,
+            color: '#000',
+            x: 20
           }) as any;
         }
 
