@@ -1,0 +1,19 @@
+<div class="sub-nav">
+  <div *ngFor="let country of countries; let i = index"
+       [class.active]="countriesVisibility[country]"
+       (click)="toggleSeries(country, i)">{{country}}</div>
+</div>
+
+<header>
+  <h1>
+    Economy of India in comparison with China and USA.<a
+    appSourceRef="https://www.imf.org/en/Publications/WEO/weo-database/2021/October"></a>
+  </h1>
+</header>
+
+<highcharts-chart
+  *ngFor="let config of allChartsConfig"
+  (chartInstance)="allCharts.push($event)"
+  [Highcharts]="Highcharts"
+  [options]="config"
+></highcharts-chart>

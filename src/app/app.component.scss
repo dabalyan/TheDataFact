@@ -52,6 +52,29 @@ app-root {
     }
   }
 
+  .sub-nav {
+    width: 100%;
+    display: flex;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+
+    > * {
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      padding: 6px min(2vw, 12px);
+      background-color: black;
+      cursor: pointer;
+
+      &.active {
+        background-color: var(--active-color);
+      }
+    }
+  }
+
   .app-logo {
     font-family: "Source Sans Pro", Helvertica, sans-serif;
     background: #1ebe51; // #3431ff;
