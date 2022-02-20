@@ -22,12 +22,14 @@ app-home {
     max-width: 25vw;
     height: 36vh;
     font-size: min(3vh, 8vw);
-    text-shadow: 0 0 black;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(39 37 52 / 60%);
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
     transition: 2s background-position linear;
+    border-radius: 9px;
     box-shadow: 0 0 0 1px #d4d4d4;
     overflow: hidden;
 
@@ -37,26 +39,24 @@ app-home {
     }
 
     &:hover {
-      background-position: left center;
-
       > * {
-        backdrop-filter: blur(0);
+        background-color: rgb(39 37 52 / 20%);
       }
     }
 
     > * {
       position: absolute;
+      top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: black;
+      color: white;
       padding: min(2vw, 2vh);
-      background-color: rgb(255 255 255 / 80%);
-      backdrop-filter: blur(4px);
-      transition: .3s backdrop-filter linear;
+      background-color: rgb(39 37 52 / 76%);
+      transition: .3s background-color linear;
     }
   }
 }
