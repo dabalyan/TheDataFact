@@ -41,13 +41,13 @@ export const economicData = {
       'gdpPpCpUsd': 306.98,
       'totalInvestmentPGdp': 34.964,
       'savingsPGdp': 32.631,
-      'inflationPc': 0,
-      'importsPc': 0,
-      'exportsPc': 0,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
-      'accountBalancePGdp': 0
+      'inflationPc': null,
+      'importsPc': null,
+      'exportsPc': null,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
+      'accountBalancePGdp': null
     },
     {
       'year': 1981,
@@ -57,12 +57,12 @@ export const economicData = {
       'totalInvestmentPGdp': 33.044,
       'savingsPGdp': 32.045,
       'inflationPc': 2.5,
-      'importsPc': 0,
-      'exportsPc': 0,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
-      'accountBalancePGdp': 0
+      'importsPc': null,
+      'exportsPc': null,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
+      'accountBalancePGdp': null
     },
     {
       'year': 1982,
@@ -72,12 +72,12 @@ export const economicData = {
       'totalInvestmentPGdp': 31.903,
       'savingsPGdp': 35.092,
       'inflationPc': 2,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 24.497,
       'totalExpenditurePGdp': 24.276,
       'netLendingPGdp': 0.22,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1983,
@@ -87,12 +87,12 @@ export const economicData = {
       'totalInvestmentPGdp': 31.855,
       'savingsPGdp': 35.147,
       'inflationPc': 2,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 24.685,
       'totalExpenditurePGdp': 24.695,
       'netLendingPGdp': -0.01,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1984,
@@ -102,12 +102,12 @@ export const economicData = {
       'totalInvestmentPGdp': 34.324,
       'savingsPGdp': 35.119,
       'inflationPc': 2.7,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 23.522,
       'totalExpenditurePGdp': 23.452,
       'netLendingPGdp': 0.07,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1985,
@@ -117,12 +117,12 @@ export const economicData = {
       'totalInvestmentPGdp': 39.025,
       'savingsPGdp': 34.25,
       'inflationPc': 9.3,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 23.423,
       'totalExpenditurePGdp': 22.498,
       'netLendingPGdp': 0.925,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1986,
@@ -132,12 +132,12 @@ export const economicData = {
       'totalInvestmentPGdp': 37.676,
       'savingsPGdp': 35.535,
       'inflationPc': 6.5,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 21.999,
       'totalExpenditurePGdp': 22.344,
       'netLendingPGdp': -0.345,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1987,
@@ -147,12 +147,12 @@ export const economicData = {
       'totalInvestmentPGdp': 37.249,
       'savingsPGdp': 36.671,
       'inflationPc': 7.3,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 19.734,
       'totalExpenditurePGdp': 20.435,
       'netLendingPGdp': -0.701,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1988,
@@ -162,12 +162,12 @@ export const economicData = {
       'totalInvestmentPGdp': 39.001,
       'savingsPGdp': 36.545,
       'inflationPc': 18.8,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 17.221,
       'totalExpenditurePGdp': 18.185,
       'netLendingPGdp': -0.964,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1989,
@@ -177,12 +177,12 @@ export const economicData = {
       'totalInvestmentPGdp': 37.056,
       'savingsPGdp': 35.768,
       'inflationPc': 18,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 17.681,
       'totalExpenditurePGdp': 18.595,
       'netLendingPGdp': -0.914,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1990,
@@ -192,12 +192,12 @@ export const economicData = {
       'totalInvestmentPGdp': 33.984,
       'savingsPGdp': 38.593,
       'inflationPc': 3.1,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 17.488,
       'totalExpenditurePGdp': 18.207,
       'netLendingPGdp': -0.719,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1991,
@@ -207,12 +207,12 @@ export const economicData = {
       'totalInvestmentPGdp': 35.25,
       'savingsPGdp': 38.98,
       'inflationPc': 3.4,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 15.599,
       'totalExpenditurePGdp': 16.643,
       'netLendingPGdp': -1.044,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1992,
@@ -222,12 +222,12 @@ export const economicData = {
       'totalInvestmentPGdp': 39.15,
       'savingsPGdp': 38.464,
       'inflationPc': 6.4,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 13.525,
       'totalExpenditurePGdp': 14.749,
       'netLendingPGdp': -1.225,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1993,
@@ -237,12 +237,12 @@ export const economicData = {
       'totalInvestmentPGdp': 43.401,
       'savingsPGdp': 42.253,
       'inflationPc': 14.7,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 12.634,
       'totalExpenditurePGdp': 13.53,
       'netLendingPGdp': -0.895,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1994,
@@ -252,12 +252,12 @@ export const economicData = {
       'totalInvestmentPGdp': 40.238,
       'savingsPGdp': 43.381,
       'inflationPc': 24.1,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 10.779,
       'totalExpenditurePGdp': 12.469,
       'netLendingPGdp': -1.69,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1995,
@@ -267,12 +267,12 @@ export const economicData = {
       'totalInvestmentPGdp': 39.022,
       'savingsPGdp': 41.941,
       'inflationPc': 17.1,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 10.225,
       'totalExpenditurePGdp': 11.177,
       'netLendingPGdp': -0.953,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1996,
@@ -282,12 +282,12 @@ export const economicData = {
       'totalInvestmentPGdp': 37.685,
       'savingsPGdp': 41.077,
       'inflationPc': 8.3,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 10.355,
       'totalExpenditurePGdp': 11.095,
       'netLendingPGdp': -0.74,
-      'accountBalancePGdp': 0
+      'accountBalancePGdp': null
     },
     {
       'year': 1997,
@@ -297,8 +297,8 @@ export const economicData = {
       'totalInvestmentPGdp': 35.657,
       'savingsPGdp': 39.515,
       'inflationPc': 2.8,
-      'importsPc': 0,
-      'exportsPc': 0,
+      'importsPc': null,
+      'exportsPc': null,
       'revenuePGdp': 10.893,
       'totalExpenditurePGdp': 11.627,
       'netLendingPGdp': -0.733,
@@ -751,9 +751,9 @@ export const economicData = {
       'inflationPc': 11.346,
       'importsPc': 13.355,
       'exportsPc': 7.258,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.478
     },
     {
@@ -766,9 +766,9 @@ export const economicData = {
       'inflationPc': 12.654,
       'importsPc': 10.338,
       'exportsPc': 9.051,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.611
     },
     {
@@ -781,9 +781,9 @@ export const economicData = {
       'inflationPc': 7.736,
       'importsPc': 7.437,
       'exportsPc': 8.061,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.667
     },
     {
@@ -796,9 +796,9 @@ export const economicData = {
       'inflationPc': 12.558,
       'importsPc': 4.566,
       'exportsPc': 6.555,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.444
     },
     {
@@ -811,9 +811,9 @@ export const economicData = {
       'inflationPc': 6.517,
       'importsPc': 0.094,
       'exportsPc': 4.13,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.121
     },
     {
@@ -826,9 +826,9 @@ export const economicData = {
       'inflationPc': 6.251,
       'importsPc': 7.484,
       'exportsPc': -1.967,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -2.025
     },
     {
@@ -841,9 +841,9 @@ export const economicData = {
       'inflationPc': 8.889,
       'importsPc': 3.415,
       'exportsPc': 0.369,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.806
     },
     {
@@ -856,9 +856,9 @@ export const economicData = {
       'inflationPc': 9.059,
       'importsPc': 2.058,
       'exportsPc': 5.437,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.708
     },
     {
@@ -1458,9 +1458,9 @@ export const economicData = {
       'inflationPc': 13.502,
       'importsPc': -6.657,
       'exportsPc': 10.755,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': 0.081
     },
     {
@@ -1473,9 +1473,9 @@ export const economicData = {
       'inflationPc': 10.378,
       'importsPc': 2.608,
       'exportsPc': 1.221,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': 0.157
     },
     {
@@ -1488,9 +1488,9 @@ export const economicData = {
       'inflationPc': 6.158,
       'importsPc': -1.271,
       'exportsPc': -7.653,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -0.165
     },
     {
@@ -1503,9 +1503,9 @@ export const economicData = {
       'inflationPc': 3.16,
       'importsPc': 12.63,
       'exportsPc': -2.592,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.065
     },
     {
@@ -1518,9 +1518,9 @@ export const economicData = {
       'inflationPc': 4.368,
       'importsPc': 24.337,
       'exportsPc': 8.147,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -2.337
     },
     {
@@ -1533,9 +1533,9 @@ export const economicData = {
       'inflationPc': 3.528,
       'importsPc': 6.49,
       'exportsPc': 3.348,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -2.723
     },
     {
@@ -1548,9 +1548,9 @@ export const economicData = {
       'inflationPc': 1.944,
       'importsPc': 8.53,
       'exportsPc': 7.673,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -3.214
     },
     {
@@ -1563,9 +1563,9 @@ export const economicData = {
       'inflationPc': 3.578,
       'importsPc': 5.94,
       'exportsPc': 10.921,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -3.309
     },
     {
@@ -1578,9 +1578,9 @@ export const economicData = {
       'inflationPc': 4.1,
       'importsPc': 3.93,
       'exportsPc': 16.219,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -2.314
     },
     {
@@ -1593,9 +1593,9 @@ export const economicData = {
       'inflationPc': 4.791,
       'importsPc': 4.402,
       'exportsPc': 11.573,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.763
     },
     {
@@ -1608,9 +1608,9 @@ export const economicData = {
       'inflationPc': 5.419,
       'importsPc': 3.579,
       'exportsPc': 8.824,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.324
     },
     {
@@ -1623,9 +1623,9 @@ export const economicData = {
       'inflationPc': 4.216,
       'importsPc': -0.151,
       'exportsPc': 6.612,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': 0.047
     },
     {
@@ -1638,9 +1638,9 @@ export const economicData = {
       'inflationPc': 3.042,
       'importsPc': 7.013,
       'exportsPc': 6.927,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -0.792
     },
     {
@@ -1653,9 +1653,9 @@ export const economicData = {
       'inflationPc': 2.97,
       'importsPc': 8.646,
       'exportsPc': 3.268,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.237
     },
     {
@@ -1668,9 +1668,9 @@ export const economicData = {
       'inflationPc': 2.596,
       'importsPc': 11.923,
       'exportsPc': 8.836,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.669
     },
     {
@@ -1683,9 +1683,9 @@ export const economicData = {
       'inflationPc': 2.805,
       'importsPc': 8.003,
       'exportsPc': 10.274,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.487
     },
     {
@@ -1698,9 +1698,9 @@ export const economicData = {
       'inflationPc': 2.937,
       'importsPc': 8.697,
       'exportsPc': 8.178,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.546
     },
     {
@@ -1713,9 +1713,9 @@ export const economicData = {
       'inflationPc': 2.338,
       'importsPc': 13.468,
       'exportsPc': 11.912,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -1.641
     },
     {
@@ -1728,9 +1728,9 @@ export const economicData = {
       'inflationPc': 1.547,
       'importsPc': 11.686,
       'exportsPc': 2.332,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -2.373
     },
     {
@@ -1743,9 +1743,9 @@ export const economicData = {
       'inflationPc': 2.193,
       'importsPc': 11.594,
       'exportsPc': 4.985,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -2.976
     },
     {
@@ -1758,9 +1758,9 @@ export const economicData = {
       'inflationPc': 3.367,
       'importsPc': 13.002,
       'exportsPc': 8.311,
-      'revenuePGdp': 0,
-      'totalExpenditurePGdp': 0,
-      'netLendingPGdp': 0,
+      'revenuePGdp': null,
+      'totalExpenditurePGdp': null,
+      'netLendingPGdp': null,
       'accountBalancePGdp': -3.921
     },
     {
