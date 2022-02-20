@@ -4,7 +4,7 @@ import * as Highcharts from 'highcharts';
 import {ActivatedRoute, Router} from '@angular/router';
 import {COLORS} from '../app.meta';
 import {SIZE_MULTIPLIER} from '../utils/constants';
-import {verticalPlotLineConfig} from '../utils/highcharts-helpers';
+import {GenerateChartOptions, XAxisPlotLinesConfig} from '../utils/highcharts-helpers';
 
 type AqiSummary = { pm25: number, pm10: number, date: string, o3: number, no2: number, so2: number, co: number };
 type AqiPollutant = Exclude<keyof AqiSummary, 'date'>
@@ -33,98 +33,39 @@ const localiseDate = (date: string | Date): string => {
   }
 };
 
-const generateChartOptions = (series, plotLines, yAxisLabel, yAxisMax, pollutant, year): Highcharts.Options => ({
-  title: null,
-  credits: {enabled: false},
-  chart: {
-    type: 'spline',
-    animation: false,
-    borderWidth: 0,
-    backgroundColor: 'transparent',
-    style: {
-      fontFamily: 'monospace',
-    },
-  },
-  mapNavigation: {
-    enabled: false,
-    buttonOptions: {
-      alignTo: 'spacingBox',
-    },
-  },
-  plotOptions: {
-    areaspline: {
-      fillOpacity: 0.5,
-      marker: {enabled: false},
-    },
-    spline: {
-      marker: {enabled: false},
-      lineWidth: SIZE_MULTIPLIER,
-    },
-    column: {
-      borderWidth: 0,
-      pointWidth: SIZE_MULTIPLIER * 2,
-      dataLabels: {
-        enabled: true
+const generateChartOptions = (series, plotLines, yAxisLabel, yAxisMax, pollutant, year): Highcharts.Options =>
+  GenerateChartOptions({
+    plotOptions: {
+      spline: {
+        lineWidth: SIZE_MULTIPLIER,
       }
-    }
-  },
-  yAxis: {
-    gridZIndex: 0,
-    gridLineWidth: SIZE_MULTIPLIER,
-    max: yAxisMax,
-    labels: {
-      style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
-        fontWeight: '400',
-      },
     },
-    opposite: true,
-    title: {
-      text: yAxisLabel,
-      style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
-        fontWeight: '400',
-      },
-    }
-  },
-  xAxis: {
-    // type: 'datetime',
-    gridZIndex: 1,
-    showFirstLabel: true,
-    showLastLabel: true,
-    labels: {
-      // tslint:disable-next-line:only-arrow-functions typedef
-      formatter() {
-        // return localiseDate(this.value as any);
-        const d = new Date(START_DATE);
-        d.setDate(d.getDate() + Number(this.value));
-        return localiseDate(d)
-      },
-      style: {
-        fontSize: SIZE_MULTIPLIER * 13 + 'px',
-        fontWeight: '400',
-      },
+    yAxis: {
+      max: yAxisMax,
+      title: {
+        text: yAxisLabel
+      }
     },
-    plotLines
-  },
-  legend: {
-    layout: 'horizontal',
-    verticalAlign: 'bottom',
-    itemStyle: {
-      fontSize: SIZE_MULTIPLIER * 14 + 'px',
-      fontWeight: '400',
+    xAxis: {
+      labels: {
+        formatter() {
+          const d = new Date(START_DATE);
+          d.setDate(d.getDate() + Number(this.value));
+          return localiseDate(d)
+        },
+      },
+      plotLines
     },
-  },
-  tooltip: {
-    formatter: function () {
-      const date = new Date(START_DATE);
-      date.setDate(date.getDate() + this.x);
-      return formatPollutant(pollutant) + ' AQI on <b>' + localiseDate(date) +
-        '</b> was <b>' + this.y + '</b>';
-    }
-  },
-  series
-});
+    tooltip: {
+      formatter: function () {
+        const date = new Date(START_DATE);
+        date.setDate(date.getDate() + this.x);
+        return formatPollutant(pollutant) + ' AQI on <b>' + localiseDate(date) +
+          '</b> was <b>' + this.y + '</b>';
+      }
+    },
+    series
+  });
 
 const loadFile = async (fileName: string) => await (await fetch(`/assets/delhi-aqi-raw-data/${fileName}.csv`)).text();
 const loadAllData = async () => Promise.all(DATA_FILES.map(n => loadFile(n).then(csv => parse(csv, {
@@ -209,11 +150,10 @@ export class DelhiAqiComponent implements OnInit {
         const currentYearDateKey = `${year}-${isoMonthDay.join('-')}`;
 
         if (diwaliDates.includes(currentYearDateKey)) {
-          xAxisDiwaliPlotLines = verticalPlotLineConfig({
+          xAxisDiwaliPlotLines = XAxisPlotLinesConfig({
             value: xAxisIndex,
-            text: `Diwali ${localiseDate(countingDay)}`,
-            color: '#000',
-            x: 20
+            label: {text: `Diwali ${localiseDate(countingDay)}`, x: -SIZE_MULTIPLIER * 20, style: {color: '#000'}},
+            color: '#000'
           }) as any;
         }
 

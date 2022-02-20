@@ -1,101 +1,32 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import * as Highcharts from 'highcharts';
 import {ActivatedRoute, Router} from '@angular/router';
-import {SIZE_MULTIPLIER} from '../utils/constants';
 import {centralGovernments, roadNetworkOfIndia} from './india-roads-and-highways.data';
 import {COLORS} from '../app.meta';
-import {verticalPlotLineConfig} from '../utils/highcharts-helpers';
+import {GenerateChartOptions, XAxisPlotLinesConfig} from '../utils/highcharts-helpers';
 
-const generateChartOptions = (series, plotLines, yAxisLabel, dashStyle?): Highcharts.Options => ({
-  title: null,
-  credits: {enabled: false},
-  chart: {
-    type: 'spline',
-    animation: false,
-    borderWidth: 0,
-    backgroundColor: 'transparent',
-    style: {
-      fontFamily: 'monospace',
-    },
-  },
-  mapNavigation: {
-    enabled: false,
-    buttonOptions: {
-      alignTo: 'spacingBox',
-    },
-  },
-  plotOptions: {
-    areaspline: {
-      fillOpacity: 0.5,
-      marker: {enabled: false},
-    },
-    spline: {
-      marker: {enabled: false},
-      lineWidth: SIZE_MULTIPLIER * 2,
-      dashStyle,
-    },
-    column: {
-      borderWidth: 0,
-      pointWidth: SIZE_MULTIPLIER * 2,
-      dataLabels: {
-        enabled: true
+const generateChartOptions = (series, plotLines, yAxisLabel, dashStyle?): Highcharts.Options =>
+  GenerateChartOptions({
+    plotOptions: {
+      spline: {
+        dashStyle,
       }
-    }
-  },
-  yAxis: {
-    gridZIndex: 0,
-    gridLineWidth: SIZE_MULTIPLIER,
-    labels: {
-      style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
-        fontWeight: '400',
-      },
     },
-    opposite: true,
-    title: {
-      text: yAxisLabel,
-      style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
-        fontWeight: '400',
-      },
-    }
-  },
-  xAxis: {
-    // type: 'datetime',
-    gridZIndex: 1,
-    // showFirstLabel: true,
-    showLastLabel: true,
-    // tickInterval: 2,
-    labels: {
-      // tslint:disable-next-line:only-arrow-functions typedef
-      /*formatter() {
-        // return localiseDate(this.value as any);
-        const d = new Date(START_DATE);
-        d.setDate(d.getDate() + Number(this.value));
-        return localiseDate(d)
-      },*/
-      style: {
-        fontSize: SIZE_MULTIPLIER * 13 + 'px',
-        fontWeight: '400',
-      },
+    yAxis: {
+      title: {
+        text: yAxisLabel
+      }
     },
-    plotLines
-  },
-  legend: {
-    layout: 'horizontal',
-    verticalAlign: 'bottom',
-    itemStyle: {
-      fontSize: SIZE_MULTIPLIER * 14 + 'px',
-      fontWeight: '400',
+    xAxis: {
+      plotLines
     },
-  },
-  tooltip: {
-    formatter: function () {
-      return `Total <b>Length</b> in <b>${this.x}</b>: <b>${this.y.toLocaleString()}</b> km`;
-    }
-  },
-  series
-});
+    tooltip: {
+      formatter: function () {
+        return `Total <b>Length</b> in <b>${this.x}</b>: <b>${this.y.toLocaleString()}</b> km`;
+      }
+    },
+    series
+  });
 
 @Component({
   selector: 'app-roads-and-highways',
@@ -164,9 +95,9 @@ export class IndiaRoadsAndHighwaysComponent implements OnInit {
         government: 'Atal Era'
       }
     ] : []).concat(centralGovernments)
-           .map(gov => verticalPlotLineConfig({
+           .map(gov => XAxisPlotLinesConfig({
              value: gov.year,
-             text: gov.government
+             label: {text: gov.government}
            })) as any;
 
     this.allChartsConfig = allSeriesList
@@ -176,6 +107,6 @@ export class IndiaRoadsAndHighwaysComponent implements OnInit {
           series,
           ...(series === expresswaysSeries ? [expresswaysUnderConstructionSeries] : [])
         ],
-        plotLines(series === expresswaysUnderConstructionSeries), `Length (KM)`));
+        plotLines(series === expresswaysSeries), `Length (KM)`));
   }
 }

@@ -2,107 +2,29 @@ import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import * as Highcharts from 'highcharts';
 import {ActivatedRoute, Router} from '@angular/router';
 import {COLORS} from '../app.meta';
-import {SIZE_MULTIPLIER} from '../utils/constants';
 import {importantPeriods, yearlyTerrorismFatalities} from './terrorism-in-india.data';
-import {verticalPlotLineConfig} from '../utils/highcharts-helpers';
+import {GenerateChartOptions, XAxisPlotLinesConfig} from '../utils/highcharts-helpers';
 
-const generateChartOptions = (series, plotLines, yAxisLabel, dashStyle?): Highcharts.Options => ({
-  title: null,
-  credits: {enabled: false},
-  chart: {
-    type: 'spline',
-    animation: false,
-    borderWidth: 0,
-    backgroundColor: 'transparent',
-    style: {
-      fontFamily: 'monospace',
-    },
-  },
-  mapNavigation: {
-    enabled: false,
-    buttonOptions: {
-      alignTo: 'spacingBox',
-    },
-  },
-  plotOptions: {
-    areaspline: {
-      fillOpacity: 0.5,
-      marker: {enabled: false},
-    },
-    spline: {
-      marker: {enabled: false},
-      lineWidth: SIZE_MULTIPLIER * 2,
-      dashStyle,
-      dataLabels: {
-        // enabled: true
+const generateChartOptions = (series, plotLines, yAxisLabel): Highcharts.Options =>
+  GenerateChartOptions({
+    yAxis: {
+      title: {
+        text: yAxisLabel
       }
     },
-    column: {
-      borderWidth: 0,
-      pointWidth: SIZE_MULTIPLIER * 4,
-      opacity: .9,
-      dataLabels: {
-        // enabled: true
+    xAxis: {
+      plotLines
+    },
+    tooltip: {
+      shared: true,
+      useHTML: true,
+      formatter: function () {
+        const formatter = that => `<tr><td>${that.series.name}</td> <td><b>${that.y.toLocaleString()}</b></td></tr>`
+        return `Fatalities in <b>${this.x}</b><br><br> <table>` + (this.points || [this]).map(formatter).join('') + '</table>';
       }
-    }
-  },
-  yAxis: {
-    gridZIndex: 0,
-    gridLineWidth: SIZE_MULTIPLIER,
-    labels: {
-      style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
-        fontWeight: '400',
-      },
     },
-    opposite: true,
-    title: {
-      text: yAxisLabel,
-      style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
-        fontWeight: '400',
-      },
-    }
-  },
-  xAxis: {
-    // type: 'datetime',
-    gridZIndex: 1,
-    // showFirstLabel: true,
-    showLastLabel: true,
-    // tickInterval: 2,
-    labels: {
-      // tslint:disable-next-line:only-arrow-functions typedef
-      /*formatter() {
-        // return localiseDate(this.value as any);
-        const d = new Date(START_DATE);
-        d.setDate(d.getDate() + Number(this.value));
-        return localiseDate(d)
-      },*/
-      style: {
-        fontSize: SIZE_MULTIPLIER * 13 + 'px',
-        fontWeight: '400',
-      },
-    },
-    plotLines
-  },
-  legend: {
-    layout: 'horizontal',
-    verticalAlign: 'bottom',
-    itemStyle: {
-      fontSize: SIZE_MULTIPLIER * 14 + 'px',
-      fontWeight: '400',
-    },
-  },
-  tooltip: {
-    shared: true,
-    useHTML: true,
-    formatter: function () {
-      const formatter = that => `<tr><td>${that.series.name}</td> <td><b>${that.y.toLocaleString()}</b></td></tr>`
-      return `Fatalities in <b>${this.x}</b><br><br> <table>` + (this.points || [this]).map(formatter).join('') + '</table>';
-    }
-  },
-  series
-});
+    series
+  });
 
 @Component({
   selector: 'app-terrorism-in-india',
@@ -155,7 +77,9 @@ export class TerrorismInIndiaComponent implements OnInit {
       })
     });
 
-    const plotLines = importantPeriods.map(({year: value, name: text}) => verticalPlotLineConfig({value, text})) as any;
+    const plotLines = importantPeriods.map(
+      ({year: value, name: text}) => XAxisPlotLinesConfig({value, label: {text}})
+    ) as any;
 
     this.allChartsConfig.push(generateChartOptions([killedSeries, terroristsKilledSeries], plotLines, `Fatalities`));
     this.allChartsConfig.push(generateChartOptions([
