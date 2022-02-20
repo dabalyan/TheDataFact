@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {COLORS} from '../app.meta';
 import {importantPeriods, yearlyTerrorismFatalities} from './terrorism-in-india.data';
 import {GenerateChartOptions, XAxisPlotLinesConfig} from '../utils/highcharts-helpers';
+import {SIZE_MULTIPLIER} from '../utils/constants';
 
 const generateChartOptions = (series, plotLines, yAxisLabel): Highcharts.Options =>
   GenerateChartOptions({
@@ -47,20 +48,18 @@ export class TerrorismInIndiaComponent implements OnInit {
   }
 
   async resetInit(): Promise<void> {
-    const killedSeries = {name: 'Civilians and Security Personal', data: [], color: COLORS[0]};
+    const civiliansAndSecurityForcesKilled = {name: 'Civilians and Security Personal', data: [], color: COLORS[0]};
     const civiliansKilledSeries = {name: 'Civilians', data: [], color: COLORS[1]};
     const securityForcesKilledSeries = {name: 'Security Personal', data: [], color: COLORS[2]};
     const terroristsKilledSeries = {name: 'Terrorists', data: [], color: '#000'};
     const unspecifiedKilledSeries = {name: 'Unspecified', data: [], color: COLORS[4]};
-    const totalSeries = {name: 'Total', data: [], color: COLORS[5]};
 
     const fatalitiesSeriesDict = {
-      killedSeries,
+      civiliansAndSecurityForcesKilled,
       civiliansKilledSeries,
       securityForcesKilledSeries,
       terroristsKilledSeries,
-      unspecifiedKilledSeries,
-      // totalSeries
+      unspecifiedKilledSeries
     };
     const fatalitiesSeriesList = Object.values(fatalitiesSeriesDict);
     const fatalitiesSeriesNames = Object.keys(fatalitiesSeriesDict);
@@ -78,13 +77,15 @@ export class TerrorismInIndiaComponent implements OnInit {
     });
 
     const plotLines = importantPeriods.map(
-      ({year: value, name: text}) => XAxisPlotLinesConfig({value, label: {text}})
+      ({year: value, name: text}) => XAxisPlotLinesConfig({
+        value, label: {text}
+      })
     ) as any;
 
-    this.allChartsConfig.push(generateChartOptions([killedSeries, terroristsKilledSeries], plotLines, `Fatalities`));
+    this.allChartsConfig.push(generateChartOptions([civiliansAndSecurityForcesKilled, terroristsKilledSeries], plotLines, `Fatalities`));
     this.allChartsConfig.push(generateChartOptions([
       civiliansKilledSeries, securityForcesKilledSeries
     ], plotLines, `Fatalities`));
-    this.allChartsConfig.push(generateChartOptions(fatalitiesSeriesList.filter(s => s !== killedSeries), plotLines, `Fatalities`));
+    this.allChartsConfig.push(generateChartOptions(fatalitiesSeriesList.filter(s => s !== civiliansAndSecurityForcesKilled), plotLines, `Fatalities`));
   }
 }

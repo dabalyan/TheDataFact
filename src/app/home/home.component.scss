@@ -18,7 +18,7 @@ app-home {
     align-self: unset;
 
     flex-grow: 1;
-    width: 25vw;
+    min-width: min(400px, 90vw);
     max-width: 25vw;
     height: 36vh;
     font-size: min(3vh, 8vw);
