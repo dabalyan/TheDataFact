@@ -4,10 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "prebuild": "sudo rm -rf dist && cd dist/datafact && git init && git remote add origin https:\/\/github.com\/TheDataFact\/thedatafact.github.io.git && git fetch && git switch master && rm -rf",
     "build": "ng build",
     "postbuild": "cp dist/datafact/index.html dist/datafact/404.html && npm run pushChanges",
-    "pushChanges": "cd dist/datafact && git init && git remote add origin https:\/\/github.com\/TheDataFact\/thedatafact.github.io.git && git fetch",
+    "pushChanges": "cd dist/datafact && git init && git remote add origin https://github.com/TheDataFact/thedatafact.github.io.git && git fetch && git add . && git commit -m changes && git branch -u origin\/master && git pull --rebase -X theirs && git push",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
