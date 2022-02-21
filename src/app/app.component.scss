@@ -80,11 +80,14 @@ app-root {
 
   .app-logo {
     font-family: "Source Sans Pro", Helvertica, sans-serif;
-    background: #1ebe51; // #3431ff;
     font-size: 1.3em;
     font-weight: bold;
-    padding: min(8px, 1vw);
+    padding: 0 min(8px, 1vw) 0 0;
     letter-spacing: .05em;
     position: relative;
+
+    img {
+      height: 2.2em;
+    }
   }
 }
