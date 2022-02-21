@@ -23,6 +23,6 @@ app-india-vehicles-and-accidents {
     width: 30%;
     height: 50%;
     flex-grow: 1;
-    min-width: 400px;
+    min-width: min(400px, 96vw);
   }
 }

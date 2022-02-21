@@ -1,4 +1,5 @@
 import * as Highcharts from 'highcharts';
+import indiaMap from '@highcharts/map-collection/countries/in/custom/in-all-disputed.geo.json';
 import {SIZE_MULTIPLIER} from './constants';
 import {mergeDeep} from './functions';
 
@@ -51,9 +52,8 @@ const defaultChartConfig = (): Highcharts.Options => ({
       lineWidth: SIZE_MULTIPLIER * 2,
     },
     column: {
-      borderWidth: 0,
-      pointWidth: SIZE_MULTIPLIER * 4,
-      opacity: .9,
+      borderWidth: 1,
+      pointWidth: SIZE_MULTIPLIER * 4
     }
   },
   yAxis: {
@@ -84,6 +84,12 @@ const defaultChartConfig = (): Highcharts.Options => ({
       },
     }
   },
+  tooltip: {
+    hideDelay: 0,
+    backgroundColor: 'rgba(255, 255, 255, 1)',
+    // borderColor: '#000',
+    borderRadius: 8,
+  },
   legend: {
     layout: 'horizontal',
     verticalAlign: 'bottom',
@@ -94,5 +100,55 @@ const defaultChartConfig = (): Highcharts.Options => ({
   }
 });
 
+const defaultMapConfig = (): Highcharts.Options => ({
+  title: null,
+  credits: {enabled: false},
+  tooltip: {
+    hideDelay: 0,
+    backgroundColor: 'rgba(255, 255, 255, .9)',
+    borderColor: '#000',
+    borderRadius: 8
+  },
+  chart: {
+    height: '90%',
+    animation: false,
+    map: indiaMap,
+    borderWidth: 0,
+    margin: 0,
+    marginBottom: 50,
+    spacing: [0, 0, 0, 0],
+    backgroundColor: 'transparent',
+    style: {
+      fontFamily: 'monospace',
+    },
+  },
+  mapNavigation: {
+    enabled: false,
+    enableButtons: true,
+    enableTouchZoom: true,
+    buttonOptions: {
+      alignTo: 'spacingBox',
+    },
+  },
+  legend: {
+    enabled: true,
+    align: 'right',
+    verticalAlign: 'top',
+    x: -200,
+    y: 100
+  },
+  colors: ['#f5fffa'],
+  colorAxis: {
+    stops: [
+      [0, '#000000'],
+      [.2, '#181818'],
+      [1, '#ffffff']
+    ],
+  },
+});
+
 export const GenerateChartOptions = (config: Highcharts.Options): Highcharts.Options =>
   mergeDeep(defaultChartConfig(), config);
+
+export const GenerateMapOptions = (config: Highcharts.Options): Highcharts.Options =>
+  mergeDeep(defaultMapConfig(), config);

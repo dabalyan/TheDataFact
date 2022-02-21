@@ -15,7 +15,7 @@ export const mergeDeep = (target, ...sources) => {
 
   for (const key in source) {
     if (!isSimpleObject(source[key])) {
-      target[key] = source[key]; // replace with source
+      target[key] = source[key] ?? target[key]; // replace with source
       continue;
     }
     if (!isSimpleObject(target[key])) {

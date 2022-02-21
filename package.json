@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "postbuild": "cp dist/datafact/index.html dist/datafact/404.html && npm run pushChanges",
-    "pushChanges": "cd dist/datafact && git init && git remote add origin https://github.com/TheDataFact/thedatafact.github.io.git && git fetch && git add . && git commit -m changes && git branch -u origin\/master && git pull --rebase -X theirs && git push",
+    "pushChanges": "cd dist/datafact && git init && git remote add origin https://github.com/TheDataFact/thedatafact.github.io.git && git fetch && git add . && git commit -m changes && git branch -u origin/master && git pull --rebase -X theirs && git push",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@highcharts/map-collection": "^2.0.0",
     "buffer": "^6.0.3",
     "csv-parse": "^5.0.4",
     "highcharts": "^9.3.3",

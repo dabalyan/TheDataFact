@@ -15,7 +15,8 @@ import {
 } from './india-vehicles-and-accidents/india-vehicles-and-accidents.component';
 import {HomeComponent} from './home/home.component';
 import {TerrorismInIndiaComponent} from './terrorism-in-india/terrorism-in-india.component';
-import { EconomyOfIndiaComponent } from './economy-of-india/economy-of-india.component';
+import {EconomyOfIndiaComponent} from './economy-of-india/economy-of-india.component';
+import {ElectrificationOfIndiaComponent} from './electification-of-india/electrification-of-india.component';
 
 const routes: Routes = [
   {path: 'wikipedia-sources-reliability-index', component: WikipediaSourcesReliabilityIndexComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'india-vehicles-and-accidents', component: IndiaVehiclesAndAccidentsComponent},
   {path: 'terrorism-in-india', component: TerrorismInIndiaComponent},
   {path: 'economy-of-india', component: EconomyOfIndiaComponent},
+  {path: 'electrification-of-india', component: ElectrificationOfIndiaComponent},
   {path: '', component: HomeComponent},
   {path: '**', redirectTo: ''}
 ]
@@ -38,7 +40,8 @@ const routes: Routes = [
     IndiaVehiclesAndAccidentsComponent,
     HomeComponent,
     TerrorismInIndiaComponent,
-    EconomyOfIndiaComponent
+    EconomyOfIndiaComponent,
+    ElectrificationOfIndiaComponent
   ],
   imports: [
     BrowserModule,
