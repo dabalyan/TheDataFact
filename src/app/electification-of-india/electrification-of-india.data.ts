@@ -8,7 +8,8 @@ export const stateCodes = [
   {
     'name': 'Andaman and Nicobar Islands',
     'tin': 35,
-    'code': 'AN'
+    'code': 'AN',
+    'hc-key': 'andaman and nicobar'
   },
   {
     'name': 'Andhra Pradesh',
@@ -18,7 +19,8 @@ export const stateCodes = [
   {
     'name': 'Arunachal Pradesh',
     'tin': 12,
-    'code': 'AR'
+    'code': 'AR',
+    'hc-key': 'arunanchal pradesh'
   },
   {
     'name': 'Assam',
@@ -53,7 +55,8 @@ export const stateCodes = [
   {
     'name': 'Delhi',
     'tin': 7,
-    'code': 'DL'
+    'code': 'DL',
+    'hc-key': 'nct of delhi'
   },
   {
     'name': 'Goa',
@@ -683,3 +686,225 @@ export const railwayElectrificationYearWiseData = railwayElectrificationData.sli
 
   return fillInTheBlanks;
 });
+
+
+const tapWater = [
+  {
+    '2022': 100,
+    'name': 'Andaman and Nicobar Islands',
+    'tin': 35,
+    'code': 'AN',
+    'hc-key': 'andaman and nicobar'
+  },
+  {
+    '2022': 52.21,
+    'name': 'Andhra Pradesh',
+    'tin': 37,
+    'code': 'AD'
+  },
+  {
+    '2022': 52.1,
+    'name': 'Arunachal Pradesh',
+    'tin': 12,
+    'code': 'AR',
+    'hc-key': 'arunanchal pradesh'
+  },
+  {
+    '2022': 31.48,
+    'name': 'Assam',
+    'tin': 18,
+    'code': 'AS'
+  },
+  {
+    '2022': 90.27,
+    'name': 'Bihar',
+    'tin': 10,
+    'code': 'BH'
+  },
+  {
+    '2022': 0,
+    'name': 'Chandigarh',
+    'tin': 4,
+    'code': 'CH'
+  },
+  {
+    '2022': 100,
+    'name': 'Dadra and Nagar Haveli',
+    'tin': 26,
+    'code': 'DN'
+  },
+  {
+    '2022': 100,
+    'name': 'Daman and Diu',
+    'tin': 25,
+    'code': 'DD'
+  },
+  {
+    '2022': 100,
+    'name': 'Goa',
+    'tin': 30,
+    'code': 'GA'
+  },
+  {
+    '2022': 92.6,
+    'name': 'Gujarat',
+    'tin': 24,
+    'code': 'GJ'
+  },
+  {
+    '2022': 100,
+    'name': 'Haryana',
+    'tin': 6,
+    'code': 'HR'
+  },
+  {
+    '2022': 92.56,
+    'name': 'Himachal Pradesh',
+    'tin': 2,
+    'code': 'HP'
+  },
+  {
+    '2022': 57.41,
+    'name': 'Jammu and Kashmir',
+    'tin': 1,
+    'code': 'JK'
+  },
+  {
+    '2022': 46.86,
+    'name': 'Karnataka',
+    'tin': 29,
+    'code': 'KA'
+  },
+  {
+    '2022': 38.59,
+    'name': 'Kerala',
+    'tin': 32,
+    'code': 'KL'
+  },
+  {
+    '2022': 38.22,
+    'name': 'Madhya Pradesh',
+    'tin': 23,
+    'code': 'MP'
+  },
+  {
+    '2022': 68.57,
+    'name': 'Maharashtra',
+    'tin': 27,
+    'code': 'MH'
+  },
+  {
+    '2022': 0,
+    'name': 'Lakshadweep',
+    'tin': 31,
+    'code': 'LD'
+  },
+  {
+    '2022': 63.82,
+    'name': 'Manipur',
+    'tin': 14,
+    'code': 'MN'
+  },
+  {
+    '2022': 35.88,
+    'name': 'Meghalaya',
+    'tin': 17,
+    'code': 'ME'
+  },
+  {
+    '2022': 46.72,
+    'name': 'Mizoram',
+    'tin': 15,
+    'code': 'MI'
+  },
+  {
+    '2022': 39.67,
+    'name': 'Nagaland',
+    'tin': 13,
+    'code': 'NL'
+  },
+  {
+    '2022': 42.84,
+    'name': 'Odisha',
+    'tin': 21,
+    'code': 'OR'
+  },
+  {
+    '2022': 100,
+    'name': 'Puducherry',
+    'tin': 34,
+    'code': 'PY'
+  },
+  {
+    '2022': 99.19,
+    'name': 'Punjab',
+    'tin': 3,
+    'code': 'PB'
+  },
+  {
+    '2022': 23.16,
+    'name': 'Rajasthan',
+    'tin': 8,
+    'code': 'RJ'
+  },
+  {
+    '2022': 80.81,
+    'name': 'Sikkim',
+    'tin': 11,
+    'code': 'SK'
+  },
+  {
+    '2022': 40.69,
+    'name': 'Tamil Nadu',
+    'tin': 33,
+    'code': 'TN'
+  },
+  {
+    '2022': 41.91,
+    'name': 'Tripura',
+    'tin': 16,
+    'code': 'TR'
+  },
+  {
+    '2022': 13.36,
+    'name': 'Uttar Pradesh',
+    'tin': 9,
+    'code': 'UP'
+  },
+  {
+    '2022': 19.59,
+    'name': 'West Bengal',
+    'tin': 19,
+    'code': 'WB'
+  },
+  {
+    '2022': 18.21,
+    'name': 'Chhattisgarh',
+    'tin': 22,
+    'code': 'CT'
+  },
+  {
+    '2022': 18.75,
+    'name': 'Jharkhand',
+    'tin': 20,
+    'code': 'JH'
+  },
+  {
+    '2022': 54.95,
+    'name': 'Uttarakhand',
+    'tin': 5,
+    'code': 'UT'
+  },
+  {
+    '2022': 100,
+    'name': 'Telangana',
+    'tin': 36,
+    'code': 'TS'
+  },
+  {
+    '2022': 29.42,
+    'name': 'Ladakh',
+    'tin': 38,
+    'code': 'LA'
+  }
+]

@@ -28,4 +28,19 @@ app-electrification-of-india {
       max-width: $multiplier * 800px;
     }
   }
+
+  .sub-nav {
+    position: relative;
+  }
+
+  .india-at-night {
+    margin: 0;
+    padding: 0;
+
+    img {
+      max-width: 100%;
+      max-height: 100vh;
+      vertical-align: middle;
+    }
+  }
 }
