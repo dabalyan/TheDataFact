@@ -23,7 +23,7 @@
 </div>
 
 <div class="image-container"
-     [style.background-image]="selectedImageIndex >= 2 && 'url(' + invasionImages[selectedImageIndex - 2]?.url + ')'">
+     [style.background-image]="selectedImageIndex < invasionImages.length - 1 && 'url(' + invasionImages[selectedImageIndex + 1]?.url + ')'">
   <div class="image-container"
        [style.background-image]="selectedImageIndex >= 1 && 'url(' + invasionImages[selectedImageIndex -1]?.url + ')'">
     <div class="image-container"
