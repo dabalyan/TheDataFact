@@ -1,12 +1,18 @@
-app-root {
-  display: flex;
-  flex-direction: column;
+body.flex-app {
   height: 100%;
 
-  > * {
-    flex-shrink: 0;
-  }
+  app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
+    > * {
+      flex-shrink: 0;
+    }
+  }
+}
+
+app-root {
   header {
     display: flex;
     justify-content: center;
