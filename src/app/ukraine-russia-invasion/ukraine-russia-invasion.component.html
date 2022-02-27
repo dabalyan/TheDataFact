@@ -1,0 +1,34 @@
+<header>
+  <h1>
+    2022 Russian invasion of Ukraine - Map Timeline.<a
+    appSourceRef="https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine"></a>
+  </h1>
+</header>
+
+<div class="timeline">
+  <button (click)="playIntervalRef ? stop(): play()">{{playIntervalRef ? '■ STOP' : '▶ PLAY'}}</button>
+
+  <input
+    type="range"
+    step="1"
+    min="0"
+    [max]="invasionImages.length - 1"
+    [ngModel]="selectedImageIndex"
+    (ngModelChange)="selectImage($event)">
+
+  <div class="labels">
+    <span>{{invasionImages[0].date | date:'HH:mm, dd MMM yyyy':'+0200'}}</span>
+    <span>{{invasionImages[invasionImages.length - 1].date | date:'HH:mm, dd MMM yyyy':'+0200'}}</span>
+  </div>
+</div>
+
+<div class="image-container"
+     [style.background-image]="selectedImageIndex >= 2 && 'url(' + invasionImages[selectedImageIndex - 2]?.url + ')'">
+  <div class="image-container"
+       [style.background-image]="selectedImageIndex >= 1 && 'url(' + invasionImages[selectedImageIndex -1]?.url + ')'">
+    <div class="image-container"
+         [style.background-image]="'url(' + invasionImages[selectedImageIndex].url + ')'"
+    ></div>
+  </div>
+  <span class="image-date">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}} (Ukraine)</span>
+</div>

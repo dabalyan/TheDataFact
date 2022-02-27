@@ -1,5 +1,8 @@
 <ng-template #appRoutes>
   <a class="app-nav__item"
+     routerLink="/2022-Russian-invasion-of-Ukraine"
+     routerLinkActive="active">Ukraine Invasion Map</a>
+  <a class="app-nav__item"
      routerLink="/wikipedia-sources-reliability-index"
      routerLinkActive="active">Wikipedia Reliability Index</a>
   <a class="app-nav__item"
@@ -27,7 +30,7 @@
      routerLink="/">
     <img src="assets/logo.png">
   </a>
-  <ng-container *ngIf="windowSize.width >= 1080" [ngTemplateOutlet]="appRoutes"></ng-container>
+  <ng-container *ngIf="windowSize.width >= 1300" [ngTemplateOutlet]="appRoutes"></ng-container>
   <div class="spacer"></div>
   <a class="app-nav__item" href="https://github.com/dabalyan"
      target="_blank"

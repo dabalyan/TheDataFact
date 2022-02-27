@@ -1,0 +1,67 @@
+$multiplier: 1;
+$gap: min(30px, 3vw);
+
+body, html {
+  //width: $multiplier * 100vw;
+  //height: $multiplier * 100vh;
+}
+
+app-ukraine-russia-invasion {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+  > * {
+    flex-shrink: 0;
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: var(--active-color);
+  }
+
+  header {
+    padding: min(4vh, 4vw);
+    padding-bottom: calc(min(4vh, 4vw) - #{$gap});
+  }
+
+  .timeline {
+    margin: 2vh auto;
+    padding: 0 2vw;
+    width: 100%;
+    max-width: 1080px;
+  }
+
+  .labels {
+    margin-top: .5em;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image-container {
+    position: relative;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+
+    > .image-container {
+      height: 100%;
+    }
+
+    .image-date {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      font-size: min(30px, 3vh);
+      white-space: nowrap;
+    }
+  }
+}
