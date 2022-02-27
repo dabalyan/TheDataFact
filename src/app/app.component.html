@@ -30,9 +30,11 @@
      routerLink="/">
     <img src="assets/logo.png">
   </a>
-  <ng-container *ngIf="windowSize.width >= 1300" [ngTemplateOutlet]="appRoutes"></ng-container>
+  <ng-container *ngIf="windowSize.width >= 1300"
+                [ngTemplateOutlet]="appRoutes"></ng-container>
   <div class="spacer"></div>
-  <a class="app-nav__item" href="https://github.com/dabalyan"
+  <a class="app-nav__item"
+     href="https://github.com/dabalyan/TheDataFact"
      target="_blank"
      rel="noopener">GitHub</a>
 </nav>
