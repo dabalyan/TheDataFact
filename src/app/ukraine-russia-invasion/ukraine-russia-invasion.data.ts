@@ -1,7 +1,83 @@
 export const INVASION_IMAGES = () => [
   {
+    "date": "2022-03-01T06:55:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-03-01T00:49:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220301065554%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-03-01T00:45:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220301004953%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T18:57:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220301004530%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T18:52:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228185704%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T18:29:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228185218%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T16:28:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228182922%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T12:26:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228162824%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T10:58:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228122605%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T10:53:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228105857%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T10:49:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228105324%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    "date": "2022-02-28T09:33:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228104946%212022_Russian_invasion_of_Ukraine.svg"
+  },
+  {
+    'date': '2022-02-28T08:25:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228093336%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
+    'date': '2022-02-28T03:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228082537%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
+    'date': '2022-02-28T03:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228033720%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
+    'date': '2022-02-27T22:25:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220228033319%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
+    'date': '2022-02-27T22:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220227222540%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
+    'date': '2022-02-27T18:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220227220706%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
+    'date': '2022-02-27T16:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220227185246%212022_Russian_invasion_of_Ukraine.svg'
+  },
+  {
     'date': '2022-02-27T15:02:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg'
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220227162836%212022_Russian_invasion_of_Ukraine.svg'
   },
   {
     'date': '2022-02-27T14:06:00.000Z',
