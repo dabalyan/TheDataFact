@@ -16,6 +16,10 @@
     [ngModel]="selectedImageIndex"
     (ngModelChange)="selectImage($event)">
 
+  <div class="range-tick-marks">
+    <span *ngFor="let img of invasionImages"></span>
+  </div>
+
   <div class="labels">
     <span>{{invasionImages[0].date | date:'HH:mm, dd MMM yyyy':'+0200'}}</span>
     <span>{{invasionImages[invasionImages.length - 1].date | date:'HH:mm, dd MMM yyyy':'+0200'}}</span>
@@ -30,5 +34,6 @@
          [style.background-image]="'url(' + invasionImages[selectedImageIndex].url + ')'"
     ></div>
   </div>
-  <span class="image-date">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}} (Ukraine)</span>
+  <span class="image-date">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}}
+    (Ukraine)</span>
 </div>

@@ -42,6 +42,13 @@ h1 {
 
 
 // https://range-input-css.netlify.app/
+$range-track-height: .4rem;
+$range-thumb-width: 2.5rem;
+$range-thumb-height: 1rem;
+$range-thumb-radius: 0.5rem;
+$range-thumb-outline-offset: 0.125rem;
+$range-thumb-outline: 3px solid var(--active-color);
+
 /*********** Baseline, reset styles ***********/
 input[type="range"] {
   -webkit-appearance: none;
@@ -60,44 +67,60 @@ input[type="range"]:focus {
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
   background-color: #000;
-  border-radius: 2em;
-  height: .2rem;
+  border-radius: $range-track-height;
+  height: $range-track-height;
 }
 
 /* slider thumb */
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  margin-top: -5.5px; /* Centers thumb on the track */
+  margin-top: $range-track-height / 2 - $range-thumb-height / 2; /* Centers thumb on the track */
   background-color: var(--active-color);
-  border-radius: 0.5rem;
-  height: 1rem;
-  width: 2.5rem;
+  border-radius: $range-thumb-radius;
+  height: $range-thumb-height;
+  width: $range-thumb-width;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-  outline: 3px solid var(--active-color);
-  outline-offset: 0.125rem;
+  outline: $range-thumb-outline;
+  outline-offset: $range-thumb-outline-offset;
 }
 
 /*********** Firefox styles ***********/
 /* slider track */
 input[type="range"]::-moz-range-track {
   background-color: #000;
-  border-radius: 2em;
-  height: .2rem;
+  border-radius: $range-track-height;
+  height: $range-track-height;
 }
 
 /* slider thumb */
 input[type="range"]::-moz-range-thumb {
   background-color: var(--active-color);
   border: none; /*Removes extra border that FF applies*/
-  border-radius: 0.5rem;
-  height: 1rem;
-  width: 2.5rem;
+  border-radius: $range-thumb-radius;
+  height: $range-thumb-height;
+  width: $range-thumb-width;
 }
 
 input[type="range"]:focus::-moz-range-thumb {
-  outline: 3px solid var(--active-color);
-  outline-offset: 0.125rem;
+  outline: $range-thumb-outline;
+  outline-offset: $range-thumb-outline-offset;
+}
+
+.range-tick-marks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding: 0 ($range-thumb-width / 2 - $range-thumb-outline-offset);
+  height: 2 * $range-track-height;
+  margin-top: calc(#{- 2 * $range-track-height} - 1px); /* -1px because 2px native margin on input[range] */
+  z-index: -1;
+
+  > * {
+    height: 100%;
+    box-shadow: 0 0 0 0.5px black;
+  }
 }
