@@ -27,6 +27,7 @@ app-electrification-of-india {
 
     &.map-chart {
       max-width: $multiplier * 800px;
+      height: unset;
     }
   }
 
