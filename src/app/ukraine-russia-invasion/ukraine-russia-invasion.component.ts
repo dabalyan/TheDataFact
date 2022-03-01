@@ -11,6 +11,7 @@ export class UkraineRussiaInvasionComponent implements OnInit, OnDestroy {
   readonly invasionImages = INVASION_IMAGES().reverse();
   selectedImageIndex = this.invasionImages.length - 1;
 
+  showComment = true;
   playIntervalRef: number;
 
   ngOnInit(): void {

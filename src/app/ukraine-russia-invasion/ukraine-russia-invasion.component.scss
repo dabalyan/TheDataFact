@@ -65,4 +65,52 @@ app-ukraine-russia-invasion {
       white-space: nowrap;
     }
   }
+
+  .wiki-editor-comment {
+    position: relative;
+    text-align: center;
+    padding: min(1vh, 1vw);
+    background: rgb(255 255 255 / 33%);
+    word-break: break-word;
+
+    &.hidden {
+      align-self: flex-end;
+      overflow: hidden;
+    }
+
+    button {
+      position: absolute;
+      font-size: 1.2em;
+      background: #bbbbbb;
+      top: 0;
+      left: 0;
+      padding: .2em .3em;
+      color: inherit;
+    }
+
+    @media screen and (min-width: 700px) {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      max-width: 16vw;
+    }
+
+    @media screen and (max-width: 700px) {
+      filter: invert(1);
+      mix-blend-mode: difference;
+      max-height: 12vh;
+      overflow: auto;
+    }
+
+    @media screen and (min-width: 1000px) {
+      filter: invert(1);
+      mix-blend-mode: difference;
+    }
+  }
+
+  @media screen and (max-width: 1200px) and (min-width: 1000px) {
+    > .image-container {
+      margin-right: 20vw;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 body.flex-app {
   height: 100%;
+  overflow: hidden;
 
   app-root {
     display: flex;

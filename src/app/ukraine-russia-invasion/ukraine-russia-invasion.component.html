@@ -37,3 +37,11 @@
   <span class="image-date">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}}
     (Ukraine)</span>
 </div>
+
+<div class="wiki-editor-comment"
+     *ngIf="invasionImages[selectedImageIndex]?.comment"
+     [class.hidden]="!showComment">
+  <button style="cursor: pointer"
+          (click)="showComment = !showComment">{{showComment ? '&times;' : '+' }}</button>&nbsp;&nbsp;&nbsp;
+  <span *ngIf="showComment"><b>Comment (by Wiki Editor):</b> {{invasionImages[selectedImageIndex]?.comment}}.</span>
+</div>
