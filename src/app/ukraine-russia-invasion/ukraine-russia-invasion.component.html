@@ -29,10 +29,16 @@
 <div class="image-container"
      [style.background-image]="selectedImageIndex < invasionImages.length - 1 && 'url(' + invasionImages[selectedImageIndex + 1]?.url + ')'">
   <div class="image-container"
-       [style.background-image]="selectedImageIndex >= 1 && 'url(' + invasionImages[selectedImageIndex -1]?.url + ')'">
+       [style.background-image]="selectedImageIndex < invasionImages.length - 2 && 'url(' + invasionImages[selectedImageIndex + 2]?.url + ')'">
     <div class="image-container"
-         [style.background-image]="'url(' + invasionImages[selectedImageIndex].url + ')'"
-    ></div>
+         [style.background-image]="selectedImageIndex >= 2 && 'url(' + invasionImages[selectedImageIndex - 2]?.url + ')'">
+      <div class="image-container"
+           [style.background-image]="selectedImageIndex >= 1 && 'url(' + invasionImages[selectedImageIndex - 1]?.url + ')'">
+        <div class="image-container"
+             [style.background-image]="'url(' + invasionImages[selectedImageIndex].url + ')'"
+        ></div>
+      </div>
+    </div>
   </div>
   <span class="image-date">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}}
     (Ukraine)</span>
