@@ -6,12 +6,21 @@
   </h1>
 </header>
 
+<label class="search-box">
+  <span class="search-box-icon">🔍</span>
+  <input type="text"
+         placeholder="search"
+         ngModel
+         (ngModelChange)="onSearchInput($event)">
+</label>
+
 <ng-container *ngFor="let group of groups; let i = index">
   <div class="container group-{{i}}">
     <div class="group-info"><img [src]="groupInfo[i].image"/> {{groupInfo[i].name}}</div>
     <a *ngFor="let source of group"
        [title]="source.name"
        [href]="source.link"
+       #wikiSourceLink
        target="_blank"
        rel="noopener">
       <img [src]="'assets/wiki-sources-logos/' + (source.image || source.image2)"/><span class="source-name">{{

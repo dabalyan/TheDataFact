@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, QueryList, ViewChildren, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-wikipedia-sources-reliability-index',
@@ -2710,4 +2710,18 @@ export class WikipediaSourcesReliabilityIndexComponent {
       }
     ]
   ];
+
+  @ViewChildren('wikiSourceLink') wikiSourceLink: QueryList<ElementRef<HTMLAnchorElement>>;
+
+  onSearchInput(query: string): void {
+    query = query.toLowerCase().trim();
+
+    this.wikiSourceLink.forEach(({nativeElement}) => {
+      nativeElement.classList.remove('active');
+
+      if (query && nativeElement.getAttribute('title').toLowerCase().includes(query)) {
+        nativeElement.classList.add('active');
+      }
+    });
+  }
 }
