@@ -6,12 +6,14 @@
   </h1>
 </header>
 
-<label class="search-box">
-  <span class="search-box-icon">🔍</span>
-  <input type="text"
-         placeholder="search"
-         ngModel
-         (ngModelChange)="onSearchInput($event)">
+<label class="input-group">
+  <div class="input-box">
+    <span class="search-box-icon">🔍</span>
+    <input type="text"
+           placeholder="search"
+           ngModel
+           (ngModelChange)="onSearchInput($event)">
+  </div>
 </label>
 
 <ng-container *ngFor="let group of groups; let i = index">

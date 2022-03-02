@@ -1,0 +1,106 @@
+<header>
+  <h1>
+    Performance Comparison of Stocks, ETFs and Indices.<a
+    appSourceRef="https://finnhub.io"></a>
+  </h1>
+</header>
+
+<ng-container *ngIf="apiToken">
+  <div class="user-input">
+    <ng-container *ngIf="selectedSymbols.length">
+      <select [ngModel]="fromYear"
+              (ngModelChange)="selectFromYear($event)">
+        <option *ngFor="let year of fromYearOptions"
+                [value]="year">{{year}}</option>
+      </select>
+
+      <select [ngModel]="fromMonth"
+              (ngModelChange)="selectFromMonth($event)">
+        <option *ngFor="let month of fromMonthOptions"
+                [value]="month">{{'0-' + month | date:'MMM'}}</option>
+      </select>
+
+      <select [ngModel]="timeSpan"
+              (ngModelChange)="selectTimeSpan($event)">
+        <option *ngFor="let ts of timeSpans"
+                [value]="ts">{{timeSpanLabels[ts]}}</option>
+      </select>
+
+      <select [ngModel]="pricingKey"
+              (ngModelChange)="selectPricing($event)">
+        <option *ngFor="let key of pricingKeys"
+                [value]="key">{{pricingLabels[key]}}</option>
+      </select>
+    </ng-container>
+
+    <label class="input-group">
+      <div class="input-box">
+        <span class="input-box-icon">🔍</span>
+        <input type="text"
+               placeholder="search"
+               (focusin)="showSearchResults = true"
+               (keydown.escape)="showSearchResults = false"
+               autofocus
+               ngModel
+               (ngModelChange)="onSearchInput($event)">
+      </div>
+
+      <div class="search-results"
+           *ngIf="showSearchResults && searchResults?.length">
+        <div class="search-result"
+             *ngFor="let item of searchResults"
+             (click)="toggleSymbol(item.symbol); showSearchResults = false">
+          <span class="stock-symbol">{{item.symbol}}</span> <span class="stock-name">{{item.name}}</span>
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div class="chips">
+    <div class="chip"
+         *ngFor="let symbol of selectedSymbols">
+      <span>{{symbol}}</span>
+      <span class="chip--close-btn"
+            (click)="toggleSymbol(symbol, true)">✖</span></div>
+  </div>
+
+  <highcharts-chart
+    (chartInstance)="chart = $event"
+    [Highcharts]="Highcharts"
+    [options]="chartConfig"
+  ></highcharts-chart>
+</ng-container>
+
+<div class="no-token-content"
+     *ngIf="!apiToken">
+  <h3>To use this service you have to provide your own API Key.</h3>
+
+  <h4>Follow these simple steps to get started:</h4>
+  <ol>
+    <li>Create an account on <a href="https://finnhub.io"
+                                rel="noopener noreferrer"
+                                target="_blank">Finnhub.io</a></li>
+    <li>Go to <a href="https://finnhub.io/dashboard"
+                 rel="noopener noreferrer"
+                 target="_blank">Finnhub Dashboard</a></li>
+    <li>Copy the API Key</li>
+    <li>
+      Enter/Paste the API Key here
+
+      <form (submit)="saveApiToken()">
+        <div class="input-box">
+          <span class="input-box-icon">🔑</span>
+          <input type="text"
+                 placeholder="API Key"
+                 autofocus
+                 [ngModelOptions]="{standalone: true}"
+                 [(ngModel)]="apiTokenInput">
+        </div>
+        <button class="btn"
+                type="submit"
+                [disabled]="!apiTokenInput">Save Key
+        </button>
+      </form>
+    </li>
+  </ol>
+</div>

@@ -15,47 +15,15 @@ app-wikipedia-sources-reliability-index {
   }
 
   a.active {
-    //box-shadow: 0 0 0 5px var(--active-color);
     background-color: var(--active-color);
     z-index: 1;
   }
 
-  .search-box {
-    display: flex;
-    margin: 0 auto;
-    padding: 3px 6px;
-    width: 20vw;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 999;
-    text-align: center;
-
-    input  {
-      border: 0;
-      outline: 0;
-      border-bottom: 3px solid;
-      flex-basis: 0;
-      flex-grow: 1;
-      padding: 2px 10px;
-      font-weight: bold;
-      text-transform: uppercase;
-
-      &:focus, &:active {
-        border-color: var(--active-color);
-      }
-    }
-  }
-
   .container {
-    //width: 100%;
     border: $borderWidth solid;
-    //border-bottom: 0;
     margin: 4vh 2vw;
     display: flex;
     flex-wrap: wrap;
-
-    //background: var(--color);
   }
 
   .container:last-child {
@@ -70,7 +38,6 @@ app-wikipedia-sources-reliability-index {
     padding: 12px;
     margin: 2px;
     filter: drop-shadow(0 0 0 #000);
-    //background-color: rgb(255 255 255 / 65%);
   }
 
   .container img {
