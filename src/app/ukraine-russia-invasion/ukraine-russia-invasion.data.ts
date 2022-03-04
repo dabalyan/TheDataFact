@@ -1,7 +1,47 @@
 export const INVASION_IMAGES = () => [
   {
-    'date': '2022-03-03T12:46:00.000Z',
+    'date': '2022-03-04T17:30:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Minor corrections to eastern axes, mostly Kharkiv, ISW reports minor movement from Trostianets'
+  },
+  {
+    'date': '2022-03-04T11:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220304173045%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bucha contested again as Russians enter the settlement. Enerhodar is in Russian control.'
+  },
+  {
+    'date': '2022-03-04T10:24:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220304112208%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Decrease bombardment icons size'
+  },
+  {
+    'date': '2022-03-04T08:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220304102412%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Zaphorizhzhia power plant occupied by Russian forces, not clear if Energodar (the settlement which accompanies the plant) has been taken. Vorzel and Bucha (west of Kiev) in Ukrainian hands.'
+  },
+  {
+    'date': '2022-03-03T23:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220304085544%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '(Institute for the Study of War update) Russian movement 20km from Bihun and Ovruch (Zhytomyr Oblast). Russian forces around Malyn, northwest of Makariv. Russians stopped in Peremohal east of Kiev. Failed advance to Nizhyn and Pryluky. Mena (east of Chernihiv) in Russian hands and used as a supply base towards Chernihiv assault. Russians stopped close to Chuhuiv, east of Kharkiv. Starobilsk in Russian control. Novoaidar (added) contested, but army is close and fighting is happening. Update of...'
+  },
+  {
+    'date': '2022-03-03T21:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220303231500%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Russians near Voznesensk have been defeated. Updated Mykolaiv frontline (it is more encircled than previously shown.)'
+  },
+  {
+    'date': '2022-03-03T16:08:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220303210352%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fighting inside Bucha, set to contested.'
+  },
+  {
+    'date': '2022-03-03T15:36:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220303160815%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Advances on Kyiv seem to have largely come via Ivankiv, for instance the convoy shown in Maxar satellite images. See also map versions before 22:25, 27 February 2022.'
+  },
+  {
+    'date': '2022-03-03T12:46:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220303153606%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Added bombing of Izium'
   },
   {
