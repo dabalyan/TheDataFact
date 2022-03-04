@@ -53,7 +53,7 @@ const generateChartOptions = (series, plotLines, yAxisLabel): Highcharts.Options
       shared: true,
       useHTML: true,
       formatter: function () {
-        const formatter = that => `<tr><td>${that.series.name}</td> <td><b>${that.y.toLocaleString()}</b></td></tr>`
+        const formatter = that => `<tr><td>${that.series.name}</td> <td><b>${that.y.toLocaleString()}</b> %</td></tr>`
         return `<b>${formatDate(this.x)}</b><br><br> <table>` +
           (this.points || [this]).sort(sortCompareFnByKey('y', true)).map(formatter).join('') +
           '</table>';
@@ -317,6 +317,28 @@ export class StockMarketComponent implements OnInit {
       queryParamsHandling: 'merge',
       replaceUrl: true
     })
+  }
+
+  monthSelectUnderflow(): void {
+    if (this.fromMonth === 1) { // go to previous year
+      setTimeout(() => { // prevent dual change in month caused by successive native selection
+        this.navigate({
+          month: 12,
+          from: Math.max(this.fromYearOptions[0], this.fromYear - 1)
+        });
+      });
+    }
+  }
+
+  monthSelectOverflow(): void {
+   if (this.fromMonth === 12) { // go to next year
+      setTimeout(() => { // prevent dual change in month caused by successive native selection
+        this.navigate({
+          month: 1,
+          from: Math.min(this.fromYearOptions[this.fromYearOptions.length - 1], this.fromYear + 1)
+        });
+      });
+    }
   }
 
   saveApiToken(): void {

@@ -15,7 +15,9 @@
       </select>
 
       <select [ngModel]="fromMonth"
-              (ngModelChange)="selectFromMonth($event)">
+              (ngModelChange)="selectFromMonth($event)"
+              (keydown.arrowUp)="monthSelectUnderflow()"
+              (keydown.arrowDown)="monthSelectOverflow()">
         <option *ngFor="let month of fromMonthOptions"
                 [value]="month">{{'0-' + month | date:'MMM'}}</option>
       </select>
