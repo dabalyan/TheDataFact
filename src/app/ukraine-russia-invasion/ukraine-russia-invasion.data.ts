@@ -1,7 +1,142 @@
 export const INVASION_IMAGES = () => [
   {
-    'date': '2022-03-04T17:30:00.000Z',
+    "date": "2022-03-12T07:58:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg",
+    "comment": "+Novoaidar https://tsn.ua/ukrayina/primusova-pasportizaciya-okupanti-na-luganschini-zmushuyut-miscevih-otrimuvati-dokumet-tak-zvanoyi-lnr-1999867.html"
+  },
+  {
+    "date": "2022-03-12T07:54:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220312075852%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Volnovakha has been captured by Russia, https://edition.cnn.com/europe/live-news/ukraine-russia-putin-news-03-11-22/index.html"
+  },
+  {
+    "date": "2022-03-11T14:47:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220312075427%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Set Voznesensk to contested, per detailed map."
+  },
+  {
+    'date': '2022-03-10T21:57:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added information about an air strike on a military unit in Volodymyr on February 27 at 7:50 am by three Russian missiles, which killed a soldier.'
+  },
+  {
+    'date': '2022-03-10T18:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220310215734%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Ivankiv is occupied by Russians (https://vechirniy.kyiv.ua/news/62239/). Also there\'s been no reports of fighting there.'
+  },
+  {
+    'date': '2022-03-10T18:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220310183744%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'There was no Russian attack on Snihurivka. A column was destroyed near it and 10 survivors made their way up to the town before being caught. (https://www.unian.ua/war/na-harkivshchini-viyskovi-peretvorili-na-kupu-metalobruhtu-kolonu-rosiyskoji-tehniki-video-novini-harkova-11735911.html) So not contested.'
+  },
+  {
+    'date': '2022-03-10T18:12:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220310182954%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'A Russian brigade only Orikhiv and Hulipaole, didn\'t occupy it. ISW translated what General Staff of Ukraine said wrong, they have their own translations btw\' (https://www.facebook.com/GeneralStaff.ua/posts/267650712214681).'
+  },
+  {
+    'date': '2022-03-10T00:49:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220310043902%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '(Institute for the Study of War update) Small russian gains towards Byshiv (added) west of Kyiv. Bucha changed to contested.'
+  },
+  {
+    'date': '2022-03-09T10:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220310004903%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Skadvosk has been taken by Russia.'
+  },
+  {
+    'date': '2022-03-09T01:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220309104813%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '(Institute for the Study of War update) Bucha & Hostomel controlled by Russia. Russian movement from Kozelets to Brovary spotted. Ivankiv contested. Volnovakha - Mariupol highway controlled by Russia. Hulyaipole (name update) taken by Russia. Slight Russian movement towards Zaporizhzhia. Updated (road to) Dymer slightly.'
+  },
+  {
+    'date': '2022-03-08T18:31:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220309013726%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Russian troops spotted in Snihurivka'
+  },
+  {
+    'date': '2022-03-08T13:47:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220308183145%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Change Izium to contested https://www.ukrinform.es/amp/rubric-ato/3421787-las-tropas-rusas-estan-tratando-de-tomar-izium.html'
+  },
+  {
+    'date': '2022-03-08T12:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220308134702%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update Mykolaiv and Ivankiv'
+  },
+  {
+    'date': '2022-03-08T08:57:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220308125538%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Changes in Luhansk per request'
+  },
+  {
+    'date': '2022-03-08T00:24:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220308085756%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Increase size of Kyiv marker; should be noticeably bigger than Kharkiv\'s'
+  },
+  {
+    'date': '2022-03-08T00:16:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220308002443%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '(Institute of war update & sorry for small hiatus) Russians at Brovary. Fixed path to Brovary and added path past Pryluky which was at Nova Basan earlier. Fixed Mariupol, reports are of only city control, yet exact info scarce. Russians crossed bridge north of Mykolaiv.'
+  },
+  {
+    'date': '2022-03-07T16:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220308001559%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Change Irpin to contested'
+  },
+  {
+    'date': '2022-03-07T08:11:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220307100720%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-march-6'
+  },
+  {
+    'date': '2022-03-06T00:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220306151029%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'According to the Institute for the Study of War, Shostka and Northeastern Ukraine is under Russian control.'
+  },
+  {
+    'date': '2022-03-05T21:53:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220306002900%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Add capture dates and Ukrainian counter attacks'
+  },
+  {
+    'date': '2022-03-05T10:12:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220305215325%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '(Institute for the Study of War update) Detached Russian offensive northeast of Kiev from the Chernihiv axis, after reconsideration of source these troops came from the Sumy axis, did not connect the zone of control as they (most likely) do not hold control over settlements in between. Russian forces bypassed Okhtyrka towards Hadiach. Small update next to Nizhyn.'
+  },
+  {
+    'date': '2022-03-05T02:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220305101212%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fixed the position of an arrow.'
+  },
+  {
+    'date': '2022-03-05T02:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220305022039%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'The Russian army is 20 miles from Yuzhnoukrainsk Nuclear Power Station. Source: https://kyivindependent.com/uncategorized/us-ambassador-to-the-united-nations-linda-thomas-greenfield-said-on-march-4-at-the-un-that-russian-forces-are-now-20-miles-and-closing-from-ukraines-second-largest-nuclear-facility/'
+  },
+  {
+    'date': '2022-03-05T01:58:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220305020227%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Konotop agreed to surrender to Russian forces in return for them not deploying inside it. (https://www.rbc.ua/ukr/news/stali-izvestny-rezultaty-peregovorov-vlastey-1646221123.html)'
+  },
+  {
+    'date': '2022-03-05T01:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220305014505%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Konotop agreed to surrender to Russian forces in return for them not deploying inside it. (https://www.rbc.ua/ukr/news/stali-izvestny-rezultaty-peregovorov-vlastey-1646221123.html)'
+  },
+  {
+    'date': '2022-03-04T22:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220305014248%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bring marker to top'
+  },
+  {
+    'date': '2022-03-04T22:32:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220304223710%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Russian troops no longer in Kharkiv city limits; see w:Template:Russo-Ukrainian War detailed map'
+  },
+  {
+    'date': '2022-03-04T17:30:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220304175143%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Minor corrections to eastern axes, mostly Kharkiv, ISW reports minor movement from Trostianets'
   },
   {

@@ -81,9 +81,10 @@ app-stock-market {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: max(40vw, 600px);
+    width: min(98vw,600px);
     max-width: 1080px;
     border: 1px dashed;
+    padding: min(2vw, 5px);
 
     form {
       display: flex;
