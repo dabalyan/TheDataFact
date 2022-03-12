@@ -19,10 +19,15 @@ app-ukraine-russia-invasion {
     background: none;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: 0 10vw 0 0;
     cursor: pointer;
     color: var(--active-color);
     line-height: 1;
+    text-transform: uppercase;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   header {
@@ -35,6 +40,12 @@ app-ukraine-russia-invasion {
     padding: 0 2vw;
     width: 100%;
     max-width: 1080px;
+
+    &-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .labels {

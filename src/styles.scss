@@ -154,7 +154,7 @@ input[type="range"]:focus::-moz-range-thumb {
 .range-tick-marks {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
   padding: 0 ($range-thumb-width / 2 - $range-thumb-outline-offset);
   height: 2 * $range-track-height;

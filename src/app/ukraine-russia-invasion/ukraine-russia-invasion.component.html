@@ -6,7 +6,11 @@
 </header>
 
 <div class="timeline">
-  <button (click)="playIntervalRef ? stop(): play()">{{playIntervalRef ? '■ STOP' : '▶ PLAY'}}</button>
+  <div class="timeline-buttons">
+    <button (click)="playIntervalRef ? stop(): play()">{{playIntervalRef ? '■ STOP' : '▶ PLAY'}}</button>
+
+    <button (click)="toggleTimeSpan()">{{showAllUpdates ? 'Show Daily Updates' : 'Show All Updates'}}</button>
+  </div>
 
   <input
     type="range"

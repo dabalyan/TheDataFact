@@ -8,9 +8,10 @@ import {INVASION_IMAGES} from './ukraine-russia-invasion.data';
   encapsulation: ViewEncapsulation.None
 })
 export class UkraineRussiaInvasionComponent implements OnInit, OnDestroy {
-  readonly invasionImages = INVASION_IMAGES().reverse();
+  invasionImages = INVASION_IMAGES().reverse();
   selectedImageIndex = this.invasionImages.length - 1;
 
+  showAllUpdates = true;
   showComment = true;
   playIntervalRef: number;
 
@@ -36,6 +37,28 @@ export class UkraineRussiaInvasionComponent implements OnInit, OnDestroy {
   stop(): void {
     clearInterval(this.playIntervalRef);
     this.playIntervalRef = null;
+  }
+
+  toggleTimeSpan(): void {
+    this.showAllUpdates = !this.showAllUpdates;
+
+    if (this.showAllUpdates) {
+      this.invasionImages = INVASION_IMAGES().reverse();
+    }
+    else {
+      let lastDate: number;
+      this.invasionImages = this.invasionImages.filter(({date}) => {
+        const imageDate = new Date(date).getDate();
+        const isNextDay = !lastDate || Math.abs(imageDate - lastDate);
+
+        if (isNextDay) {
+          lastDate = imageDate;
+        }
+        return isNextDay;
+      });
+    }
+
+    this.selectedImageIndex = this.invasionImages.length - 1;
   }
 
   ngOnDestroy(): void {
