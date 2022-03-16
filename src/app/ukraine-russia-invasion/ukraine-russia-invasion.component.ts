@@ -46,15 +46,14 @@ export class UkraineRussiaInvasionComponent implements OnInit, OnDestroy {
       this.invasionImages = INVASION_IMAGES().reverse();
     }
     else {
-      let lastDate: number;
-      this.invasionImages = this.invasionImages.filter(({date}) => {
-        const imageDate = new Date(date).getDate();
-        const isNextDay = !lastDate || Math.abs(imageDate - lastDate);
-
-        if (isNextDay) {
-          lastDate = imageDate;
-        }
-        return isNextDay;
+      this.invasionImages = this.invasionImages.filter(({date}, i) => {
+        const imageDate = Number(new Date(date).toLocaleDateString('en', {day: 'numeric', timeZone: 'Europe/Kiev'}));
+        const nextImageDate = i < this.invasionImages.length - 1 && Number(new Date(this.invasionImages[i + 1].date).toLocaleDateString('en', {
+          day: 'numeric',
+          timeZone: 'Europe/Kiev'
+        }));
+        const isLastUpdate = i === this.invasionImages.length - 1 || !!Math.abs(nextImageDate - imageDate);
+        return isLastUpdate;
       });
     }
 

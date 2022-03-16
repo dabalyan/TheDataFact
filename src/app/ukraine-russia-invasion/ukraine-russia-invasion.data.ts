@@ -150,11 +150,6 @@ export const INVASION_IMAGES = () => [
     'comment': 'Set Voznesensk to contested, per detailed map.'
   },
   {
-    'date': '2022-03-10T21:57:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Added information about an air strike on a military unit in Volodymyr on February 27 at 7:50 am by three Russian missiles, which killed a soldier.'
-  },
-  {
     'date': '2022-03-10T18:37:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220310215734%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Ivankiv is occupied by Russians (https://vechirniy.kyiv.ua/news/62239/). Also there\'s been no reports of fighting there.'
