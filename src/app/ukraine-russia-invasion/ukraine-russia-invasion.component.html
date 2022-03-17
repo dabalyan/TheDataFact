@@ -44,8 +44,11 @@
       </div>
     </div>
   </div>
-  <span class="image-date">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}}
+  <span class="image-date"
+        *ngIf="selectedImageIndex < invasionImages.length - 1">{{invasionImages[selectedImageIndex].date | date:'HH:mm, dd MMM yyyy':'+0200'}}
     (Ukraine)</span>
+  <span class="image-date"
+        *ngIf="selectedImageIndex === invasionImages.length - 1">Latest Update</span>
 </div>
 
 <div class="wiki-editor-comment"

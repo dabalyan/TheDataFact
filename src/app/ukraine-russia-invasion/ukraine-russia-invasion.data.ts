@@ -1,18 +1,18 @@
 export const INVASION_IMAGES = () => [
   {
-    'date': '2022-03-16T14:22:00.000Z',
+    'date': '2022-03-17T17:14:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Russian troops driven back about 40 miles of Voznesensk (https://www.wsj.com/articles/ukraine-russia-voznesensk-town-battle-11647444734).'
+  },
+  {
+    'date': '2022-03-16T14:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220317171444%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Moved the northern Kherson advance because Novovoskresenske and Arkhanhelske are near the edge of Dnipropetrovsk Oblast+show bombing of Kherson Airport.'
   },
   {
     'date': '2022-03-16T12:58:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220316142222%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Filled in the area near Kherson city. I don\'t know why it\'s shown under Ukrainian control, especially with Bilozerka under Russian occupation (https://www.pravda.com.ua/news/2022/03/14/7331213/).'
-  },
-  {
-    'date': '2022-03-16T12:05:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220316125811%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Russia never said it took Sladkoe, Stepnoe, Taramchuk and Slavnoe, just that it reached them. (https://t.me/rian_ru/153258) Also there\'s still fighting, example in Stepnoe (https://tsn.ua/ato/20-y-den-viyni-rosiyi-proti-ukrayini-yaka-situaciya-u-regionah-2009731.html).'
   },
   {
     'date': '2022-03-16T10:39:00.000Z',
@@ -25,44 +25,9 @@ export const INVASION_IMAGES = () => [
     'comment': 'Russian forces repelled from Voznesensk (https://www.youtube.com/watch?v=v3HKid-xeEQ).'
   },
   {
-    'date': '2022-03-16T05:10:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220316082353%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Uptades as per the detailed map.'
-  },
-  {
     'date': '2022-03-16T02:28:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220316050958%212022_Russian_invasion_of_Ukraine.svg',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220316082353%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Novovoskresenske, Velyka Oleksandrivka, and Arkhanhelske under Russian control. Source: https://ua.korrespondent.net/ukraine/4457270-dnipropetrovska-oblast-hotova-do-oporu-korban'
-  },
-  {
-    'date': '2022-03-15T17:35:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220316022824%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Added the bombing of a TV tower near Rivne. Source: https://kyivindependent.com/uncategorized/19-killed-9-injured-in-russias-attack-of-tv-tower-in-rivne/'
-  },
-  {
-    'date': '2022-03-15T16:07:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315173558%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Wrongly reverted again'
-  },
-  {
-    'date': '2022-03-15T15:23:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315152831%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Show Balakliia as contest, reasons already explained. Nikolske too as no independent confirmation of capture.'
-  },
-  {
-    'date': '2022-03-15T14:22:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315145456%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Fighting ongoing in Balakliia (https://edition.cnn.com/europe/live-news/ukraine-russia-putin-news-03-15-22/h_3799075fd4af25327b19f6496cbb1bc0, https://tsn.ua/ato/yaderniy-terorizm-rosiyani-ne-pripinyayut-sprob-znischiti-yadernu-ustanovku-u-harkovi-i-troschat-oblast-2005591.html). Besides it was never independently confirmed in Russian control.'
-  },
-  {
-    'date': '2022-03-15T13:30:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315134916%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Kherson Oblast under Russian control'
-  },
-  {
-    'date': '2022-03-15T11:56:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315133047%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Dnipro Airport bombed'
   },
   {
     'date': '2022-03-15T10:33:00.000Z',
@@ -73,11 +38,6 @@ export const INVASION_IMAGES = () => [
     'date': '2022-03-15T10:09:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315103242%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Minor changes+ Bucha captured by Russians (https://www.bbc.com/news/world-europe-60729206)'
-  },
-  {
-    'date': '2022-03-15T10:08:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220315100929%212022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Showed Nova Zbur\'ivka under Russian control after Russian Defense Ministry enire of Kherson is under control, there was no clash there after Feb 25 anyway. I don\'t know how to properly draw the Russian advance on the entire oblast so someone else would need to do it.'
   },
   {
     'date': '2022-03-15T00:20:00.000Z',
