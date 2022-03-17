@@ -35,5 +35,10 @@ app-delhi-aqi {
     height: 48vh;
     flex-grow: 1;
     min-width: min(400px, 96vw);
+
+    &:first-of-type {
+      width: 100%;
+      height: 54vh;
+    }
   }
 }

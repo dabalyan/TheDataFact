@@ -5,6 +5,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {COLORS} from '../app.meta';
 import {SIZE_MULTIPLIER} from '../utils/constants';
 import {GenerateChartOptions, XAxisPlotLinesConfig} from '../utils/highcharts-helpers';
+import {mergeDeep} from '../utils/functions';
 
 type AqiSummary = { pm25: number, pm10: number, date: string, o3: number, no2: number, so2: number, co: number };
 type AqiPollutant = Exclude<keyof AqiSummary, 'date'>
@@ -33,7 +34,7 @@ const localiseDate = (date: string | Date): string => {
   }
 };
 
-const generateChartOptions = (series, plotLines, yAxisLabel, yAxisMax, pollutant, year): Highcharts.Options =>
+const generateChartOptions = (series, plotLines, yAxisLabel, yAxisMax, pollutant): Highcharts.Options =>
   GenerateChartOptions({
     plotOptions: {
       spline: {
@@ -182,8 +183,32 @@ export class DelhiAqiComponent implements OnInit {
       plotLines,
       `${formatPollutant(this.aqiPollutant)} AQI`,
       600,
-      this.aqiPollutant,
-      year
+      this.aqiPollutant
     ));
+
+    const combinedChartOptions = generateChartOptions(
+      [],
+      [],
+      `${formatPollutant(this.aqiPollutant)} AQI`,
+      750,
+      this.aqiPollutant
+    );
+
+    mergeDeep(combinedChartOptions, {
+      title: {text: 'Pollution in Delhi almost always reaches the peak levels between October 29th and November 15th; regardless of when Diwali is celebrated.'},
+      series: this.allChartsConfig
+                  .flatMap(chartConfig => chartConfig.series),
+      xAxis: {
+        plotBands: [
+          {
+            color: '#ece4e4',
+            from: 28,
+            to: 45
+          }
+        ]
+      }
+    });
+
+    this.allChartsConfig.unshift(combinedChartOptions);
   }
 }
