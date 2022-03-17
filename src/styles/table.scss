@@ -1,0 +1,96 @@
+$borderColor: #bebebe;
+
+.table-container {
+  overflow: auto;
+  margin: 3vh auto;
+  max-width: min(1080px, 96vw);
+  padding: 10px;
+  border-radius: 12px;
+
+  table {
+    margin: 0;
+  }
+
+  .buttons {
+    text-align: center;
+
+    button {
+      font-weight: bold;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 8px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgb(255 255 255 / 90%);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 0 1px, rgb(0 0 0 / 5%) 0 0 0 1px, rgb(0 0 0 / 5%) 0 4px 6px -1px, rgb(0 0 0 / 5%) 0 2px 4px -1px;
+
+  tr {
+    &[data-sort-order='desc'] {
+      th.active:after {
+        content: '▼';
+      }
+    }
+
+    &[data-sort-order='asc'] {
+      th.active:after {
+        content: '▲';
+      }
+    }
+
+    &:not(:last-child) td {
+      border-bottom: .5px solid $borderColor;
+    }
+
+    animation: 0.8s verticalFlip forwards;
+  }
+
+  th {
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    user-select: none;
+    text-overflow: ellipsis;
+
+    &[colspan] {
+      border: 1px solid $borderColor;
+      border-bottom: none;
+      cursor: auto;
+    }
+
+    &.border-left {
+      border-left: 1px solid $borderColor;
+    }
+
+    &.border-right {
+      border-right: 1px solid $borderColor;
+    }
+  }
+
+  tbody {
+    tr:nth-child(2n) {
+      background-color: rgb(0 0 0 / 3%);
+    }
+  }
+
+  td {
+    padding: 2px 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:empty:before,
+    span:empty:before {
+      content: '‒';
+    }
+
+    &.numbers {
+      text-align: right;
+      letter-spacing: 0.1em;
+    }
+  }
+}

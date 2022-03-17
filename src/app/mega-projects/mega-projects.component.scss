@@ -1,0 +1,53 @@
+app-mega-projects {
+  display: block;
+
+  header {
+    padding: min(8vh, 8vw) min(8vh, 8vw) min(5vh, 5vw);
+  }
+
+  .mega-projects-list {
+    margin: 3vh auto;
+    max-width: min(1080px, 96vw);
+    overflow: auto;
+  }
+
+  .mega-projects-item {
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) repeat(3, minmax(100px, 2fr)) minmax(100px, 1fr);
+    grid-auto-flow: column;
+    align-items: center;
+
+
+    min-height: 3em;
+    margin: min(2vw, 2vh) auto;
+    gap: min(2vw, 2vh);
+
+    background: rgb(0 0 0 / 3%);
+    padding: min(2vw, 2vh);
+
+    &:first-child {
+      text-transform: uppercase;
+    }
+
+    &--divider {
+      gap: 0;
+      grid-template-columns: 1fr;
+      background: none;
+      font-size: 1.3rem;
+    }
+
+    &--waiting {
+      background-color: rgb(255 0 0 / 07%);
+    }
+  }
+
+  a {
+    color: var(--active-color);
+    font-weight: bold;
+
+    &:not([href]) {
+      color: inherit;
+      cursor: default;
+    }
+  }
+}

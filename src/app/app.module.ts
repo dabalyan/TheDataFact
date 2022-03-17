@@ -20,6 +20,7 @@ import {EconomyOfIndiaComponent} from './economy-of-india/economy-of-india.compo
 import {ElectrificationOfIndiaComponent} from './electification-of-india/electrification-of-india.component';
 import {UkraineRussiaInvasionComponent} from './ukraine-russia-invasion/ukraine-russia-invasion.component';
 import {StockMarketComponent} from './stock-market/stock-market.component';
+import {MegaProjectsComponent} from './mega-projects/mega-projects.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,11 @@ const routes: Routes = [
     data: {name: 'Electrification of India'}
   },
   {
+    path: 'ongoing-mega-projects-in-india',
+    component: MegaProjectsComponent,
+    data: {name: 'Ongoing Mega Projects in India'}
+  },
+  {
     path: '2022-Russian-invasion-of-Ukraine',
     component: UkraineRussiaInvasionComponent,
     data: {name: '2022 Russian Invasion of Ukraine | Map Timeline'}
@@ -76,7 +82,8 @@ const routes: Routes = [
     EconomyOfIndiaComponent,
     ElectrificationOfIndiaComponent,
     UkraineRussiaInvasionComponent,
-    StockMarketComponent
+    StockMarketComponent,
+    MegaProjectsComponent
   ],
   imports: [
     BrowserModule,

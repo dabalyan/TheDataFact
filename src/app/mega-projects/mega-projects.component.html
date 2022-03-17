@@ -1,0 +1,41 @@
+<header>
+  <h1>
+    Ongoing Mega Projects in India.<a
+    appSourceRef="https://en.wikipedia.org/wiki/List_of_megaprojects_in_India"></a>
+  </h1>
+</header>
+
+<section class="mega-projects-list">
+  <div class="mega-projects-item">
+    <b>Project Name</b>
+    <b>Type</b>
+    <b>Status</b>
+    <b>Location</b>
+    <b>Expected By</b>
+  </div>
+
+  <ng-container *ngFor="let project of allProjects">
+    <div class="mega-projects-item mega-projects-item--divider"
+         *ngIf="project.type === 'divider'">
+      <h4>{{project.name}}<a *ngIf="project.sourceUrl"
+                             [appSourceRef]="project.sourceUrl"></a></h4>
+    </div>
+
+    <div class="mega-projects-item"
+         *ngIf="project.type !== 'divider'"
+         [class.mega-projects-item--waiting]="project.status && project.status.code > 50">
+      <span *ngIf="project.sourceUrl">
+        <a [href]="project.sourceUrl"
+           [title]="project.description || ''"
+           target="_blank"
+           rel="noopener">{{project.name}}</a>
+      </span>
+      <span *ngIf="!project.sourceUrl">{{project.name}}</span>
+
+      <span>{{project.subType}}</span>
+      <span>{{project.status?.name}} <span *ngIf="project.progress">({{project.progress}})</span></span>
+      <span>{{project.location}}</span>
+      <span>{{project.launchDate|date:'MMM y'}}</span>
+    </div>
+  </ng-container>
+</section>

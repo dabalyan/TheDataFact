@@ -32,12 +32,18 @@ app-root {
 
     &.source-ref {
       position: relative;
-      font-size: .5em;
+      font-family: monospace;
+      font-size: max(.5em, .8rem);
       top: -.8em;
       left: -.4em;
       letter-spacing: -.2em;
+      margin-left: .4em;
       white-space: nowrap;
       color: var(--active-color);
+
+      & + .source-ref {
+        margin-left: 0;
+      }
     }
   }
 
