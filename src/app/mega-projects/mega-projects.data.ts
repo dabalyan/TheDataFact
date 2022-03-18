@@ -1,4 +1,6 @@
-interface MegaProject {
+import {BILLION, CRORE, TRILLION} from '../utils/constants';
+
+export interface MegaProject {
   name: string;
   type: string;
   subType?: string;
@@ -9,6 +11,7 @@ interface MegaProject {
   progress?: string;
   launchDate?: string;
   owner?: string;
+  costInr?: number;
   monthsUntilCompletion?: number;
 }
 
@@ -45,6 +48,7 @@ const spaceMissions: MegaProject[] = [
     type: 'Space Exploration',
     subType: 'Rover',
     owner: 'ISRO',
+    costInr: 615 * CRORE,
     description: 'Chandrayaan-3 is a planned third lunar exploration mission by the Indian Space Research Organisation (ISRO).'
   },
   {
@@ -56,6 +60,7 @@ const spaceMissions: MegaProject[] = [
     type: 'Space Exploration',
     subType: 'Coronagraphy Spacecraft',
     owner: 'ISRO',
+    costInr: 378.53 * CRORE,
     description: 'Aditya L1 is a planned coronagraphy spacecraft to study solar atmosphere, currently being designed and developed by Indian Space Research Organisation (ISRO) and various other Indian research institutes.'
   },
   {
@@ -67,6 +72,7 @@ const spaceMissions: MegaProject[] = [
     type: 'Space Exploration',
     subType: 'Crewed Spacecraft',
     owner: 'ISRO',
+    costInr: 12400 * CRORE,
     description: 'Gaganyaan is an Indian crewed orbital spacecraft intended to be the formative spacecraft of the Indian Human Spaceflight Programme. The spacecraft is being designed to carry three people, and a planned upgraded version will be equipped with rendezvous and docking capability.'
   },
   {
@@ -102,6 +108,7 @@ const scienceAndTechProjects: MegaProject[] = [
     launchDate: '2023-03',
     description: 'National Optical Fibre Network to provide a minimum of 100 Mbit/s broadband connectivity to all 250,000-gram panchayats in the country, covering nearly 625,000 villages, by improving the middle layer of nation-wide broadband internet in India to achieve the goal of Digital India.',
     type: 'Science & Technology',
+    costInr: 647 * BILLION,
     subType: 'Optical Fibre Network'
   },
   {
@@ -113,6 +120,7 @@ const scienceAndTechProjects: MegaProject[] = [
     launchDate: '2023-03',
     description: 'The OneWeb satellite constellation is a planned initial 648-satellite constellation which is in the process of being completed in 2022, with a goal to provide global satellite Internet broadband services to people everywhere, starting in 2021.',
     type: 'Science & Technology',
+    costInr: 150 * BILLION,
     subType: 'Satellite Constellation'
   },
   {
@@ -135,6 +143,7 @@ const energyProjects: MegaProject[] = [
     launchDate: '2025-12',
     description: 'When completed, it will be the biggest hybrid renewable energy park in the world.',
     type: 'Energy',
+    costInr: 1500 * BILLION,
     subType: 'Hybrid Renewable Energy Park'
   },
   {
@@ -145,6 +154,7 @@ const energyProjects: MegaProject[] = [
     launchDate: '2030-12',
     description: 'World largest photovoltaic solar park once completed.',
     type: 'Energy',
+    costInr: 250 * BILLION,
     subType: 'Solar Park'
   },
 ];
@@ -158,6 +168,7 @@ const roadsAndBridges: MegaProject[] = [
     launchDate: '2022-03',
     description: 'Gorakhpur Link Expressway is a 4-lane wide (expandable to 6) expressway in the Indian state of Uttar Pradesh. It will connect Jaitpur village in Gorakhpur district with Salarpur village on Purvanchal Expressway in Azamgarh district.',
     type: 'Roads',
+    costInr: 58.76 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -168,6 +179,7 @@ const roadsAndBridges: MegaProject[] = [
     launchDate: '2022-04',
     description: 'Currently, Bundelkhand Expressway is an 296 km long, 4-lane wide (expandable to 6) under-construction access-controlled expressway in the state of Uttar Pradesh, India',
     type: 'Roads',
+    costInr: 147.16 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -178,6 +190,7 @@ const roadsAndBridges: MegaProject[] = [
     launchDate: '2022-05',
     description: 'Nagpur–Mumbai Super Communication Expressway (officially known as Maharashtra Samruddhi Mahamarg) is an under-construction 6-lane (expandable to 8) 701 km long access-controlled expressway in Maharashtra, India. It will be amongst the country\'s longest Greenfield road project,[1] connecting the two capitals of the state i.e., Mumbai and Nagpur.',
     type: 'Roads',
+    costInr: 550 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -187,6 +200,7 @@ const roadsAndBridges: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2022-06',
     type: 'Roads',
+    costInr: 51.08 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -197,6 +211,7 @@ const roadsAndBridges: MegaProject[] = [
     launchDate: '2023-03',
     description: 'India\'s longest expressway when completed at 1380 km',
     type: 'Roads',
+    costInr: 1000 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -207,6 +222,7 @@ const roadsAndBridges: MegaProject[] = [
     launchDate: '2023-10',
     description: 'India\'s longest sea bridge when completed',
     type: 'Roads',
+    costInr: 178.43 * BILLION,
     subType: 'Bridge'
   },
   {
@@ -217,6 +233,7 @@ const roadsAndBridges: MegaProject[] = [
     launchDate: '2023-11',
     description: 'Coastal Road is an under construction 8-lane, 22.2-km long freeway that would run along Mumbai\'s western coastline connecting Marine Lines in the south to Kandivali in the north.',
     type: 'Roads',
+    costInr: 120 * BILLION,
     subType: 'Freeway'
   },
   {
@@ -246,6 +263,7 @@ const rrtsProjects: MegaProject[] = [
     launchDate: '2024-12',
     description: 'One of the first Regional Rapid Transit System in India',
     type: 'Railways',
+    costInr: 370 * BILLION,
     subType: 'RRTS (HrSR)'
   },
   {
@@ -256,6 +274,7 @@ const rrtsProjects: MegaProject[] = [
     launchDate: '2025-12',
     description: 'India\'s one first Regional Rapid Transit System',
     type: 'Railways',
+    costInr: 302.74 * BILLION,
     subType: 'RRTS (HrSR)'
   },
   {
@@ -265,6 +284,7 @@ const rrtsProjects: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     description: 'One of the first Regional Rapid Transit System in India',
     type: 'Railways',
+    costInr: 216 * BILLION,
     subType: 'RRTS (HrSR)'
   },
 ];
@@ -278,6 +298,7 @@ const hsrProjects: MegaProject[] = [
     launchDate: '2028-12',
     description: 'India\'s first high-speed rail line',
     type: 'Railways',
+    costInr: 1200 * BILLION,
     subType: 'HSR'
   },
   {
@@ -353,6 +374,7 @@ const metroProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2022-12',
     type: 'Railways',
+    costInr: 40.68 * BILLION,
     subType: 'Metro'
   },
   {
@@ -362,6 +384,7 @@ const metroProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2023-12',
     type: 'Railways',
+    costInr: 80 * BILLION,
     subType: 'Metro'
   },
   {
@@ -371,6 +394,7 @@ const metroProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2023-12',
     type: 'Railways',
+    costInr: 120 * BILLION,
     subType: 'Metro'
   },
   {
@@ -380,6 +404,7 @@ const metroProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2024-12',
     type: 'Railways',
+    costInr: 133.65 * BILLION,
     subType: 'Metro'
   },
   {
@@ -389,6 +414,7 @@ const metroProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2024-12',
     type: 'Railways',
+    costInr: 83.79 * BILLION,
     subType: 'Metro'
   },
   {
@@ -398,6 +424,7 @@ const metroProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2024-12',
     type: 'Railways',
+    costInr: 120.20 * BILLION,
     subType: 'Metro'
   },
   {
@@ -406,6 +433,7 @@ const metroProjects: MegaProject[] = [
     location: 'Maharashtra',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 130.95 * BILLION,
     subType: 'Metro'
   },
   {
@@ -414,6 +442,7 @@ const metroProjects: MegaProject[] = [
     location: 'Andhra Pradesh',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 159.33 * BILLION,
     subType: 'Metro'
   }
 ];
@@ -424,6 +453,7 @@ const monorailProjects: MegaProject[] = [
     location: 'Gujarat',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 60 * BILLION,
     subType: 'Monorail'
   }
 ];
@@ -435,6 +465,7 @@ const metrolightProjects: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     launchDate: '2024-12',
     type: 'Railways',
+    costInr: 48.25 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -444,6 +475,7 @@ const metrolightProjects: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     launchDate: '2024-12',
     type: 'Railways',
+    costInr: 57.34 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -453,6 +485,7 @@ const metrolightProjects: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     launchDate: '2024-12',
     type: 'Railways',
+    costInr: 46.72 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -462,6 +495,7 @@ const metrolightProjects: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     launchDate: '2025-12',
     type: 'Railways',
+    costInr: 43 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -470,6 +504,7 @@ const metrolightProjects: MegaProject[] = [
     location: 'Kerala',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 19.91 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -478,6 +513,7 @@ const metrolightProjects: MegaProject[] = [
     location: 'Uttar Pradesh',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 172.27 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -486,6 +522,7 @@ const metrolightProjects: MegaProject[] = [
     location: 'Uttarakhand',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 401.50 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -494,6 +531,7 @@ const metrolightProjects: MegaProject[] = [
     location: 'Tamil Nadu',
     status: PROJECT_STATUS.Approved,
     type: 'Railways',
+    costInr: 35 * BILLION,
     subType: 'Metrolite'
   },
   {
@@ -502,6 +540,7 @@ const metrolightProjects: MegaProject[] = [
     location: 'Delhi',
     status: PROJECT_STATUS.DprApproved,
     type: 'Railways',
+    costInr: 55.87 * BILLION,
     subType: 'Metrolite'
   },
 ];
@@ -514,6 +553,7 @@ const freightCorridors: MegaProject[] = [
     status: PROJECT_STATUS.PartiallyOperational,
     launchDate: '2022-06',
     type: 'Railways',
+    costInr: 600 * BILLION,
     subType: 'Dedicated Freight Corridor'
   },
   {
@@ -523,6 +563,7 @@ const freightCorridors: MegaProject[] = [
     status: PROJECT_STATUS.PartiallyOperational,
     launchDate: '2022-06',
     type: 'Railways',
+    costInr: 355 * BILLION,
     subType: 'Dedicated Freight Corridor'
   },
   {
@@ -532,6 +573,7 @@ const freightCorridors: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     launchDate: '2025-03',
     type: 'Railways',
+    costInr: 56.17 * BILLION,
     subType: 'Passenger Rail, Freight Rail'
   },
   {
@@ -569,6 +611,7 @@ const highAltitudeRailwayProjects: MegaProject[] = [
     launchDate: '2022-12',
     description: 'World highest railway bridge when completed',
     type: 'Railways',
+    costInr: 14.86 * BILLION,
     subType: 'Bridge'
   },
   {
@@ -579,6 +622,7 @@ const highAltitudeRailwayProjects: MegaProject[] = [
     launchDate: '2022-12',
     description: 'Worlds highest cable-stayed railway bridge',
     type: 'Railways',
+    costInr: 4.58 * BILLION,
     subType: 'Bridge'
   },
   {
@@ -588,6 +632,7 @@ const highAltitudeRailwayProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2023-12',
     type: 'Railways',
+    costInr: 138.09 * BILLION,
     subType: 'Station'
   },
   {
@@ -597,19 +642,8 @@ const highAltitudeRailwayProjects: MegaProject[] = [
     launchDate: '2024-12',
     status: PROJECT_STATUS.LandAcquisitionCompleted,
     type: 'Railways',
+    costInr: 833.60 * BILLION,
     subType: 'Track'
-  },
-];
-
-const waterways: MegaProject[] = [
-  {
-    sourceUrl: 'https://en.wikipedia.org/wiki/Sagar_Mala_project',
-    name: 'Sagar Mala Project',
-    location: 'India',
-    status: PROJECT_STATUS.PartiallyOperational,
-    launchDate: '2035-12',
-    type: 'Waterways',
-    subType: 'Ports'
   },
 ];
 
@@ -621,6 +655,7 @@ const aviationProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2022-12',
     type: 'Airways',
+    costInr: 30 * BILLION,
     subType: 'International Airport'
   },
   {
@@ -630,6 +665,7 @@ const aviationProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2023-12',
     type: 'Airways',
+    costInr: 13.78 * BILLION,
     subType: 'International Airport'
   },
   {
@@ -639,6 +675,7 @@ const aviationProjects: MegaProject[] = [
     status: PROJECT_STATUS.UnderConstruction,
     launchDate: '2023-12',
     type: 'Airways',
+    costInr: 26.54 * BILLION,
     subType: 'International Airport'
   },
   {
@@ -649,6 +686,7 @@ const aviationProjects: MegaProject[] = [
     launchDate: '2024-12',
     description: 'With six runways, Noida International Airport is planned to become India\'s largest airport and Asia\'s second largest.',
     type: 'Airways',
+    costInr: 295.60 * BILLION,
     subType: 'International Airport'
   },
   {
@@ -659,6 +697,7 @@ const aviationProjects: MegaProject[] = [
     launchDate: '2024-12',
     description: 'Navi Mumbai International Airport is an under-construction greenfield international airport being built at Panvel/Uran, Navi Mumbai in Maharashtra, India.',
     type: 'Airways',
+    costInr: 160 * BILLION,
     subType: 'International Airport'
   },
   {
@@ -668,6 +707,7 @@ const aviationProjects: MegaProject[] = [
     status: PROJECT_STATUS.Approved,
     launchDate: '2023-12',
     type: 'Airways',
+    costInr: 22.60 * BILLION,
     subType: 'International Airport'
   },
   {
@@ -680,6 +720,19 @@ const aviationProjects: MegaProject[] = [
   },
 ];
 
+const waterways: MegaProject[] = [
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Sagar_Mala_project',
+    name: 'Sagar Mala Project',
+    location: 'India',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2035-12',
+    type: 'Waterways',
+    costInr: 9.7 * TRILLION,
+    subType: 'Ports'
+  },
+];
+
 const religiousProjects: MegaProject[] = [
   {
     sourceUrl: 'https://en.wikipedia.org/wiki/Kedarnath_Temple',
@@ -689,6 +742,7 @@ const religiousProjects: MegaProject[] = [
     launchDate: '2022-12',
     description: 'Kedarnath Temple is a Hindu temple (shrine) dedicated to the Hindu God Shiva. The temple is located on the Garhwal Himalayan range near the Mandakini river, in the state of Uttarakhand, India.',
     type: 'Religious',
+    costInr: 3 * BILLION,
     subType: 'Temple Revamp'
   },
   {
@@ -699,6 +753,7 @@ const religiousProjects: MegaProject[] = [
     launchDate: '2024-12',
     description: 'The most awaited temple being built at the site of Ram Janmabhoomi, the birthplace of Rama, a principal deity of Hinduism.',
     type: 'Religious',
+    costInr: 11 * BILLION,
     subType: 'Temple'
   },
   {
@@ -709,7 +764,42 @@ const religiousProjects: MegaProject[] = [
     launchDate: '2024-12',
     description: 'World\'s tallest religious monument once completed',
     type: 'Religious',
+    costInr: 3 * BILLION,
     subType: 'Temple'
+  },
+];
+
+const urbanDevelopmentProjects: MegaProject[] = [
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/India_International_Convention_and_Expo_Centre',
+    name: 'India International Convention & Expo Centre (IICC)',
+    location: 'New Delhi',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2023-12',
+    type: 'Urban Redevelopment',
+    costInr: 3 * BILLION,
+    subType: 'Convention Center'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Pragati_Maidan',
+    name: 'Pragati Maidan Revamp',
+    location: 'New Delhi',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2023-12',
+    type: 'Urban Redevelopment',
+    costInr: 30 * BILLION,
+    subType: 'Convention Center'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Central_Vista_Redevelopment_Project',
+    name: 'Central Vista Redevelopment Project',
+    location: 'New Delhi',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2024-12',
+    description: 'Redevelopment of Central Vista which is India\'s Administrative area.',
+    type: 'Urban Redevelopment',
+    costInr: 134.50 * BILLION,
+    subType: 'Administrative Area'
   },
 ];
 
@@ -721,6 +811,7 @@ const plannedCities: MegaProject[] = [
     status: PROJECT_STATUS.InProgress,
     progress: '52%',
     type: 'Smart City',
+    costInr: 1913 * BILLION,
     subType: 'Urban Revamp'
   },
   {
@@ -747,37 +838,6 @@ const plannedCities: MegaProject[] = [
     status: PROJECT_STATUS.InProgress,
     type: 'Greenfield City',
     subType: 'Business District'
-  },
-];
-
-const urbanDevelopmentProjects: MegaProject[] = [
-  {
-    sourceUrl: 'https://en.wikipedia.org/wiki/India_International_Convention_and_Expo_Centre',
-    name: 'India International Convention & Expo Centre (IICC)',
-    location: 'New Delhi',
-    status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2023-12',
-    type: 'Urban Redevelopment',
-    subType: 'Convention Center'
-  },
-  {
-    sourceUrl: 'https://en.wikipedia.org/wiki/Pragati_Maidan',
-    name: 'Pragati Maidan Revamp',
-    location: 'New Delhi',
-    status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2023-12',
-    type: 'Urban Redevelopment',
-    subType: 'Convention Center'
-  },
-  {
-    sourceUrl: 'https://en.wikipedia.org/wiki/Central_Vista_Redevelopment_Project',
-    name: 'Central Vista Redevelopment Project',
-    location: 'New Delhi',
-    status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2024-12',
-    description: 'Redevelopment of Central Vista which is India\'s Administrative area.',
-    type: 'Urban Redevelopment',
-    subType: 'Administrative Area'
   },
 ];
 

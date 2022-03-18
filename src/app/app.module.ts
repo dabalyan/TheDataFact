@@ -20,7 +20,7 @@ import {EconomyOfIndiaComponent} from './economy-of-india/economy-of-india.compo
 import {ElectrificationOfIndiaComponent} from './electification-of-india/electrification-of-india.component';
 import {UkraineRussiaInvasionComponent} from './ukraine-russia-invasion/ukraine-russia-invasion.component';
 import {StockMarketComponent} from './stock-market/stock-market.component';
-import {MegaProjectsComponent} from './mega-projects/mega-projects.component';
+import {CompletionYearPipe, MegaProjectsComponent} from './mega-projects/mega-projects.component';
 
 const routes: Routes = [
   {
@@ -83,7 +83,8 @@ const routes: Routes = [
     ElectrificationOfIndiaComponent,
     UkraineRussiaInvasionComponent,
     StockMarketComponent,
-    MegaProjectsComponent
+    MegaProjectsComponent,
+    CompletionYearPipe
   ],
   imports: [
     BrowserModule,

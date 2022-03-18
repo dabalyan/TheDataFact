@@ -1,5 +1,15 @@
 export const INVASION_IMAGES = () => [
   {
+    'date': '2022-03-18T00:08:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Izium was captured by Russian forces. Source: https://www.bbc.com/news/live/world-europe-60774819'
+  },
+  {
+    'date': '2022-03-17T21:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318000853%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bilmak and Chernihivka under Russian control according to the detailed map. Source: http://1news.zp.ua/pid-zaporizhzhyam-u-polon-vzyali-eks-vagnerivczya/. Rubizhne under Russian control. Source: https://twitter.com/aldin_ww/status/1504557716282429448'
+  },
+  {
     'date': '2022-03-17T17:14:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Russian troops driven back about 40 miles of Voznesensk (https://www.wsj.com/articles/ukraine-russia-voznesensk-town-battle-11647444734).'

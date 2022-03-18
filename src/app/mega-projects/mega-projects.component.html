@@ -5,6 +5,18 @@
   </h1>
 </header>
 
+<div class="user-input">
+  <select [(ngModel)]="completionYear">
+    <option value="">Completion Year</option>
+    <option *ngFor="let year of completionYears"
+            [value]="year">{{year}}</option>
+  </select>
+  <select [(ngModel)]="currency">
+    <option value="INR">INR (₹)</option>
+    <option value="USD">USD ($)</option>
+  </select>
+</div>
+
 <section class="mega-projects-list">
   <div class="mega-projects-item">
     <b>Project Name</b>
@@ -12,9 +24,10 @@
     <b>Status</b>
     <b>Location</b>
     <b>Expected By</b>
+    <b>Estimated Cost</b>
   </div>
 
-  <ng-container *ngFor="let project of allProjects">
+  <ng-container *ngFor="let project of allProjects | completionYearPipe: completionYear">
     <div class="mega-projects-item mega-projects-item--divider"
          *ngIf="project.type === 'divider'">
       <h4>{{project.name}}<a *ngIf="project.sourceUrl"
@@ -36,6 +49,15 @@
       <span>{{project.status?.name}} <span *ngIf="project.progress">({{project.progress}})</span></span>
       <span>{{project.location}}</span>
       <span>{{project.launchDate|date:'MMM y'}}</span>
+
+      <span *ngIf="project.costInr && currency === 'INR'">₹{{project.costInr / crore | number:'1.0-0'}} Cr</span>
+      <span *ngIf="project.costInr && currency === 'USD'">
+        <span *ngIf="project.costInr < billion * inrUsd">${{project.costInr / million / inrUsd | number:'1.0-2'}}
+          million</span>
+        <span *ngIf="project.costInr >= billion * inrUsd">${{project.costInr / billion / inrUsd | number:'1.0-2'}}
+          billion</span>
+      </span>
+      <span *ngIf="!project.costInr"></span>
     </div>
   </ng-container>
 </section>
