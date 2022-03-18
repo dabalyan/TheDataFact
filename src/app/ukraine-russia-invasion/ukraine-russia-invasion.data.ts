@@ -1,18 +1,58 @@
 export const INVASION_IMAGES = () => [
   {
-    'date': '2022-03-18T00:08:00.000Z',
+    'date': '2022-03-20T00:13:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/'
+  },
+  {
+    'date': '2022-03-19T23:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320001353%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Changed frontlines near Mykolaiv in order to match the announcments from the Ukrainian government saying where the Russian troops have stopped. https://t.me/spravdi/2867'
+  },
+  {
+    'date': '2022-03-19T03:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319234431%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updated to add new Russian advances and front lines based of the Institute for the Study of War\'s daily updates on the situation in Ukraine. Filled in area in Zaporizhnia Oblast because according to Oleksiy Arestovych there are no forces within 100-150 km of Mariupol.'
+  },
+  {
+    'date': '2022-03-18T14:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319032933%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Small fixes.'
+  },
+  {
+    'date': '2022-03-18T14:17:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318142006%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fixed cities in Northeastern Ukraine. ISW shows them as controlled by Russia. Besides that, it\'s unlikely that they would hold for that long.'
+  },
+  {
+    'date': '2022-03-18T14:09:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318141756%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Chernihiv under siege. Source: https://www.nytimes.com/2022/03/10/world/europe/chernihiv-russia-troops.html'
+  },
+  {
+    'date': '2022-03-18T12:26:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318140917%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Deleting some villages near Shostka because I can\'t find anything militarily on them. Doubt they lasted long anyway or there is going to be anything on them.'
+  },
+  {
+    'date': '2022-03-18T11:36:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318122621%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Shostka is currently occupied or so it seems. (https://myprivacy.dpgmedia.nl/consent/?siteKey=ucf98legs1caotgh&callbackUrl=https%3A%2F%2Fwww.nu.nl%2Fprivacy-gate%2Faccept%3FredirectUri%3Dhttps%253A%252F%252Fwww.nu.nl%252Fspanningen-oekraine%252F6189879%252Fbericht-uit-een-bezet-shostka-angst-honger-en-verdriet.html) I don\'t know of the other towns like Pyrohivka or Svase.'
+  },
+  {
+    'date': '2022-03-18T11:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318113610%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Restore some edits by Viewsridge, WSJ was talking about them being driven back 40 miles in present sense'
+  },
+  {
+    'date': '2022-03-18T00:08:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318112014%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Izium was captured by Russian forces. Source: https://www.bbc.com/news/live/world-europe-60774819'
   },
   {
     'date': '2022-03-17T21:00:00.000Z',
     'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220318000853%212022_Russian_invasion_of_Ukraine.svg',
     'comment': 'Bilmak and Chernihivka under Russian control according to the detailed map. Source: http://1news.zp.ua/pid-zaporizhzhyam-u-polon-vzyali-eks-vagnerivczya/. Rubizhne under Russian control. Source: https://twitter.com/aldin_ww/status/1504557716282429448'
-  },
-  {
-    'date': '2022-03-17T17:14:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Russian troops driven back about 40 miles of Voznesensk (https://www.wsj.com/articles/ukraine-russia-voznesensk-town-battle-11647444734).'
   },
   {
     'date': '2022-03-16T14:22:00.000Z',
