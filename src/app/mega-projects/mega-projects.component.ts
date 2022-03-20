@@ -1,6 +1,7 @@
 import {Component, Pipe, PipeTransform, ViewEncapsulation} from '@angular/core';
-import {MEGA_PROJECTS, MegaProject} from './mega-projects.data';
+import {COMPLETION_YEARS, MEGA_PROJECTS, MegaProject} from './mega-projects.data';
 import {BILLION, CRORE, MILLION} from '../utils/constants';
+import {QueryParam} from '../utils/query-param';
 
 @Pipe({
   name: 'completionYearPipe'
@@ -23,7 +24,7 @@ export class MegaProjectsComponent {
   readonly million = MILLION;
   readonly billion = BILLION;
   readonly inrUsd = 75;
-  currency: 'USD' | 'INR' = 'INR';
-  completionYear: string = '';
-  completionYears: string[] = [...new Set(MEGA_PROJECTS.filter(({launchDate}) => launchDate).map(({launchDate}) => launchDate.match(/\d{4}/)[0]))].sort();
+  completionYears: string[] = COMPLETION_YEARS;
+  @QueryParam('', COMPLETION_YEARS) completionYear: string;
+  @QueryParam('INR', ['USD', 'INR']) currency: 'USD' | 'INR';
 }

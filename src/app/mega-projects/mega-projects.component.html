@@ -50,12 +50,12 @@
       <span>{{project.location}}</span>
       <span>{{project.launchDate|date:'MMM y'}}</span>
 
-      <span *ngIf="project.costInr && currency === 'INR'">₹{{project.costInr / crore | number:'1.0-0'}} Cr</span>
+      <span *ngIf="project.costInr && currency === 'INR'">₹{{project.costInr / crore | number:'1.0-0'}} cr</span>
       <span *ngIf="project.costInr && currency === 'USD'">
         <span *ngIf="project.costInr < billion * inrUsd">${{project.costInr / million / inrUsd | number:'1.0-2'}}
-          million</span>
+          m</span>
         <span *ngIf="project.costInr >= billion * inrUsd">${{project.costInr / billion / inrUsd | number:'1.0-2'}}
-          billion</span>
+          b</span>
       </span>
       <span *ngIf="!project.costInr"></span>
     </div>

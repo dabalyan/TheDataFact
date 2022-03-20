@@ -21,12 +21,15 @@ const PROJECT_STATUS = {
   Planned: {code: 100, name: 'Planned'},
 
   DprUnderPreparation: {code: 90, name: 'DPR Under Preparation'},
+  DprSubmitted: {code: 85, name: 'DPR Submitted'},
   DprApproved: {code: 80, name: 'DPR Approved'},
   Approved: {code: 70, name: 'Approved'},
 
   LandAcquisitionToBegin: {code: 60, name: 'Land Acquisition to Begin'},
   LandAcquisitionInProgress: {code: 50, name: 'Land Acquisition in Progress'},
   LandAcquisitionCompleted: {code: 49, name: 'Land Acquisition Completed'},
+
+  TendersInProgress: {code: 45, name: 'Tendering in Progress'},
 
   InProgress: {code: 40, name: 'In Progress'},
   UnderDevelopment: {code: 40, name: 'Under Development'},
@@ -134,7 +137,17 @@ const scienceAndTechProjects: MegaProject[] = [
   },
 ];
 
-const energyProjects: MegaProject[] = [
+const greenEnergyProjects: MegaProject[] = [
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Rajasthan_Atomic_Power_Station',
+    name: 'Rajasthan Atomic Power Station (Unit 7 & 8)',
+    location: 'Rajasthan',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2023-12',
+    type: 'Energy',
+    costInr: 170 * BILLION,
+    subType: 'Nuclear Power Plant'
+  },
   {
     sourceUrl: 'https://en.wikipedia.org/wiki/Gujarat_Hybrid_Renewable_Energy_Park',
     name: 'Gujarat Hybrid Renewable Energy Park',
@@ -147,6 +160,16 @@ const energyProjects: MegaProject[] = [
     subType: 'Hybrid Renewable Energy Park'
   },
   {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Kudankulam_Nuclear_Power_Plant',
+    name: 'Kudankulam Nuclear Power Plant (Unit 3,4,5,6)',
+    location: 'Tamil Nadu',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2027-12',
+    type: 'Energy',
+    costInr: 900 * BILLION,
+    subType: 'Nuclear Power Plant'
+  },
+  {
     sourceUrl: 'https://en.wikipedia.org/wiki/Dholera_Solar_Park',
     name: 'Dholera Solar Park',
     location: 'Gujarat',
@@ -157,18 +180,37 @@ const energyProjects: MegaProject[] = [
     costInr: 250 * BILLION,
     subType: 'Solar Park'
   },
+  {
+    sourceUrl: 'https://dae.gov.in/writereaddata/lsusq%20367.pdf',
+    name: '10 * 700MW Pressurized Heavy Water Reactors',
+    location: 'Rajasthan, Haryana, Madhya Pradesh, Karnataka',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2031-12',
+    type: 'Energy',
+    costInr: 1050 * BILLION,
+    subType: 'Nuclear Power Plant'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Jaitapur_Nuclear_Power_Project',
+    name: 'Jaitapur Nuclear Power Project',
+    location: 'Maharashtra',
+    status: PROJECT_STATUS.Approved,
+    type: 'Energy',
+    costInr: 1120 * BILLION,
+    subType: 'Nuclear Power Plant'
+  },
 ];
 
 const roadsAndBridges: MegaProject[] = [
   {
-    sourceUrl: 'https://en.wikipedia.org/wiki/Gorakhpur_Link_Expressway',
-    name: 'Gorakhpur Link Expressway',
-    location: 'Uttar Pradesh',
+    sourceUrl: 'https://en.wikipedia.org/wiki/Mumbai%E2%80%93Nagpur_Expressway',
+    name: 'Mumbai–Nagpur Expressway',
+    location: 'Maharashtra',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2022-03',
-    description: 'Gorakhpur Link Expressway is a 4-lane wide (expandable to 6) expressway in the Indian state of Uttar Pradesh. It will connect Jaitpur village in Gorakhpur district with Salarpur village on Purvanchal Expressway in Azamgarh district.',
+    launchDate: '2022-06',
+    description: 'Nagpur–Mumbai Super Communication Expressway (officially known as Maharashtra Samruddhi Mahamarg) is an under-construction 6-lane (expandable to 8) 701 km long access-controlled expressway in Maharashtra, India. It will be amongst the country\'s longest Greenfield road project,[1] connecting the two capitals of the state i.e., Mumbai and Nagpur.',
     type: 'Roads',
-    costInr: 58.76 * BILLION,
+    costInr: 550 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -176,21 +218,20 @@ const roadsAndBridges: MegaProject[] = [
     name: 'Bundelkhand Expressway',
     location: 'Uttar Pradesh',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2022-04',
-    description: 'Currently, Bundelkhand Expressway is an 296 km long, 4-lane wide (expandable to 6) under-construction access-controlled expressway in the state of Uttar Pradesh, India',
+    launchDate: '2022-06',
     type: 'Roads',
-    costInr: 147.16 * BILLION,
+    costInr: 147 * BILLION,
     subType: 'Expressway'
   },
   {
-    sourceUrl: 'https://en.wikipedia.org/wiki/Mumbai%E2%80%93Nagpur_Expressway',
-    name: 'Mumbai–Nagpur Expressway',
-    location: 'Maharashtra',
+    sourceUrl: 'https://en.wikipedia.org/wiki/Gorakhpur_Link_Expressway',
+    name: 'Gorakhpur Link Expressway',
+    location: 'Uttar Pradesh',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2022-05',
-    description: 'Nagpur–Mumbai Super Communication Expressway (officially known as Maharashtra Samruddhi Mahamarg) is an under-construction 6-lane (expandable to 8) 701 km long access-controlled expressway in Maharashtra, India. It will be amongst the country\'s longest Greenfield road project,[1] connecting the two capitals of the state i.e., Mumbai and Nagpur.',
+    launchDate: '2022-06',
+    description: 'Gorakhpur Link Expressway is a 4-lane wide (expandable to 6) expressway in the Indian state of Uttar Pradesh. It will connect Jaitpur village in Gorakhpur district with Salarpur village on Purvanchal Expressway in Azamgarh district.',
     type: 'Roads',
-    costInr: 550 * BILLION,
+    costInr: 58.76 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -204,14 +245,64 @@ const roadsAndBridges: MegaProject[] = [
     subType: 'Expressway'
   },
   {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Dwarka_Expressway',
+    name: 'Dwarka Expressway',
+    location: 'Haryana, Delhi',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2022-12',
+    type: 'Roads',
+    costInr: 95 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/National_Highway_275_(India)#Bengaluru-Mysuru_section',
+    name: 'Bengaluru-Mysuru Expressway',
+    location: 'Karnataka',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2022-12',
+    type: 'Roads',
+    costInr: 87 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Gorakhpur_Link_Expressway',
+    name: 'Gorakhpur Link Expressway',
+    location: 'Uttar Pradesh',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2022-12',
+    type: 'Roads',
+    costInr: 58 * BILLION,
+    subType: 'Expressway'
+  },
+  {
     sourceUrl: 'https://en.wikipedia.org/wiki/Delhi%E2%80%93Mumbai_Expressway',
     name: 'Delhi–Mumbai Expressway',
     location: 'Delhi, Haryana, Rajasthan, Madhya Pradesh, Gujarat, Maharashtra',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2023-03',
+    launchDate: '2023-06',
     description: 'India\'s longest expressway when completed at 1380 km',
     type: 'Roads',
     costInr: 1000 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Amritsar%E2%80%93Jamnagar_Expressway',
+    name: 'Amritsar–Jamnagar Expressway',
+    location: 'Punjab, Haryana, Rajasthan, Gujarat',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2023-12',
+    type: 'Roads',
+    costInr: 800 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Delhi%E2%80%93Amritsar%E2%80%93Katra_Expressway',
+    name: 'Delhi–Amritsar–Katra Expressway',
+    location: 'Haryana, Punjab, Jammu and Kashmir',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2023-12',
+    type: 'Roads',
+    costInr: 350 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -219,7 +310,7 @@ const roadsAndBridges: MegaProject[] = [
     name: 'Mumbai Trans Harbour Link',
     location: 'Maharashtra',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2023-10',
+    launchDate: '2023-12',
     description: 'India\'s longest sea bridge when completed',
     type: 'Roads',
     costInr: 178.43 * BILLION,
@@ -230,18 +321,125 @@ const roadsAndBridges: MegaProject[] = [
     name: 'Coastal Road',
     location: 'Mumbai',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2023-11',
+    launchDate: '2023-12',
     description: 'Coastal Road is an under construction 8-lane, 22.2-km long freeway that would run along Mumbai\'s western coastline connecting Marine Lines in the south to Kandivali in the north.',
     type: 'Roads',
     costInr: 120 * BILLION,
     subType: 'Freeway'
   },
   {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Lucknow%E2%80%93Kanpur_Expressway',
+    name: 'Lucknow–Kanpur Expressway',
+    location: 'Uttar Pradesh',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2023-12',
+    type: 'Roads',
+    costInr: 47 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Raipur%E2%80%93Visakhapatnam_Expressway',
+    name: 'Raipur-Visakhapatnam Expressway',
+    location: 'Chhattisgarh, Odisha, Andhra Pradesh',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2024-03',
+    type: 'Roads',
+    costInr: 200 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Ludhiana-Bhatinda-Ajmer_Expressway',
+    name: 'Ludhiana-Bathinda-Ajmer Expressway',
+    location: 'Punjab, Haryana, Rajasthan',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2024-03',
+    type: 'Roads',
+    costInr: 80 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Ganga_Expressway',
+    name: 'Ganga Expressway',
+    location: 'Uttar Pradesh',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2024-12',
+    type: 'Roads',
+    costInr: 373 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Bangalore%E2%80%93Chennai_Expressway',
+    name: 'Bangalore–Chennai Expressway',
+    location: 'Karnataka, Andhra Pradesh, Tamil Nadu',
+    status: PROJECT_STATUS.LandAcquisitionInProgress,
+    launchDate: '2024-12',
+    type: 'Roads',
+    costInr: 180 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Delhi%E2%80%93Saharanpur%E2%80%93Dehradun_Expressway',
+    name: 'Delhi–Saharanpur–Dehradun Expressway',
+    location: 'Delhi, Uttar Pradesh, Uttarakhand',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2024-12',
+    type: 'Roads',
+    costInr: 83 * BILLION,
+    subType: 'Expressway'
+  },
+  {
     sourceUrl: 'https://en.wikipedia.org/w/index.php?title=Surat-Chennai_Expressway&action=edit&redlink=1',
     name: 'Surat-Chennai Expressway',
-    location: 'Gujarat, Tamil Nadu',
-    status: PROJECT_STATUS.UnderConstruction,
+    location: 'Gujarat, Maharashtra, Karnataka, Telangana, Tamil Nadu',
+    status: PROJECT_STATUS.TendersInProgress,
+    launchDate: '2025-12',
+    costInr: 450 * BILLION,
     type: 'Roads',
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://timesofindia.indiatimes.com/city/amaravati/andhra-pradesh-finalises-dpr-for-bengaluru-vijayawada-national-highway/articleshow/89911695.cms',
+    name: 'Bengaluru-Vijayawada Expressway',
+    location: 'Karnataka, Andhra Pradesh',
+    status: PROJECT_STATUS.DprSubmitted,
+    costInr: 170 * BILLION,
+    type: 'Roads',
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Narmada_Expressway',
+    name: 'Narmada Expressway',
+    location: 'Madhya Pradesh',
+    status: PROJECT_STATUS.DprUnderPreparation,
+    type: 'Roads',
+    costInr: 310 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Kolkata%E2%80%93Varanasi_Expressway',
+    name: 'Varanasi-Ranchi–Kolkata Expressway',
+    location: 'Uttar Pradesh, Bihar, Jharkhand, West Bengal',
+    status: PROJECT_STATUS.DprUnderPreparation,
+    costInr: 250 * BILLION,
+    type: 'Roads',
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://www.business-standard.com/article/economy-policy/delhi-mumbai-chambal-e-ways-to-act-as-growth-engines-for-mp-gadkari-121091601471_1.html.',
+    name: 'Chambal Expressway',
+    location: 'Madhya Pradesh',
+    status: PROJECT_STATUS.DprUnderPreparation,
+    type: 'Roads',
+    costInr: 85 * BILLION,
+    subType: 'Expressway'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Chennai_Port%E2%80%93Maduravoyal_Expressway',
+    name: 'Chennai Port – Maduravoyal Expressway',
+    location: 'Tamil Nadu',
+    status: PROJECT_STATUS.DprUnderPreparation,
+    type: 'Roads',
+    costInr: 58 * BILLION,
     subType: 'Expressway'
   },
   {
@@ -250,6 +448,7 @@ const roadsAndBridges: MegaProject[] = [
     location: 'Maharashtra, Telangana, Andhra Pradesh, Karnataka',
     status: PROJECT_STATUS.Planned,
     type: 'Roads',
+    costInr: 350 * BILLION,
     subType: 'Expressway'
   },
 ];
@@ -398,6 +597,26 @@ const metroProjects: MegaProject[] = [
     subType: 'Metro'
   },
   {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Ahmedabad_Metro',
+    name: 'Ahmedabad Metro',
+    location: 'Gujarat',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2024-12',
+    type: 'Railways',
+    costInr: 210 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Lucknow_Metro',
+    name: 'Lucknow Metro',
+    location: 'Uttar Pradesh',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2024-12',
+    type: 'Railways',
+    costInr: 150 * BILLION,
+    subType: 'Metro'
+  },
+  {
     sourceUrl: 'https://en.wikipedia.org/wiki/Patna_Metro',
     name: 'Patna Metro',
     location: 'Bihar',
@@ -405,6 +624,26 @@ const metroProjects: MegaProject[] = [
     launchDate: '2024-12',
     type: 'Railways',
     costInr: 133.65 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Kanpur_Metro',
+    name: 'Kanpur Metro (Phase 1)',
+    location: 'Uttar Pradesh',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2024-12',
+    type: 'Railways',
+    costInr: 110 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Surat_Metro',
+    name: 'Surat Metro',
+    location: 'Gujarat',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2024-12',
+    type: 'Railways',
+    costInr: 120.20 * BILLION,
     subType: 'Metro'
   },
   {
@@ -418,13 +657,82 @@ const metroProjects: MegaProject[] = [
     subType: 'Metro'
   },
   {
-    sourceUrl: 'https://en.wikipedia.org/wiki/Surat_Metro',
-    name: 'Surat Metro',
-    location: 'Gujarat',
+    sourceUrl: 'https://en.wikipedia.org/wiki/Namma_Metro',
+    name: 'Bangalore Metro (Phase 2)',
+    location: 'Karnataka',
     status: PROJECT_STATUS.UnderConstruction,
-    launchDate: '2024-12',
+    launchDate: '2025-12',
     type: 'Railways',
-    costInr: 120.20 * BILLION,
+    costInr: 320 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Noida_Metro',
+    name: 'Noida Metro (Phase 2)',
+    location: 'Uttar Pradesh',
+    status: PROJECT_STATUS.DprUnderPreparation,
+    launchDate: '2025-12',
+    type: 'Railways',
+    costInr: 100 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Mumbai_Metro',
+    name: 'Mumbai Metro',
+    location: 'Maharashtra',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2026-12',
+    type: 'Railways',
+    costInr: 1400 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Pune_Metro',
+    name: 'Pune Metro',
+    location: 'Maharashtra',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2026-12',
+    type: 'Railways',
+    costInr: 247.73 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Nagpur_Metro',
+    name: 'Nagpur Metro',
+    location: 'Maharashtra',
+    status: PROJECT_STATUS.PartiallyOperational,
+    launchDate: '2026-12',
+    type: 'Railways',
+    costInr: 155 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Delhi_Metro#Phase_IV',
+    name: 'Delhi Metro (Phase 4)',
+    location: 'Delhi',
+    status: PROJECT_STATUS.UnderConstruction,
+    launchDate: '2026-12',
+    type: 'Railways',
+    costInr: 540 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Chennai_Metro#Phase_II',
+    name: 'Chennai Metro (Phase 2)',
+    location: 'Tamil Nadu',
+    status: PROJECT_STATUS.DprUnderPreparation,
+    launchDate: '2026-12',
+    type: 'Railways',
+    costInr: 630 * BILLION,
+    subType: 'Metro'
+  },
+  {
+    sourceUrl: 'https://en.wikipedia.org/wiki/Jaipur_Metro#Phase_2',
+    name: 'Jaipur Metro (Phase 2)',
+    location: 'Rajasthan',
+    status: PROJECT_STATUS.DprSubmitted,
+    type: 'Railways',
+    costInr: 45.46 * BILLION,
     subType: 'Metro'
   },
   {
@@ -847,12 +1155,12 @@ export const MEGA_PROJECTS: MegaProject[] = [
   {name: '🔬 Science and Technology', type: 'divider'},
   ...scienceAndTechProjects,
   {
-    name: '⚡ Renewable Energy',
+    name: '⚡ Green Energy',
     type: 'divider',
     sourceUrl: 'https://en.wikipedia.org/wiki/Solar_power_in_India#Major_photovoltaic_power_stations'
   },
-  ...energyProjects,
-  {name: '🛣️ Roadways', type: 'divider'},
+  ...greenEnergyProjects,
+  {name: '🛣️ Roadways', type: 'divider', sourceUrl: 'https://en.wikipedia.org/wiki/Expressways_of_India'},
   ...roadsAndBridges,
   {
     name: '🚄 Rapid Rail Transport Systems - RRTS | HrSR',
@@ -902,3 +1210,5 @@ export const MEGA_PROJECTS: MegaProject[] = [
     return project;
   })
   .filter(project => !project.status || project.status.code < 100);
+
+export const COMPLETION_YEARS = [...new Set(MEGA_PROJECTS.filter(({launchDate}) => launchDate).map(({launchDate}) => launchDate.match(/\d{4}/)[0]))].sort()
