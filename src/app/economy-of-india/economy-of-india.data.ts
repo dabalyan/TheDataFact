@@ -754,7 +754,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.478
+      'accountBalancePGdp': -1.478,
+      'netFdi': 0.042484826668035
     },
     {
       'year': 1981,
@@ -769,7 +770,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.611
+      'accountBalancePGdp': -1.611,
+      'netFdi': 0.0475061812998319
     },
     {
       'year': 1982,
@@ -784,7 +786,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.667
+      'accountBalancePGdp': -1.667,
+      'netFdi': 0.0359115899153442
     },
     {
       'year': 1983,
@@ -799,7 +802,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.444
+      'accountBalancePGdp': -1.444,
+      'netFdi': 0.0025840470787193
     },
     {
       'year': 1984,
@@ -814,7 +818,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.121
+      'accountBalancePGdp': -1.121,
+      'netFdi': 0.00906870288386821
     },
     {
       'year': 1985,
@@ -829,7 +834,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -2.025
+      'accountBalancePGdp': -2.025,
+      'netFdi': 0.0456277765181843
     },
     {
       'year': 1986,
@@ -844,7 +850,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.806
+      'accountBalancePGdp': -1.806,
+      'netFdi': 0.0472837841549837
     },
     {
       'year': 1987,
@@ -859,7 +866,8 @@ export const economicData = {
       'revenuePGdp': null,
       'totalExpenditurePGdp': null,
       'netLendingPGdp': null,
-      'accountBalancePGdp': -1.708
+      'accountBalancePGdp': -1.708,
+      'netFdi': 0.0760911990543315
     },
     {
       'year': 1988,
@@ -874,7 +882,8 @@ export const economicData = {
       'revenuePGdp': 17.568,
       'totalExpenditurePGdp': 24.457,
       'netLendingPGdp': -6.89,
-      'accountBalancePGdp': -2.404
+      'accountBalancePGdp': -2.404,
+      'netFdi': 0.0307664821001948
     },
     {
       'year': 1989,
@@ -889,7 +898,8 @@ export const economicData = {
       'revenuePGdp': 17.69,
       'totalExpenditurePGdp': 25.234,
       'netLendingPGdp': -7.544,
-      'accountBalancePGdp': -1.979
+      'accountBalancePGdp': -1.979,
+      'netFdi': 0.0851567337085313
     },
     {
       'year': 1990,
@@ -904,7 +914,8 @@ export const economicData = {
       'revenuePGdp': 17.442,
       'totalExpenditurePGdp': 25.371,
       'netLendingPGdp': -7.93,
-      'accountBalancePGdp': -2.947
+      'accountBalancePGdp': -2.947,
+      'netFdi': 0.0737400205365949
     },
     {
       'year': 1991,
@@ -919,7 +930,8 @@ export const economicData = {
       'revenuePGdp': 19.037,
       'totalExpenditurePGdp': 26.801,
       'netLendingPGdp': -7.764,
-      'accountBalancePGdp': -0.426
+      'accountBalancePGdp': -0.426,
+      'netFdi': 0.0272255401825463
     },
     {
       'year': 1992,
@@ -934,7 +946,8 @@ export const economicData = {
       'revenuePGdp': 18.472,
       'totalExpenditurePGdp': 26.229,
       'netLendingPGdp': -7.757,
-      'accountBalancePGdp': -1.675
+      'accountBalancePGdp': -1.675,
+      'netFdi': 0.0959418288373836
     },
     {
       'year': 1993,
@@ -949,7 +962,8 @@ export const economicData = {
       'revenuePGdp': 17.32,
       'totalExpenditurePGdp': 25.742,
       'netLendingPGdp': -8.422,
-      'accountBalancePGdp': -0.408
+      'accountBalancePGdp': -0.408,
+      'netFdi': 0.19705616250511
     },
     {
       'year': 1994,
@@ -964,7 +978,8 @@ export const economicData = {
       'revenuePGdp': 17.897,
       'totalExpenditurePGdp': 25.756,
       'netLendingPGdp': -7.859,
-      'accountBalancePGdp': -1.012
+      'accountBalancePGdp': -1.012,
+      'netFdi': 0.297385908901827
     },
     {
       'year': 1995,
@@ -979,7 +994,8 @@ export const economicData = {
       'revenuePGdp': 17.852,
       'totalExpenditurePGdp': 24.549,
       'netLendingPGdp': -6.697,
-      'accountBalancePGdp': -1.609
+      'accountBalancePGdp': -1.609,
+      'netFdi': 0.59498625843436
     },
     {
       'year': 1996,
@@ -994,7 +1010,8 @@ export const economicData = {
       'revenuePGdp': 17.354,
       'totalExpenditurePGdp': 23.944,
       'netLendingPGdp': -6.59,
-      'accountBalancePGdp': -1.125
+      'accountBalancePGdp': -1.125,
+      'netFdi': 0.617479055916172
     },
     {
       'year': 1997,
@@ -1009,7 +1026,8 @@ export const economicData = {
       'revenuePGdp': 16.663,
       'totalExpenditurePGdp': 24.796,
       'netLendingPGdp': -8.133,
-      'accountBalancePGdp': -1.3
+      'accountBalancePGdp': -1.3,
+      'netFdi': 0.860208566090658
     },
     {
       'year': 1998,
@@ -1024,7 +1042,8 @@ export const economicData = {
       'revenuePGdp': 16.011,
       'totalExpenditurePGdp': 25.586,
       'netLendingPGdp': -9.574,
-      'accountBalancePGdp': -0.942
+      'accountBalancePGdp': -0.942,
+      'netFdi': 0.625285966332408
     },
     {
       'year': 1999,
@@ -1039,7 +1058,8 @@ export const economicData = {
       'revenuePGdp': 16.853,
       'totalExpenditurePGdp': 25.404,
       'netLendingPGdp': -8.551,
-      'accountBalancePGdp': -1.006
+      'accountBalancePGdp': -1.006,
+      'netFdi': 0.472644845877164
     },
     {
       'year': 2000,
@@ -1054,7 +1074,8 @@ export const economicData = {
       'revenuePGdp': 17.372,
       'totalExpenditurePGdp': 25.636,
       'netLendingPGdp': -8.264,
-      'accountBalancePGdp': -0.559
+      'accountBalancePGdp': -0.559,
+      'netFdi': 0.765212648995792
     },
     {
       'year': 2001,
@@ -1069,7 +1090,8 @@ export const economicData = {
       'revenuePGdp': 16.946,
       'totalExpenditurePGdp': 27.788,
       'netLendingPGdp': -10.843,
-      'accountBalancePGdp': 0.688
+      'accountBalancePGdp': 0.688,
+      'netFdi': 1.05637830509657
     },
     {
       'year': 2002,
@@ -1084,7 +1106,8 @@ export const economicData = {
       'revenuePGdp': 17.732,
       'totalExpenditurePGdp': 28.613,
       'netLendingPGdp': -10.881,
-      'accountBalancePGdp': 1.211
+      'accountBalancePGdp': 1.211,
+      'netFdi': 1.01157180543964
     },
     {
       'year': 2003,
@@ -1099,7 +1122,8 @@ export const economicData = {
       'revenuePGdp': 18.195,
       'totalExpenditurePGdp': 29.426,
       'netLendingPGdp': -11.231,
-      'accountBalancePGdp': 2.277
+      'accountBalancePGdp': 2.277,
+      'netFdi': 0.605889254716748
     },
     {
       'year': 2004,
@@ -1114,7 +1138,8 @@ export const economicData = {
       'revenuePGdp': 18.897,
       'totalExpenditurePGdp': 27.959,
       'netLendingPGdp': -9.062,
-      'accountBalancePGdp': -0.342
+      'accountBalancePGdp': -0.342,
+      'netFdi': 0.765601404573582
     },
     {
       'year': 2005,
@@ -1129,7 +1154,8 @@ export const economicData = {
       'revenuePGdp': 19.062,
       'totalExpenditurePGdp': 26.431,
       'netLendingPGdp': -7.368,
-      'accountBalancePGdp': -1.187
+      'accountBalancePGdp': -1.187,
+      'netFdi': 0.886100720125194
     },
     {
       'year': 2006,
@@ -1144,7 +1170,8 @@ export const economicData = {
       'revenuePGdp': 20.338,
       'totalExpenditurePGdp': 26.659,
       'netLendingPGdp': -6.321,
-      'accountBalancePGdp': -1.008
+      'accountBalancePGdp': -1.008,
+      'netFdi': 2.13016842533494
     },
     {
       'year': 2007,
@@ -1159,7 +1186,8 @@ export const economicData = {
       'revenuePGdp': 21.962,
       'totalExpenditurePGdp': 26.467,
       'netLendingPGdp': -4.505,
-      'accountBalancePGdp': -1.27
+      'accountBalancePGdp': -1.27,
+      'netFdi': 2.07339574616693
     },
     {
       'year': 2008,
@@ -1174,7 +1202,8 @@ export const economicData = {
       'revenuePGdp': 19.708,
       'totalExpenditurePGdp': 28.69,
       'netLendingPGdp': -8.982,
-      'accountBalancePGdp': -2.28
+      'accountBalancePGdp': -2.28,
+      'netFdi': 3.62052189719656
     },
     {
       'year': 2009,
@@ -1189,7 +1218,8 @@ export const economicData = {
       'revenuePGdp': 18.518,
       'totalExpenditurePGdp': 28.052,
       'netLendingPGdp': -9.534,
-      'accountBalancePGdp': -2.815
+      'accountBalancePGdp': -2.815,
+      'netFdi': 2.65159312683012
     },
     {
       'year': 2010,
@@ -1204,7 +1234,8 @@ export const economicData = {
       'revenuePGdp': 18.821,
       'totalExpenditurePGdp': 27.447,
       'netLendingPGdp': -8.626,
-      'accountBalancePGdp': -2.802
+      'accountBalancePGdp': -2.802,
+      'netFdi': 1.63503427378005
     },
     {
       'year': 2011,
@@ -1219,7 +1250,8 @@ export const economicData = {
       'revenuePGdp': 19.291,
       'totalExpenditurePGdp': 27.641,
       'netLendingPGdp': -8.349,
-      'accountBalancePGdp': -4.29
+      'accountBalancePGdp': -4.29,
+      'netFdi': 2.00206555190048
     },
     {
       'year': 2012,
@@ -1234,7 +1266,8 @@ export const economicData = {
       'revenuePGdp': 19.814,
       'totalExpenditurePGdp': 27.364,
       'netLendingPGdp': -7.55,
-      'accountBalancePGdp': -4.806
+      'accountBalancePGdp': -4.806,
+      'netFdi': 1.31293433730695
     },
     {
       'year': 2013,
@@ -1249,7 +1282,8 @@ export const economicData = {
       'revenuePGdp': 19.6,
       'totalExpenditurePGdp': 26.6,
       'netLendingPGdp': -7,
-      'accountBalancePGdp': -1.737
+      'accountBalancePGdp': -1.737,
+      'netFdi': 1.51627596536499
     },
     {
       'year': 2014,
@@ -1264,7 +1298,8 @@ export const economicData = {
       'revenuePGdp': 19.149,
       'totalExpenditurePGdp': 26.22,
       'netLendingPGdp': -7.071,
-      'accountBalancePGdp': -1.314
+      'accountBalancePGdp': -1.314,
+      'netFdi': 1.69565878566846
     },
     {
       'year': 2015,
@@ -1279,7 +1314,8 @@ export const economicData = {
       'revenuePGdp': 19.854,
       'totalExpenditurePGdp': 27.059,
       'netLendingPGdp': -7.205,
-      'accountBalancePGdp': -1.05
+      'accountBalancePGdp': -1.05,
+      'netFdi': 2.09211575768566
     },
     {
       'year': 2016,
@@ -1294,7 +1330,8 @@ export const economicData = {
       'revenuePGdp': 20.113,
       'totalExpenditurePGdp': 27.233,
       'netLendingPGdp': -7.12,
-      'accountBalancePGdp': -0.626
+      'accountBalancePGdp': -0.626,
+      'netFdi': 1.93736319812939
     },
     {
       'year': 2017,
@@ -1309,7 +1346,8 @@ export const economicData = {
       'revenuePGdp': 20.004,
       'totalExpenditurePGdp': 26.232,
       'netLendingPGdp': -6.227,
-      'accountBalancePGdp': -1.835
+      'accountBalancePGdp': -1.835,
+      'netFdi': 1.50731658089818
     },
     {
       'year': 2018,
@@ -1324,7 +1362,8 @@ export const economicData = {
       'revenuePGdp': 19.965,
       'totalExpenditurePGdp': 26.345,
       'netLendingPGdp': -6.38,
-      'accountBalancePGdp': -2.117
+      'accountBalancePGdp': -2.117,
+      'netFdi': 1.55926352274079
     },
     {
       'year': 2019,
@@ -1339,7 +1378,8 @@ export const economicData = {
       'revenuePGdp': 19.659,
       'totalExpenditurePGdp': 27.051,
       'netLendingPGdp': -7.391,
-      'accountBalancePGdp': -0.855
+      'accountBalancePGdp': -0.855,
+      'netFdi': 1.76312750821227
     },
     {
       'year': 2020,
@@ -1354,7 +1394,8 @@ export const economicData = {
       'revenuePGdp': 18.293,
       'totalExpenditurePGdp': 31.073,
       'netLendingPGdp': -12.78,
-      'accountBalancePGdp': 0.903
+      'accountBalancePGdp': 0.903,
+      'netFdi': 2.41941471455581
     },
     {
       'year': 2021,

@@ -111,6 +111,13 @@ export class EconomyOfIndiaComponent implements OnInit {
       }
     });
 
+    const indiaFdiSeries = {
+      name: 'India Net FDI (% of GDP)',
+      data: economicData.IND.map(({year, netFdi}) => ({x: year, y: netFdi})),
+      color: '#000',
+      visible: this.countriesVisibility.India
+    }
+
     const plotLines = importantPeriods.map(
       ({year: value, name: text}) => XAxisPlotLinesConfig({
         value, label: {text}
@@ -119,7 +126,7 @@ export class EconomyOfIndiaComponent implements OnInit {
 
     this.allChartsConfig = allSeriesListIndia
       .map((series, i) => generateChartOptions([
-        series, allSeriesListChina[i], allSeriesLisUsa[i]
+        series, allSeriesListChina[i], allSeriesLisUsa[i], ...(i === 0 ? [indiaFdiSeries] : [])
       ], plotLines, series.description.yAxisLabel, series.description.name));
   }
 
