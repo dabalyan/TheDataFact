@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {Injector, NgModule} from '@angular/core';
 import {BrowserModule, Title} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 
@@ -69,6 +69,8 @@ const routes: Routes = [
   {path: '**', redirectTo: ''}
 ]
 
+export let AppInjector: Injector;
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -96,7 +98,8 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(private router: Router, private title: Title) {
+  constructor(private router: Router, private title: Title, private injector: Injector) {
+    AppInjector = this.injector;
     this.router.events.subscribe(event => {
       if (event instanceof RoutesRecognized) {
         const windowTitle = event.state.root.firstChild.data['name']?.trim();

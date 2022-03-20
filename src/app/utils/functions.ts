@@ -1,3 +1,5 @@
+import {ActivatedRoute, Router} from '@angular/router';
+
 export const isSimpleObject = item => {
   return !!item && item.constructor === Object;
 }
@@ -52,3 +54,13 @@ export const sortByIndexAndLengthCompareFn = (keyName: string, matchValue) => {
     return a > b ? 1 : a < b ? -1 : valueA.length > valueB.length ? 1 : valueA.length < valueB.length ? -1 : 0;
   }
 }
+
+export const getCurrentRoute = (router: Router): ActivatedRoute => {
+  let route = router.routerState.root;
+  while (route.firstChild) {
+    route = route.firstChild;
+  }
+  return route;
+}
+
+export const isNumber = (n: any): n is number => typeof n === 'number' && isFinite(n);
