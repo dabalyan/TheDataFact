@@ -1,8 +1,108 @@
 export const INVASION_IMAGES = () => [
   {
-    'date': '2022-03-20T00:13:00.000Z',
-    'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
-    'comment': 'Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/'
+    "date": "2022-03-22T09:56:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Added front and dates in Sumy, Zaporozhye, Kherson, Chernihiv regions, DPR and LPR. Bugs fixed."
+  },
+  {
+    "date": "2022-03-22T09:52:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322095613%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Kherson region is completely under the control of Russia. Source: https://t.me/istorijaoruzija/43889; The advance of the troops of the Luhansk PR in the area of Popasna. Popasna is under the control of the Luhansk PR and Russia. The advance of the troops of the Donetsk PR and Russia in the Maryinka area. The transition of the territory under the control of the DPR and Russia. Source: https://t.me/istorijaoruzija/46994; Added front and dates in Sumy, Zaporozhye, Kherson, Chernihiv regions, DPR..."
+  },
+  {
+    "date": "2022-03-21T16:23:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322095251%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "The front was added and the main front was merged in the Kharkiv region."
+  },
+  {
+    "date": "2022-03-21T10:42:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321162352%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Curve advance arrows for Voznesensk & Izium"
+  },
+  {
+    "date": "2022-03-21T03:02:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321104201%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Added more cities. Especially inside Russian controlled areas."
+  },
+  {
+    "date": "2022-03-20T22:52:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321030215%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "added naval bases with anchor logo"
+  },
+  {
+    "date": "2022-03-20T20:44:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320225216%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Fix scale"
+  },
+  {
+    "date": "2022-03-20T18:54:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320204426%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Changed a few bugs."
+  },
+  {
+    "date": "2022-03-20T18:02:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320185414%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Under the control of Russia and the Luhansk PR is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295; Vuhledar under the control of Russia and Donetsk PR. Source: https://ru.m.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%80; Added exact dates, added front."
+  },
+  {
+    "date": "2022-03-20T17:55:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320180230%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Under the control of Russia and the Luhansk People's Republic is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295"
+  },
+  {
+    "date": "2022-03-20T15:39:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320175504%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Shevchenkove and Bohdanivka under Russian control. Source: https://www.france24.com/en/live-news/20220309-russian-tanks-advance-towards-kyiv-from-east. Fixed the border around Mariupol according to this map: https://commons.wikimedia.org/wiki/File:Situation_in_Mariupol.svg"
+  },
+  {
+    "date": "2022-03-20T08:26:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320123839%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for tr."
+  },
+  {
+    "date": "2022-03-20T00:13:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320082610%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/"
+  },
+  {
+    "date": "2022-03-19T23:44:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320001353%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Changed frontlines near Mykolaiv in order to match the announcments from the Ukrainian government saying where the Russian troops have stopped. https://t.me/spravdi/2867"
+  },
+  {
+    "date": "2022-03-19T21:14:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319234431%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru."
+  },
+  {
+    "date": "2022-03-19T21:09:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319211421%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru."
+  },
+  {
+    "date": "2022-03-19T21:07:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319210932%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru."
+  },
+  {
+    "date": "2022-03-19T16:42:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319210711%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for es."
+  },
+  {
+    "date": "2022-03-20T18:02:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321030215%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Under the control of Russia and the Luhansk PR is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295; Vuhledar under the control of Russia and Donetsk PR. Source: https://ru.m.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%80; Added exact dates, added front."
+  },
+  {
+    "date": "2022-03-20T15:39:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320175504%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Shevchenkove and Bohdanivka under Russian control. Source: https://www.france24.com/en/live-news/20220309-russian-tanks-advance-towards-kyiv-from-east. Fixed the border around Mariupol according to this map: https://commons.wikimedia.org/wiki/File:Situation_in_Mariupol.svg"
+  },
+  {
+    "date": "2022-03-20T00:13:00.000Z",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320082610%212022_Russian_invasion_of_Ukraine.svg",
+    "comment": "Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/"
   },
   {
     'date': '2022-03-19T23:44:00.000Z',

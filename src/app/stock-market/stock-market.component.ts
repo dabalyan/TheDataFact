@@ -1,8 +1,8 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import {ActivatedRoute, Router} from '@angular/router';
-import {GenerateChartOptions} from '../utils/highcharts-helpers';
-import {sortByIndexAndLengthCompareFn, sortCompareFnByKey} from '../utils/functions';
+import { ActivatedRoute, Router } from '@angular/router';
+import { GenerateChartOptions } from '../utils/highcharts-helpers';
+import { sortByIndexAndLengthCompareFn, sortCompareFnByKey } from '../utils/functions';
 
 const formatDate = (timestamp, month = 'short', year = 'numeric') => new Date(timestamp).toLocaleString(undefined, {
   year: year as any,
@@ -39,7 +39,7 @@ const generateChartOptions = (series, plotLines, yAxisLabel): Highcharts.Options
         x: 30
       },
       opposite: true,
-      plotLines: [{value: 0, color: 'red', dashStyle: 'Dash'}]
+      plotLines: [{ value: 0, color: 'red', dashStyle: 'Dash' }]
     },
     xAxis: {
       plotLines,
@@ -84,11 +84,11 @@ export class StockMarketComponent implements OnInit {
   searchResults: { type: string; name: string; symbol: string }[];
   showSearchResults = false;
 
-  timeSpanLabels = {D: 'Daily', W: 'Weekly', M: 'Monthly'};
+  timeSpanLabels = { D: 'Daily', W: 'Weekly', M: 'Monthly' };
   timeSpans = Object.keys(this.timeSpanLabels);
   timeSpan: 'D' | 'W' | 'M';
 
-  pricingLabels = {c: 'On Close', o: 'On Open', h: 'Highest', l: 'Lowest'};
+  pricingLabels = { c: 'On Close', o: 'On Open', h: 'Highest', l: 'Lowest' };
   pricingKeys = Object.keys(this.pricingLabels);
   pricingKey: 'c' | 'o' | 'h' | 'l';
 
@@ -156,11 +156,10 @@ export class StockMarketComponent implements OnInit {
       || previousTimeSpan && previousTimeSpan !== this.timeSpan
       || previousPricingKey && previousPricingKey !== this.pricingKey;
 
-    const yAxisTitle = `% Growth since ${
-      new Date('0-' + this.fromMonth).toLocaleString(undefined, {month: 'short'})
-    } ${this.fromYear}`;
+    const yAxisTitle = `% Growth since ${new Date('0-' + this.fromMonth).toLocaleString(undefined, { month: 'short' })
+      } ${this.fromYear}`;
     this.chartConfig.yAxis.title.text = yAxisTitle;
-    this.chart?.yAxis[0].setTitle({text: yAxisTitle});
+    this.chart?.yAxis[0].setTitle({ text: yAxisTitle });
 
     const querySymbols = queryParams['symbols']?.split(',').map(s => s.toUpperCase().trim()) as string[];
 
@@ -192,26 +191,27 @@ export class StockMarketComponent implements OnInit {
     if (!resetChart) {
       this.selectedSymbols.push(symbol);
     }
-    const existingSeries = this.chart.series.find(({name}) => name === symbol);
+    const existingSeries = this.chart.series.find(({ name }) => name === symbol);
 
     const startIndex = allData.t.findIndex(t => t >= this.fromDateTimestamp);
     const basePrice = allData[this.pricingKey][startIndex];
     const seriesData = allData[this.pricingKey].slice(startIndex).map((value, i) => ({
       x: allData.t[i + startIndex] * 1000,
-      y: (value - basePrice) * 100 / basePrice
+      y: (value - basePrice) * 100 / basePrice,
+      marker: { enabled: false }
     }));
-    seriesData[seriesData.length - 1]['dataLabels'] = {enabled: true};
-    seriesData[seriesData.length - 1]['marker'] = {enabled: true};
+    seriesData[seriesData.length - 1]['dataLabels'] = { enabled: true };
+    seriesData[seriesData.length - 1]['marker'] = { enabled: true };
 
     if (existingSeries) {
       existingSeries.setData(seriesData, true, true);
     }
     else {
       this.chart.addSeries({
-        type: 'spline',
+        type: 'line',
         name: symbol,
         data: seriesData,
-        marker: {symbol: 'circle'}
+        marker: { symbol: 'circle', enabled: false }
       });
     }
   }
@@ -223,7 +223,7 @@ export class StockMarketComponent implements OnInit {
     }
 
     this.selectedSymbols.splice(this.selectedSymbols.indexOf(symbol), 1);
-    this.chart.series.find(({name}) => name === symbol)?.remove();
+    this.chart.series.find(({ name }) => name === symbol)?.remove();
   }
 
   async memoizeFetchData(url: string, token: string): Promise<any> {
@@ -265,19 +265,19 @@ export class StockMarketComponent implements OnInit {
     const partialMatchesBySymbol = [];
     const partialMatchesByName = [];
 
-    this.allTickers.forEach(({name, symbol}, i) => {
+    this.allTickers.forEach(({ name, symbol }, i) => {
       if (symbol === query) {
-        exactMatchesBySymbol.push({symbol, name});
+        exactMatchesBySymbol.push({ symbol, name });
       }
       else if (symbol.includes(query)) {
-        partialMatchesBySymbol.push({symbol, name});
+        partialMatchesBySymbol.push({ symbol, name });
       }
 
       if (name === query) {
-        exactMatchesByName.push({symbol, name});
+        exactMatchesByName.push({ symbol, name });
       }
       else if (name.includes(query)) {
-        partialMatchesByName.push({symbol, name});
+        partialMatchesByName.push({ symbol, name });
       }
     });
 
@@ -292,23 +292,23 @@ export class StockMarketComponent implements OnInit {
   toggleSymbol(symbol: string, remove = false): void {
     const symbols = remove ? this.selectedSymbols.filter(s => s !== symbol) : [...this.selectedSymbols, symbol];
 
-    this.navigate({symbols: symbols.join(',')});
+    this.navigate({ symbols: symbols.join(',') });
   }
 
   selectFromYear(year: number): void {
-    this.navigate({from: year});
+    this.navigate({ from: year });
   }
 
   selectFromMonth(month: number): void {
-    this.navigate({month});
+    this.navigate({ month });
   }
 
   selectTimeSpan(span: number): void {
-    this.navigate({ts: span});
+    this.navigate({ ts: span });
   }
 
   selectPricing(key: number): void {
-    this.navigate({pricing: key});
+    this.navigate({ pricing: key });
   }
 
   navigate(queryParams: Record<string, any>): void {
@@ -331,7 +331,7 @@ export class StockMarketComponent implements OnInit {
   }
 
   monthSelectOverflow(): void {
-   if (this.fromMonth === 12) { // go to next year
+    if (this.fromMonth === 12) { // go to next year
       setTimeout(() => { // prevent dual change in month caused by successive native selection
         this.navigate({
           month: 1,

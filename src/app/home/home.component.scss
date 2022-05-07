@@ -35,16 +35,16 @@ app-home {
 
     &.contain {
       background-position: center;
-      background-size: contain;
+      background-size: cover;
     }
 
     &:hover {
-      > * {
+      >* {
         background-color: rgb(39 37 52 / 20%);
       }
     }
 
-    > * {
+    >* {
       position: absolute;
       top: 0;
       left: 0;

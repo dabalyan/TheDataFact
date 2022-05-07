@@ -1,0 +1,37 @@
+<div class="sub-nav">
+    <div [class.active]="activeStat === 'deaths'" (click)="selectStat('deaths')">Deaths</div>
+    <div [class.active]="activeStat === 'births'" (click)="selectStat('births')">Births</div>
+</div>
+
+<header>
+    <h1>
+        Annually reported, registered {{activeStat}} by each state.<a
+            appSourceRef="https://crsorgi.gov.in/web/uploads/download/CRS_report_2020.pdf"></a><a
+            appSourceRef="https://crsorgi.gov.in/annual-report.html"></a>
+    </h1>
+</header>
+
+<section class="grid-container">
+    <div class="row grid-head-row">
+        <div class="column"><span>State</span></div>
+        <div class="column"><span>2012</span></div>
+        <div class="column"><span>2013</span></div>
+        <div class="column"><span>2014</span></div>
+        <div class="column"><span>2015</span></div>
+        <div class="column"><span>2016</span></div>
+        <div class="column"><span>2017</span></div>
+        <div class="column"><span>2018</span></div>
+        <div class="column"><span>2019</span></div>
+        <div class="column"><span>2020</span></div>
+    </div>
+    <div class="row"
+        *ngFor="let row of (activeStat === 'deaths' ? registeredDeaths : registeredBirths); let ir = index;">
+        <div class="column" [class.grid-head-column]="ir === 0"><span>{{row.name}}</span></div>
+        <div class="column colored-column" *ngFor="let col of row.counts; let i = index"
+            [style.background-color]="row.colors[i]">
+            <span>{{col > 0 ? '' : ''}}{{col ? (col | number: '0.0-2') + '' : 'NA'}}</span>
+            <span *ngIf="row.pcChange[i]">{{row.pcChange[i] > 0 ? '+' : ''}}{{(row.pcChange[i] | number:
+                '0.0-2')}}%</span>
+        </div>
+    </div>
+</section>

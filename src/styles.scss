@@ -10,3 +10,15 @@
 .pb-0 {
   padding-bottom: 0;
 }
+
+@keyframes verticalFlip {
+  from {
+    transform: rotateX(90deg);
+    opacity: 0
+  }
+
+  to {
+    transform: rotateX(0);
+    opacity: 1
+  }
+}

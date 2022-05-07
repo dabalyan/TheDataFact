@@ -1,0 +1,54 @@
+app-births-and-deaths {
+    display: block;
+    padding: 0 2vw 2vw;
+
+    header {
+        padding: min(8vh, 8vw);
+    }
+
+    .grid-container {
+        overflow: auto;
+    }
+
+    $grid-gap: min(.2vw, .2vh);
+
+    .row {
+        display: grid;
+        grid-template-columns: minmax(200px, 2fr) repeat(9, minmax(90px, 2fr));
+        grid-auto-flow: column;
+        align-items: center;
+        margin: $grid-gap auto;
+        word-break: break-word;
+        gap: $grid-gap;
+
+        .column {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            padding: min(1vw, 1vh);
+            min-height: 1em;
+            background-color: rgb(246 246 246);
+            animation: 0.8s verticalFlip forwards;
+
+            :nth-child(2) {
+                font-size: .8em;
+            }
+
+            &.colored-column {
+                // color: #fff;
+                /* mix-blend-mode: difference; */
+                // text-shadow: 1px 1px 1px black;
+            }
+        }
+    }
+
+    .grid-head-row .column,
+    .column.grid-head-column {
+        color: #fff;
+        background-color: #000;
+    }
+}
