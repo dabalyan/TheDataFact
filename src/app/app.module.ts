@@ -9,6 +9,13 @@ import {
 } from './wikipedia-sources-reliability-index/wikipedia-sources-reliability-index.component';
 import { Router, RouterModule, Routes, RoutesRecognized } from '@angular/router';
 import { HighchartsChartModule } from 'highcharts-angular';
+import * as  Highcharts from 'highcharts';
+import More from 'highcharts/highcharts-more';
+import Tree from 'highcharts/modules/treemap';
+import Heatmap from 'highcharts/modules/heatmap';
+More(Highcharts);
+Tree(Highcharts);
+Heatmap(Highcharts);
 import { SourceRefDirective } from './directives/source-ref.directive';
 import { IndiaRoadsAndHighwaysComponent } from './india-roads-and-highways/india-roads-and-highways.component';
 import {
@@ -22,12 +29,18 @@ import { UkraineRussiaInvasionComponent } from './ukraine-russia-invasion/ukrain
 import { StockMarketComponent } from './stock-market/stock-market.component';
 import { CompletionYearPipe, MegaProjectsComponent } from './mega-projects/mega-projects.component';
 import { BirthsAndDeathsComponent } from './births-and-deaths/births-and-deaths.component';
+import { LanguagesOfIndiaComponent } from './languages-of-india/languages-of-india.component';
 
 const routes: Routes = [
   {
     path: 'wikipedia-sources-reliability-index',
     component: WikipediaSourcesReliabilityIndexComponent,
     data: { name: 'Wikipedia Sources Reliability Index' }
+  },
+  {
+    path: 'languages-of-india',
+    component: LanguagesOfIndiaComponent,
+    data: { name: 'Languages of India' }
   },
   {
     path: 'delhi-aqi-during-diwali-season',
@@ -93,7 +106,8 @@ export let AppInjector: Injector;
     StockMarketComponent,
     MegaProjectsComponent,
     CompletionYearPipe,
-    BirthsAndDeathsComponent
+    BirthsAndDeathsComponent,
+    LanguagesOfIndiaComponent
   ],
   imports: [
     BrowserModule,

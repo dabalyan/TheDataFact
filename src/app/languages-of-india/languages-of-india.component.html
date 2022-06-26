@@ -1,0 +1,24 @@
+<header>
+  <h1>
+    Number of speakers per language in India (2011 Census)<a
+    appSourceRef="https://en.wikipedia.org/wiki/2011_Census_of_India"></a>
+  </h1>
+  <h4>(% is out of total population)</h4>
+</header>
+
+<highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="combinedStackedChartsConfig"
+></highcharts-chart>
+
+<section class="charts">
+  <highcharts-chart
+    *ngFor="let config of allChartsConfig"
+    [Highcharts]="Highcharts"
+    [options]="config"
+  ></highcharts-chart>
+</section>
+
+<footer style="justify-self: right;margin-bottom: 1em; text-align: right">
+  Source: https://en.wikipedia.org/wiki/Languages_of_India
+</footer>

@@ -61,14 +61,14 @@ const defaultChartConfig = (): Highcharts.Options => ({
     gridLineWidth: SIZE_MULTIPLIER,
     labels: {
       style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
+        fontSize: SIZE_MULTIPLIER * 16 + 'px',
         fontWeight: '400',
       },
     },
     opposite: true,
     title: {
       style: {
-        fontSize: SIZE_MULTIPLIER * 14 + 'px',
+        fontSize: SIZE_MULTIPLIER * 16 + 'px',
         fontWeight: '400',
       },
     }
@@ -79,8 +79,9 @@ const defaultChartConfig = (): Highcharts.Options => ({
     showLastLabel: true,
     labels: {
       style: {
-        fontSize: SIZE_MULTIPLIER * 13 + 'px',
+        fontSize: SIZE_MULTIPLIER * 16 + 'px',
         fontWeight: '400',
+        color: '#000'
       },
     }
   },
@@ -94,7 +95,8 @@ const defaultChartConfig = (): Highcharts.Options => ({
     layout: 'horizontal',
     verticalAlign: 'bottom',
     itemStyle: {
-      fontSize: SIZE_MULTIPLIER * 14 + 'px',
+      color: '#000',
+      fontSize: SIZE_MULTIPLIER * 16 + 'px',
       fontWeight: '400',
     },
   }
@@ -105,7 +107,7 @@ const defaultMapConfig = (): Highcharts.Options => ({
   credits: {enabled: false},
   tooltip: {
     hideDelay: 0,
-    backgroundColor: 'rgba(255, 255, 255, .9)',
+    backgroundColor: 'rgba(255, 255, 255, .95)',
     borderColor: '#000',
     borderRadius: 8
   },

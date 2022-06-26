@@ -9,6 +9,7 @@ $borderColor: #bebebe;
 
   table {
     margin: 0;
+    animation: 0.8s verticalFlip forwards;
   }
 
   .buttons {
@@ -46,8 +47,6 @@ table {
     &:not(:last-child) td {
       border-bottom: .5px solid $borderColor;
     }
-
-    animation: 0.8s verticalFlip forwards;
   }
 
   th {
