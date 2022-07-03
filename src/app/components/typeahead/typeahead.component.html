@@ -1,0 +1,15 @@
+<label class="input-group">
+  <div class="input-box">
+    <span class="input-box-icon">🔍</span>
+    <input type="text"
+           placeholder="search"
+           (focusin)="toggleSearchResults(true)"
+           (keydown.escape)="toggleSearchResults(false)"
+           autofocus
+           ngModel
+           (ngModelChange)="search.emit($event)">
+  </div>
+  <ng-container *ngIf="showSearchResults">
+    <ng-content></ng-content>
+  </ng-container>
+</label>

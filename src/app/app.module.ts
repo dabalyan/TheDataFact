@@ -30,12 +30,19 @@ import { StockMarketComponent } from './stock-market/stock-market.component';
 import { CompletionYearPipe, MegaProjectsComponent } from './mega-projects/mega-projects.component';
 import { BirthsAndDeathsComponent } from './births-and-deaths/births-and-deaths.component';
 import { LanguagesOfIndiaComponent } from './languages-of-india/languages-of-india.component';
+import { SunriseAndSunsetComponent } from './sunrise-and-sunset/sunrise-and-sunset.component';
+import { TypeaheadComponent } from './components/typeahead/typeahead.component';
+import { SearchHighlightPipe } from './pipes/search-highlight.pipe';
 
 const routes: Routes = [
   {
     path: 'wikipedia-sources-reliability-index',
     component: WikipediaSourcesReliabilityIndexComponent,
     data: { name: 'Wikipedia Sources Reliability Index' }
+  },{
+    path: 'sunrise-and-sunset',
+    component: SunriseAndSunsetComponent,
+    data: { name: 'Sunrise and Sunset' }
   },
   {
     path: 'languages-of-india',
@@ -107,7 +114,10 @@ export let AppInjector: Injector;
     MegaProjectsComponent,
     CompletionYearPipe,
     BirthsAndDeathsComponent,
-    LanguagesOfIndiaComponent
+    LanguagesOfIndiaComponent,
+    SunriseAndSunsetComponent,
+    TypeaheadComponent,
+    SearchHighlightPipe
   ],
   imports: [
     BrowserModule,

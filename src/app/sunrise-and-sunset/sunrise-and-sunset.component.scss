@@ -1,0 +1,26 @@
+$multiplier: 1;
+$gap: min(30px, 3vw);
+
+app-sunrise-and-sunset {
+  header {
+    padding: min(8vh, 8vw);
+    padding-bottom: min(6vh, 6vw);
+  }
+
+  select {
+    max-width: 150px;
+  }
+
+  .search-result-symbol {
+    min-width: 5em !important;
+  }
+
+  highcharts-chart, .highcharts-container {
+    margin: auto;
+    display: block;
+    height: 90vh;
+    max-width: 98vw;
+    min-width: 300px;
+    flex-grow: 1;
+  }
+}

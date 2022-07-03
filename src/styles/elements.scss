@@ -6,25 +6,36 @@
   max-width: 1080px;
   margin: 1rem auto;
   gap: .3rem;
+}
 
-  .chip {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 0 .5rem;
-    background-color: rgb(222 222 222 / 60%);
-    border-radius: 3px;
+.chip {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: .3rem .5rem;
+  background-color: rgb(222 222 222 / 60%);
+  border-radius: 3px;
+  gap: .5em;
 
-    &--close-btn {
-      cursor: pointer;
-      margin: .2rem 0 .2rem .4rem;
-      background-color: rgb(0 0 0 / 5%);
-      border-radius: 1rem;
-      width: 1.2rem;
-      line-height: 1.2rem;
-      font-size: .8rem;
-      text-align: center;
-      color: #8f8f8f;
+  img {
+    width: 1.2em;
+    max-height: 1.2em;
+    vertical-align: middle;
+  }
+
+  &--close-btn {
+    cursor: pointer;
+    background-color: rgb(0 0 0 / 5%);
+    border-radius: 1rem;
+    flex-shrink: 0;
+    width: 1.2rem;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    text-align: center;
+    color: #8f8f8f;
+
+    &:hover {
+      background-color: rgb(0 0 0 / 10%);
     }
   }
 }
@@ -44,6 +55,12 @@
     outline: 2px solid var(--active-color);
     outline-offset: 2px;
   }
+}
+
+.country-flag {
+  width: 1.2em;
+  max-height: 1.2em;
+  vertical-align: middle;
 }
 
 .color-active {

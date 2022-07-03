@@ -35,27 +35,16 @@
       </select>
     </ng-container>
 
-    <label class="input-group">
-      <div class="input-box">
-        <span class="input-box-icon">🔍</span>
-        <input type="text"
-               placeholder="search"
-               (focusin)="showSearchResults = true"
-               (keydown.escape)="showSearchResults = false"
-               autofocus
-               ngModel
-               (ngModelChange)="onSearchInput($event)">
-      </div>
-
+    <app-typeahead (search)="onSearchInput($event)" [(showSearchResults)]="showSearchResults">
       <div class="search-results"
-           *ngIf="showSearchResults && searchResults?.length">
+           *ngIf="searchResults?.length">
         <div class="search-result"
              *ngFor="let item of searchResults"
              (click)="toggleSymbol(item.symbol); showSearchResults = false">
-          <span class="stock-symbol">{{item.symbol}}</span> <span class="stock-name">{{item.name}}</span>
+          <span class="search-result-symbol">{{item.symbol}}</span> <span class="search-result-label">{{item.name}}</span>
         </div>
       </div>
-    </label>
+    </app-typeahead>
   </div>
 
   <div class="chips">

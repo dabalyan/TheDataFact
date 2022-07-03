@@ -1,3 +1,11 @@
+.user-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
 .input-group {
   position: sticky;
   display: flex;

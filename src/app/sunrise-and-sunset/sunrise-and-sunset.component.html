@@ -1,0 +1,51 @@
+<header>
+  <h1>
+    Performance Comparison of Stocks, ETFs and Indices.<a
+    appSourceRef="https://finnhub.io"></a>
+  </h1>
+</header>
+
+<div class="user-input">
+  <select [(ngModel)]="selectedCountry">
+    <option value="">World</option>
+    <option *ngFor="let country of countries"
+            [value]="country[1]">{{country[0]}}</option>
+  </select>
+
+  <app-typeahead (search)="searchSubject.next($event)"
+                 [(showSearchResults)]="showSearchResults">
+    <div class="search-results"
+         *ngIf="searchResults?.length">
+      <div class="search-result"
+           *ngFor="let cityIndex of searchResults"
+           (click)="toggleCity(cityIndex); showSearchResults = false">
+      <span class="search-result-symbol">
+        <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{{cities[cityIndex][0] | lowercase}}.svg"
+             alt="">
+        {{cities[cityIndex][0]}}
+      </span>
+        <span class="search-result-label">
+          <span [innerHTML]="cities[cityIndex][1] | searchHighlight:(searchSubject | async)"></span>
+          <span>la: <b>{{cities[cityIndex][2] | number:'2.2-2'}}</b> ln: <b>{{cities[cityIndex][3] | number:'2.2-2'}}</b></span>
+        </span>
+      </div>
+    </div>
+  </app-typeahead>
+</div>
+
+<div class="chips">
+  <div class="chip"
+       *ngFor="let index of selectedCitiesIndices">
+    <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{{cities[index][0] | lowercase}}.svg"
+         [alt]="cities[index][0]"
+         [title]="cities[index][0]">
+    <span class="chip-symbol">{{cities[index][1]}}</span>
+    <span class="chip--close-btn"
+          (click)="toggleCity(index, true)">✖</span></div>
+</div>
+
+<highcharts-chart
+  *ngFor="let config of allChartsConfig"
+  [Highcharts]="Highcharts"
+  [options]="config"
+></highcharts-chart>

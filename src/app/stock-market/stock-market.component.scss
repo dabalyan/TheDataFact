@@ -14,65 +14,11 @@ app-stock-market {
 
   highcharts-chart {
     display: block;
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     height: 60vh;
     flex-grow: 1;
     min-width: min(400px, 96vw);
-  }
-
-  .user-input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .5rem;
-  }
-
-  .input-group {
-    margin: 0;
-    display: inline-flex;
-  }
-
-  .search-results {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 104%;
-    background-color: #fff;
-    width: 100%;
-    max-height: 40vh;
-    overflow: auto;
-    box-shadow: 0 0 3px 1px rgb(0 0 0 / 13%);
-    z-index: 1;
-
-    .search-result {
-      display: flex;
-      border-bottom: 1px solid rgba(0, 0, 0, .3);
-      cursor: pointer;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      &:hover {
-        background-color: #e0e0e0;
-      }
-
-      .stock-symbol {
-        display: inline-flex;
-        align-items: center;
-        min-width: 6em;
-        padding: .5em .6em;
-        background-color: #e0e0e0;
-        align-self: stretch;
-      }
-
-      .stock-name {
-        padding: .5em 1em;
-        word-break: break-word;
-      }
-    }
   }
 
   .no-token-content {
