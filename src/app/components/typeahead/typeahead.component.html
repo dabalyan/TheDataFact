@@ -2,7 +2,7 @@
   <div class="input-box">
     <span class="input-box-icon">🔍</span>
     <input type="text"
-           placeholder="search"
+           [placeholder]="placeholder"
            (focusin)="toggleSearchResults(true)"
            (keydown.escape)="toggleSearchResults(false)"
            autofocus

@@ -16,6 +16,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class TypeaheadComponent implements OnInit {
+  @Input() placeholder = 'search';
   @Input() showSearchResults: boolean;
   @Output() readonly showSearchResultsChange = new EventEmitter<boolean>();
   @Output() readonly search = new EventEmitter<string>();

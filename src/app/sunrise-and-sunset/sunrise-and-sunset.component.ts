@@ -1,59 +1,12 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 import {BehaviorSubject, map} from 'rxjs';
 import {debounceTime} from 'rxjs/operators';
 import {ActivatedRoute, Router} from '@angular/router';
 import {getTimes, GetTimesResult} from 'suncalc'
 import * as findTimeZone from 'tz-lookup';
-import * as Highcharts from 'highcharts';
-import {GenerateChartOptions} from '../utils/highcharts-helpers';
-import {COLORS} from '../app.meta';
 import {DateTime} from 'luxon';
 
-const generateChartOptions = (series, categories): Highcharts.Options =>
-  GenerateChartOptions({
-    chart: {
-      type: 'columnrange'
-    },
-    xAxis: {
-      type: 'category',
-      categories: categories.map(([index, country, city]) => city),
-      labels: {
-        useHTML: true,
-        formatter() {
-          const point = this;
-          return `<img class="country-flag"
-src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/${categories[point.pos][1].toLowerCase()}.svg" />
-<span>${point.value}</span>`;
-        }
-      }
-    },
-    yAxis: {
-      visible: false,
-      min: 0,
-      max: 24,
-      opposite: false,
-      title: {text: null}
-    },
-    legend: {
-      reversed: true,
-      verticalAlign: 'top',
-    },
-    plotOptions: {
-      columnrange: {
-        pointWidth: 42,
-        dataLabels: {
-          enabled: true,
-          useHTML: true,
-          inside: true,
-          formatter() {
-            const point = this;
-            return `<span style="font-size: 10px">${String(Math.floor(point.y)).padStart(2, '0')}:${String(Math.floor((point.y % 1) * 60)).padStart(2, '0')}</span>`;
-          },
-        }
-      }
-    },
-    series
-  });
+type CityData = [string, string, string, string];
 
 @Component({
   selector: 'app-sunrise-and-sunset',
@@ -61,11 +14,7 @@ src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/${cat
   styleUrls: ['./sunrise-and-sunset.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class SunriseAndSunsetComponent {
-  readonly Highcharts: typeof Highcharts = Highcharts;
-  allChartsConfig = [];
-  chart: Highcharts.Chart;
-
+export class SunriseAndSunsetComponent implements OnInit, OnDestroy {
   cities: string[][];
   countries: string[][] = [];
   selectedCountry = '';
@@ -74,7 +23,14 @@ export class SunriseAndSunsetComponent {
   showSearchResults = false;
   searchResults: number[] = [];
   selectedCitiesIndices: number[] = [];
-  selectedCitiesSunriseSunset: [number, string, string, string, string, GetTimesResult][];
+  selectedCitiesSunriseSunset: { index: string, city: CityData, times: GetTimesResult }[];
+
+  chartData;
+  readonly startDate = DateTime.now().setZone('utc').startOf('year');
+  readonly todayDate = DateTime.now().setZone('utc').startOf('day');
+  selectedDate;
+  dayOfYearOffset = 0;
+  intervalRef;
 
   readonly searchResultsStream = this.searchSubject
                                      .pipe(
@@ -87,6 +43,8 @@ export class SunriseAndSunsetComponent {
   }
 
   async ngOnInit(): Promise<void> {
+    document.body.classList.add('flex-app');
+
     await this.fetchCities();
 
     this.route.queryParams.subscribe(() => {
@@ -100,44 +58,47 @@ export class SunriseAndSunsetComponent {
     }
 
     const queryParams = this.route.snapshot.queryParams;
-    const preselected = `74547,19195,61207,98948,30179,64252,11832,91686,16406,43123,36830,77724,53545,91055,39831,50542,109921,66954,102484,118404,76355,4832,59481,16,32275,139919,75801,88342,114603,140046,113328,22084,81382,121570`;
+    let preselected = `74547,19195,61207,98948,30179,64252,43123,36830,77724,53545,50542,109921,66954,102484,118404,76355,16,32275,139919,75801,88342,113328,81382,121570,59481,14089,5720,91503,13055`;
+    preselected = `74547,19195,61207,30179,64252,43123,53545,50542,109921,66954,118404,76355,16,139919,113328,121570,14089,5720,13055,36830`;
     const queryCities = (queryParams['cities']?.trim() || preselected)
       .split(',')
       .map(s => isNaN(Number(s)) ? null : Number(s)) as number[];
 
     this.selectedCitiesIndices = [...new Set(queryCities)];
-    this.generateSunriseSunset();
+    this.generateChartData();
 
-    const sunriseAndSunsetSeries = {name: 'Sunrise and Sunset', data: [], color: COLORS[0]};
+    if (this.intervalRef) {
+      return;
+    }
+    setTimeout(() => {
+      this.autoPlay();
+    }, 2000);
+  }
 
-    const selectedCitiesBySunrise = this.selectedCitiesSunriseSunset.map((city) => {
-      const tz = findTimeZone(+city[3], +city[4]);
-      const sunrise = DateTime.fromJSDate(city[5].sunrise).setZone(tz);
-      const sunset = DateTime.fromJSDate(city[5].sunset).setZone(tz);
-      return [city, sunrise, sunset] as [any, DateTime, DateTime];
-    }).sort((a, b) => a[0][4] - b[0][4]);
+  dayChangedByUser(offset: string): void {
+    this.stopAutoPlaying();
+    this.dayOfYearOffset = +offset;
+    this.generateChartData();
+  }
 
-    selectedCitiesBySunrise.forEach(([city, sunrise, sunset]) => {
-      sunriseAndSunsetSeries.data.push([
-        +(sunrise.hour + sunrise.minute / 60).toFixed(2),
-        +(sunset.hour + sunset.minute / 60).toFixed(2)
-      ]);
-    });
+  autoPlay(): void {
+    this.stopAutoPlaying();
+    this.intervalRef = setInterval(() => {
+      this.generateChartData();
+      this.dayOfYearOffset += 1;
+      this.dayOfYearOffset %= 365;
+    }, 300);
+  }
 
-    this.allChartsConfig = [];
+  stopAutoPlaying(): void {
+    if (this.intervalRef) {
+      clearInterval(this.intervalRef);
+      this.intervalRef = null;
+    }
+  }
 
-    [
-      sunriseAndSunsetSeries
-    ].forEach(dataSeries => {
-      dataSeries = {...dataSeries};
-
-      this.allChartsConfig.push(
-        generateChartOptions(
-          [dataSeries],
-          selectedCitiesBySunrise.map(([[index, country, city]]) => [index, country, city])
-        )
-      );
-    });
+  identifyItem(index, item): void {
+    return item.index;
   }
 
   async fetchCities() {
@@ -163,12 +124,36 @@ export class SunriseAndSunsetComponent {
       .filter(([name, code]) => name && code);
   }
 
+  generateChartData(): void {
+    this.generateSunriseSunset();
+
+    const padTime = hourMinute => String(hourMinute).padStart(2, '0');
+
+    this.chartData =
+      this.selectedCitiesSunriseSunset
+          .map(({index, city, times}) => {
+            const tz = findTimeZone(+city[2], +city[3]);
+            const sunrise = DateTime.fromJSDate(times.sunrise).setZone(tz);
+            const sunset = DateTime.fromJSDate(times.sunset).setZone(tz);
+            return [index, city, sunrise, sunset] as [string, CityData, DateTime, DateTime];
+          })
+          .sort((a, b) => +a[1][2] - +b[1][2])
+          .map(
+            ([index, city, sunrise, sunset]) => {
+              const startPos = 100 * (sunrise.hour * 60 + sunrise.minute) / (24 * 60);
+              const endPos = 100 * (sunset.hour * 60 + sunset.minute) / (24 * 60);
+              const sunriseTime = padTime(sunrise.hour) + ':' + padTime(sunrise.minute);
+              const sunsetTime = padTime(sunset.hour) + ':' + padTime(sunset.minute);
+              return {index, city, startPos, endPos: endPos < startPos ? 100 : endPos, sunriseTime, sunsetTime};
+            });
+  }
+
   generateSunriseSunset(): void {
-    const utcDateZeroTime = DateTime.now().setZone('utc').startOf('day').toJSDate();
+    const utcDateZeroTime = this.selectedDate = this.startDate.plus({days: this.dayOfYearOffset}).toJSDate();
 
     this.selectedCitiesSunriseSunset = this.selectedCitiesIndices.map(index => {
       const city = this.cities[index];
-      return [index, ...city, getTimes(utcDateZeroTime, +city[2], +city[3])] as any;
+      return {index, city, times: getTimes(utcDateZeroTime, +city[2], +city[3])} as any;
     });
   }
 
@@ -216,5 +201,10 @@ export class SunriseAndSunsetComponent {
       queryParamsHandling: 'merge',
       replaceUrl: true
     })
+  }
+
+  ngOnDestroy(): void {
+    document.body.classList.remove('flex-app');
+    this.stopAutoPlaying();
   }
 }

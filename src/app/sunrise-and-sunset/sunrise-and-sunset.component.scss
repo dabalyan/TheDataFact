@@ -2,9 +2,13 @@ $multiplier: 1;
 $gap: min(30px, 3vw);
 
 app-sunrise-and-sunset {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 46px);
+
   header {
-    padding: min(8vh, 8vw);
-    padding-bottom: min(6vh, 6vw);
+    padding: min(4vh, 4vw);
+    padding-bottom: min(3vh, 3vw);
   }
 
   select {
@@ -15,12 +19,72 @@ app-sunrise-and-sunset {
     min-width: 5em !important;
   }
 
-  highcharts-chart, .highcharts-container {
-    margin: auto;
-    display: block;
-    height: 90vh;
-    max-width: 98vw;
-    min-width: 300px;
+  .sunrise-sunset-chart {
+    display: flex;
+    margin-top: 2rem;
     flex-grow: 1;
+    gap: 0px;
+    height: 100%;
+    overflow: auto;
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      flex-grow: 1;
+      min-width: 40px;
+      gap: 2px;
+
+      &-head {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        align-items: center;
+        height: 10rem;
+        word-break: break-word;
+        font-size: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &__label {
+          writing-mode: vertical-rl;
+          line-height: .8;
+        }
+      }
+
+      &-piller {
+        flex-grow: 1;
+        flex-shrink: 0;
+        position: relative;
+
+        &__inner {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          left: 0;
+          right: 0;
+          color: #fff;
+          //--dark-color: rgb(0 0 0 / 42%);
+          --dark-color: rgb(205 135 135 / 63%);
+          --bright-color: #fdff77;
+          //--bright-color: #fff;
+          background: linear-gradient(0, var(--dark-color), var(--bright-color), var(--dark-color));
+          transition: .3s linear;
+
+          > img {
+            width: 2em;
+            max-height: 2em;
+          }
+
+          > span {
+            background-color: rgba(50 50 50 / 10%);
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }

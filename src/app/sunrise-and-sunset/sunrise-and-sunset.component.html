@@ -1,18 +1,19 @@
 <header>
   <h1>
-    Performance Comparison of Stocks, ETFs and Indices.<a
-    appSourceRef="https://finnhub.io"></a>
+    Sunrise and sunset timings{{selectedDate ? ' on ' : '.'}} {{selectedDate | date:'MMM dd, y'}}
   </h1>
 </header>
 
 <div class="user-input">
   <select [(ngModel)]="selectedCountry">
+    <option disabled>Search Cities In</option>
     <option value="">World</option>
     <option *ngFor="let country of countries"
             [value]="country[1]">{{country[0]}}</option>
   </select>
 
-  <app-typeahead (search)="searchSubject.next($event)"
+  <app-typeahead placeholder="Search Cities"
+                 (search)="searchSubject.next($event)"
                  [(showSearchResults)]="showSearchResults">
     <div class="search-results"
          *ngIf="searchResults?.length">
@@ -31,21 +32,40 @@
       </div>
     </div>
   </app-typeahead>
+
+  <select style="width: 5em" [ngModel]="dayOfYearOffset"
+          (ngModelChange)="dayChangedByUser($event)">
+    <option disabled>Day of Year</option>
+    <option *ngFor="let day of [].constructor(365); let i = index"
+            [value]="i">{{i + 1}}</option>
+  </select>
+
+  <button (click)="intervalRef ? stopAutoPlaying(): autoPlay()">{{intervalRef ? '■ STOP' : '▶ PLAY'}}</button>
 </div>
 
-<div class="chips">
-  <div class="chip"
-       *ngFor="let index of selectedCitiesIndices">
-    <img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{{cities[index][0] | lowercase}}.svg"
-         [alt]="cities[index][0]"
-         [title]="cities[index][0]">
-    <span class="chip-symbol">{{cities[index][1]}}</span>
-    <span class="chip--close-btn"
-          (click)="toggleCity(index, true)">✖</span></div>
-</div>
-
-<highcharts-chart
-  *ngFor="let config of allChartsConfig"
-  [Highcharts]="Highcharts"
-  [options]="config"
-></highcharts-chart>
+<section class="sunrise-sunset-chart">
+  <div *ngFor="let item of chartData; trackBy:identifyItem"
+       class="sunrise-sunset-chart-column">
+    <div class="sunrise-sunset-chart-column-head">
+       <span class="chip--close-btn"
+             (click)="toggleCity(item.index, true)">✖</span>
+      <img class="country-flag"
+           src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{{item.city[0] | lowercase}}.svg"
+           [alt]="item.city[0]"
+           [title]="item.city[0]"/>
+      <span class="sunrise-sunset-chart-column-head__label">{{item.city[1]}}</span>
+    </div>
+    <div class="sunrise-sunset-chart-column-piller">
+      <div class="sunrise-sunset-chart-column-piller__inner"
+           [style.bottom]="item.startPos + '%'"
+           [style.top]="(100 - item.endPos) + '%'">
+        <span>{{item.sunsetTime}}</span>
+        <img class="country-flag"
+             src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/{{item.city[0] | lowercase}}.svg"
+             [alt]="item.city[0]"
+             [title]="item.city[0]"/>
+        <span>{{item.sunriseTime}}</span>
+      </div>
+    </div>
+  </div>
+</section>

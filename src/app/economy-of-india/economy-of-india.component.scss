@@ -14,8 +14,8 @@ app-economy-of-india {
   gap: $gap;
 
   header {
-    padding: min(8vh, 8vw);
-    padding-bottom: calc(min(8vh, 8vw) - #{$gap});
+    padding: min(3vh, 3vw);
+    padding-bottom: calc(min(6vh, 6vw) - #{$gap});
   }
 
   highcharts-chart {
