@@ -133,11 +133,7 @@ const defaultMapConfig = (): Highcharts.Options => ({
     },
   },
   legend: {
-    enabled: true,
-    align: 'right',
-    verticalAlign: 'top',
-    x: -200,
-    y: 100
+    enabled: true
   },
   colors: ['#f5fffa'],
   colorAxis: {

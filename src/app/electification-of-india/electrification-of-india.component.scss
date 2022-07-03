@@ -26,13 +26,15 @@ app-electrification-of-india {
     min-width: min(400px, 96vw);
 
     &.map-chart {
-      max-width: $multiplier * 800px;
+      max-width: $multiplier * 680px;
       height: unset;
     }
   }
 
   .sub-nav {
     position: relative;
+    font-size: 12px;
+    margin-top: -16px;
   }
 
   .india-at-night {
