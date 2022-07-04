@@ -1,108 +1,1463 @@
 export const INVASION_IMAGES = () => [
   {
-    "date": "2022-03-22T09:56:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Added front and dates in Sumy, Zaporozhye, Kherson, Chernihiv regions, DPR and LPR. Bugs fixed."
+    'date': '2022-07-03T23:49:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/4/4f/2022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Lysychansk and all of Luhansk are captured according to latest ISW interactive map: https://storymaps.arcgis.com/stories/36a7f6a6f5a9448496de641cf64bd375'
   },
   {
-    "date": "2022-03-22T09:52:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322095613%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Kherson region is completely under the control of Russia. Source: https://t.me/istorijaoruzija/43889; The advance of the troops of the Luhansk PR in the area of Popasna. Popasna is under the control of the Luhansk PR and Russia. The advance of the troops of the Donetsk PR and Russia in the Maryinka area. The transition of the territory under the control of the DPR and Russia. Source: https://t.me/istorijaoruzija/46994; Added front and dates in Sumy, Zaporozhye, Kherson, Chernihiv regions, DPR..."
+    'date': '2022-07-02T04:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220703234936%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per Detailed Map & ISW'
   },
   {
-    "date": "2022-03-21T16:23:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322095251%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "The front was added and the main front was merged in the Kharkiv region."
+    'date': '2022-06-30T09:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220702045545%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update Snake Island https://www.bbc.com/news/live/world-europe-61987663'
   },
   {
-    "date": "2022-03-21T10:42:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321162352%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Curve advance arrows for Voznesensk & Izium"
+    'date': '2022-06-28T19:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220630092243%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
   },
   {
-    "date": "2022-03-21T03:02:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321104201%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Added more cities. Especially inside Russian controlled areas."
+    'date': '2022-06-28T13:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220628194417%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Corrected Spelling of Huiliapole'
   },
   {
-    "date": "2022-03-20T22:52:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321030215%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "added naval bases with anchor logo"
+    'date': '2022-06-28T03:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220628134827%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
   },
   {
-    "date": "2022-03-20T20:44:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320225216%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Fix scale"
+    'date': '2022-06-26T04:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220628030355%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
   },
   {
-    "date": "2022-03-20T18:54:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320204426%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Changed a few bugs."
+    'date': '2022-06-25T22:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220626045553%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'removed arrow'
   },
   {
-    "date": "2022-03-20T18:02:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320185414%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Under the control of Russia and the Luhansk PR is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295; Vuhledar under the control of Russia and Donetsk PR. Source: https://ru.m.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%80; Added exact dates, added front."
+    'date': '2022-06-25T21:57:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625220005%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
   },
   {
-    "date": "2022-03-20T17:55:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320180230%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Under the control of Russia and the Luhansk People's Republic is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295"
+    'date': '2022-06-25T19:40:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625215741%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added Pryvillya and Novodruzhesk'
   },
   {
-    "date": "2022-03-20T15:39:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320175504%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Shevchenkove and Bohdanivka under Russian control. Source: https://www.france24.com/en/live-news/20220309-russian-tanks-advance-towards-kyiv-from-east. Fixed the border around Mariupol according to this map: https://commons.wikimedia.org/wiki/File:Situation_in_Mariupol.svg"
+    'date': '2022-06-25T17:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625194048%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Sievierodonetsk falls to the Russians'
   },
   {
-    "date": "2022-03-20T08:26:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320123839%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for tr."
+    'date': '2022-06-25T13:58:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625174412%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Missed a bit'
   },
   {
-    "date": "2022-03-20T00:13:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320082610%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/"
+    'date': '2022-06-25T13:53:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625135840%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
   },
   {
-    "date": "2022-03-19T23:44:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320001353%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Changed frontlines near Mykolaiv in order to match the announcments from the Ukrainian government saying where the Russian troops have stopped. https://t.me/spravdi/2867"
+    'date': '2022-06-25T13:30:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625135352%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Corrected date at Zolote, added Hirske'
   },
   {
-    "date": "2022-03-19T21:14:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319234431%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru."
+    'date': '2022-06-24T13:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220625133029%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Made file parity detailed map, minus Sievierodonetsk'
   },
   {
-    "date": "2022-03-19T21:09:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319211421%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru."
+    'date': '2022-06-23T21:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220624134509%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW & detailed map'
   },
   {
-    "date": "2022-03-19T21:07:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319210932%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru."
+    'date': '2022-06-22T22:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220623213330%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
   },
   {
-    "date": "2022-03-19T16:42:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319210711%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for es."
+    'date': '2022-06-21T04:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220622221551%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'remove 3 zh-hant in id=switch22876-5'
   },
   {
-    "date": "2022-03-20T18:02:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321030215%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Under the control of Russia and the Luhansk PR is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295; Vuhledar under the control of Russia and Donetsk PR. Source: https://ru.m.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%80; Added exact dates, added front."
+    'date': '2022-06-21T03:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220621042041%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'zh_HANT → zh-hant; OK to overwrite if you just edited the file'
   },
   {
-    "date": "2022-03-20T15:39:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320175504%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Shevchenkove and Bohdanivka under Russian control. Source: https://www.france24.com/en/live-news/20220309-russian-tanks-advance-towards-kyiv-from-east. Fixed the border around Mariupol according to this map: https://commons.wikimedia.org/wiki/File:Situation_in_Mariupol.svg"
+    'date': '2022-06-20T20:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220621033448%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates in Kharkiv Oblast per ISW'
   },
   {
-    "date": "2022-03-20T00:13:00.000Z",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320082610%212022_Russian_invasion_of_Ukraine.svg",
-    "comment": "Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/"
+    'date': '2022-06-20T05:36:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220620203733%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-hant.'
+  },
+  {
+    'date': '2022-06-20T05:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220620053637%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-tw.'
+  },
+  {
+    'date': '2022-06-20T05:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220620053355%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-tw.'
+  },
+  {
+    'date': '2022-06-19T01:17:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220620052016%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW & detailed map'
+  },
+  {
+    'date': '2022-06-17T01:38:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220619011757%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW, improved frontline details around Popasna & Kharkiv'
+  },
+  {
+    'date': '2022-06-16T14:51:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220617013847%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-06-16T14:46:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220616145124%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-06-16T04:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220616144608%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-hant.'
+  },
+  {
+    'date': '2022-06-14T22:49:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220616040501%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW & detailed map'
+  },
+  {
+    'date': '2022-06-14T13:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220614224910%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Labels style (first letter capital was missing for a few ones)'
+  },
+  {
+    'date': '2022-06-14T01:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220614134404%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW & detailed map'
+  },
+  {
+    'date': '2022-06-09T01:11:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220614012909%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
+  },
+  {
+    'date': '2022-06-07T22:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220609011100%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates across the front per ISW'
+  },
+  {
+    'date': '2022-06-07T13:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220607220659%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-cn.'
+  },
+  {
+    'date': '2022-06-07T00:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220607130550%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Very minor updates in Donbas per ISW'
+  },
+  {
+    'date': '2022-06-06T00:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220607003720%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
+  },
+  {
+    'date': '2022-06-05T20:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220606004544%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-06-05T01:23:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220605200511%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added date'
+  },
+  {
+    'date': '2022-06-05T00:59:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220605012358%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Minor updates per ISW'
+  },
+  {
+    'date': '2022-06-04T23:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220605005904%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'delete dup langtags; lowercase langtags; fix dates; OK to lose this version; edit can be redone in a couple minutes'
+  },
+  {
+    'date': '2022-06-04T04:23:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220604232245%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Minor adjustments to be more accurate to ISW map + improved tracing along Donets west of Izyum'
+  },
+  {
+    'date': '2022-06-04T00:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220604042259%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates around Izyum per ISW'
+  },
+  {
+    'date': '2022-06-03T19:16:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220604000227%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-06-03T17:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220603191608%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added the settlements Davydiv Brid & Sviatohirsk'
+  },
+  {
+    'date': '2022-06-03T16:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220603172159%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates per ISW'
+  },
+  {
+    'date': '2022-06-01T14:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220603164239%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ko.'
+  },
+  {
+    'date': '2022-06-01T14:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220601145224%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ko.'
+  },
+  {
+    'date': '2022-05-31T23:16:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220601144802%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Frontline updates per ISW. Discussion on talk page agreed that Lyman should be set as Russian controlled. Please do not revert it back to contested.'
+  },
+  {
+    'date': '2022-05-31T15:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220531231611%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-30T16:59:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220531150346%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-05-30T03:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530165901%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Corrected name of newly added settlement'
+  },
+  {
+    'date': '2022-05-30T03:11:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530031146%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Corrected name of newly added settlement'
+  },
+  {
+    'date': '2022-05-30T02:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530031101%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix positioning on 19 May date; kill extraneous style info'
+  },
+  {
+    'date': '2022-05-30T02:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530024241%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'zh_ → zh-; del duplicate zh; minor style fixes'
+  },
+  {
+    'date': '2022-05-30T00:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530022928%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added dates'
+  },
+  {
+    'date': '2022-05-30T00:10:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530005222%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Frontline updates per ISW. New counterattack added in Kherson Oblast.'
+  },
+  {
+    'date': '2022-05-29T19:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220530001021%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'There is no independent confirmation of the end of hostilities in Lyman.'
+  },
+  {
+    'date': '2022-05-29T15:53:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220529190308%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-29T09:31:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220529155339%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ka.'
+  },
+  {
+    'date': '2022-05-29T00:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220529093141%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Removed piece of text that bugged the map'
+  },
+  {
+    'date': '2022-05-29T00:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220529005558%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Very minor frontline changes per ISW. Updated control of Ternova and Zolote per detailed map'
+  },
+  {
+    'date': '2022-05-28T09:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220529005210%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for vi.'
+  },
+  {
+    'date': '2022-05-27T21:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220528090035%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-27T16:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220527214821%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update Donbas'
+  },
+  {
+    'date': '2022-05-27T10:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220527160306%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-27T04:32:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220527101902%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-hant.'
+  },
+  {
+    'date': '2022-05-27T04:25:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220527043222%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-hant.'
+  },
+  {
+    'date': '2022-05-26T16:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220527042508%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'change one zh_HANT to zh-HANT // Editing SVG source code using c:User:Rillke/SVGedit.js'
+  },
+  {
+    'date': '2022-05-26T10:50:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526162835%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-tw.'
+  },
+  {
+    'date': '2022-05-26T10:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526105047%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-tw.'
+  },
+  {
+    'date': '2022-05-26T10:43:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526104852%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-hant.'
+  },
+  {
+    'date': '2022-05-26T09:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526104318%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for zh-hant.'
+  },
+  {
+    'date': '2022-05-26T01:49:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526093341%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-05-26T01:35:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526014903%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Minor frontline changes per ISW & the detailed map. I added two towns in Kharkiv Oblast that have gone back and forth between Russian & Ukrainian control in the last week.'
+  },
+  {
+    'date': '2022-05-24T03:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220526013535%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Updates to frontline around Sievierodonetsk per ISW, added symbol for Azovstal.'
+  },
+  {
+    'date': '2022-05-21T23:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220524034810%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Per the ISW, all remaining defenders in Mariupol & Azovstal have surrendered and all hostilities have ceased. Russia has full control of the city.'
+  },
+  {
+    'date': '2022-05-20T00:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220521234542%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Forgot to move arrow'
+  },
+  {
+    'date': '2022-05-20T00:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220520003319%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Frontline changes per ISW, Set Mariupol back to contested, considering not all Azovstal fighters have surrendered, but Russia still has de facto control of the facility. We should really have a different symbol for Azovstal going forward.'
+  },
+  {
+    'date': '2022-05-19T08:12:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220520002904%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Corrected color of Mariupol date'
+  },
+  {
+    'date': '2022-05-18T16:46:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220519081208%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'delete one date rect; move second underneath an orphan 22 April label'
+  },
+  {
+    'date': '2022-05-18T16:32:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220518164648%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix mistranslated dates; kill zombie switch; still 3 errors'
+  },
+  {
+    'date': '2022-05-17T09:08:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220518163227%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'According to most major news outlets, Ukraine is evacuating all remaining Azovstal defenders and has ceded full control of Mariupol, and Azovstal, to the Russians'
+  },
+  {
+    'date': '2022-05-17T03:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220517090831%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ko.'
+  },
+  {
+    'date': '2022-05-16T09:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220517030257%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-05-16T07:47:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220516091952%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-05-15T21:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220516074741%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-05-15T21:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515213445%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-05-15T21:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515212842%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-05-15T12:43:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515210510%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for lt.'
+  },
+  {
+    'date': '2022-05-15T03:09:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515124337%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix Georgian scale 20'
+  },
+  {
+    'date': '2022-05-15T03:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515030957%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'another bad Georgian date'
+  },
+  {
+    'date': '2022-05-15T03:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515030335%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix Georgian date 6 აპრილი != 6 მაისი'
+  },
+  {
+    'date': '2022-05-15T02:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515030016%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'flatten place names; correct date translations'
+  },
+  {
+    'date': '2022-05-15T01:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515025253%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-05-14T19:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220515010750%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Reverting Rubizhne to contested as discussion on talk page thinks more confirmation is needed before changing.'
+  },
+  {
+    'date': '2022-05-14T19:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220514195524%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ka.'
+  },
+  {
+    'date': '2022-05-14T12:58:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220514190550%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ka.'
+  },
+  {
+    'date': '2022-05-14T03:36:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220514125844%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ko.'
+  },
+  {
+    'date': '2022-05-13T23:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220514033638%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for it.'
+  },
+  {
+    'date': '2022-05-13T23:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513235251%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Rubizhne captured by Russians per detailed map & other small frontline changes per ISW'
+  },
+  {
+    'date': '2022-05-13T11:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513234812%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-13T05:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513114205%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-05-13T04:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513055549%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'remove bad translations'
+  },
+  {
+    'date': '2022-05-13T03:30:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513040036%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix some text; remove some style attributes'
+  },
+  {
+    'date': '2022-05-13T00:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513033057%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bug Fixed'
+  },
+  {
+    'date': '2022-05-13T00:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513001552%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bug Fixed'
+  },
+  {
+    'date': '2022-05-12T23:51:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220513000328%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update to the Kharkiv frontline per ISW. I also added two settlements nearby said frontline to add more context.'
+  },
+  {
+    'date': '2022-05-12T14:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220512235107%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bugs fixed.'
+  },
+  {
+    'date': '2022-05-12T13:59:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220512140707%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bugs and port of Mariupol fixed.'
+  },
+  {
+    'date': '2022-05-12T10:11:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220512135921%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bugs fixed.'
+  },
+  {
+    'date': '2022-05-11T07:04:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220512101101%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-09T02:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220511070445%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Popasna captured by the Russians per ISW & detailed map'
+  },
+  {
+    'date': '2022-05-08T17:01:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220509024843%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-05-08T00:25:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220508170112%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update front lines, particularly near Kharkiv and Lyman, per detailed map'
+  },
+  {
+    'date': '2022-05-03T03:36:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220508002530%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Rubizhne fix'
+  },
+  {
+    'date': '2022-04-29T18:56:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220503033631%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fixed arrows'
+  },
+  {
+    'date': '2022-04-29T16:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220429185619%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-04-29T16:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220429160509%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fixed'
+  },
+  {
+    'date': '2022-04-29T04:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220429160039%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'remove rotations; distribute class="place" and font-size'
+  },
+  {
+    'date': '2022-04-29T04:09:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220429044223%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'patch legend symbol'
+  },
+  {
+    'date': '2022-04-27T12:14:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220429040922%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix legend'
+  },
+  {
+    'date': '2022-04-26T22:30:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220427121428%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-04-26T18:59:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426223058%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for uk.'
+  },
+  {
+    'date': '2022-04-26T16:09:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426185938%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fixed arrows'
+  },
+  {
+    'date': '2022-04-26T14:18:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426160949%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-26T13:31:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426141819%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update North West Kherson'
+  },
+  {
+    'date': '2022-04-26T09:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426095450%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for el.'
+  },
+  {
+    'date': '2022-04-26T06:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426090534%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'minor grouping and order'
+  },
+  {
+    'date': '2022-04-26T05:57:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426065236%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'repair damaged 1 April switch. use symbol and style for new labels'
+  },
+  {
+    'date': '2022-04-26T05:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426055735%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'symbol for contested city'
+  },
+  {
+    'date': '2022-04-26T04:25:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426050054%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'remove dup legend'
+  },
+  {
+    'date': '2022-04-25T23:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220426042539%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fixed all arrows according to progress and roads'
+  },
+  {
+    'date': '2022-04-25T06:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220425234416%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-24T11:13:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220425062225%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Modify the colors per the discussion at the English Wiki talk page.'
+  },
+  {
+    'date': '2022-04-24T00:31:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220424111356%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'small fixes in layer shifts'
+  },
+  {
+    'date': '2022-04-23T23:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220424003124%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update front lines, particularly in Kharkiv & Donetsk oblasts, per Detailed Map. Please can someone check that date translations, layers etc. are correct?'
+  },
+  {
+    'date': '2022-04-23T17:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423230259%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-23T16:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423172025%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix the broken capture dates in Izium, Kreminna and in the legend.'
+  },
+  {
+    'date': '2022-04-23T14:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423161555%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for vi.'
+  },
+  {
+    'date': '2022-04-23T05:09:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423140722%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'use date symbol and date class in map legend'
+  },
+  {
+    'date': '2022-04-23T03:54:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423050944%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Add font fallbacks.'
+  },
+  {
+    'date': '2022-04-23T01:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423035424%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix some city colors; soften ru-controlled city borders'
+  },
+  {
+    'date': '2022-04-23T00:18:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423010320%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'remove spurious switch clauses'
+  },
+  {
+    'date': '2022-04-23T00:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423001814%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'add systemLanguage="en" to place names'
+  },
+  {
+    'date': '2022-04-22T21:51:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220423000525%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for vi.'
+  },
+  {
+    'date': '2022-04-22T21:50:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220422215120%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fixes'
+  },
+  {
+    'date': '2022-04-22T21:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220422215043%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '+ cities names'
+  },
+  {
+    'date': '2022-04-22T20:24:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220422213408%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-22T19:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220422202423%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-22T18:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220422192815%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-21T18:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220422182802%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for en.'
+  },
+  {
+    'date': '2022-04-21T18:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421184201%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for it.'
+  },
+  {
+    'date': '2022-04-21T17:26:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421183917%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix 2 cities and delete extraneous parameter'
+  },
+  {
+    'date': '2022-04-21T17:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421172610%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'raise cities to toplevel; outline Ru-controlled cities; consistent colors with class=cityru or cityuk'
+  },
+  {
+    'date': '2022-04-21T16:17:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421171946%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for it.'
+  },
+  {
+    'date': '2022-04-21T16:16:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421161702%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-04-21T16:12:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421161607%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-04-21T16:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421161218%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ca.'
+  },
+  {
+    'date': '2022-04-20T22:17:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220421160250%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for el.'
+  },
+  {
+    'date': '2022-04-20T12:56:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420221735%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for pt.'
+  },
+  {
+    'date': '2022-04-20T09:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420125610%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T09:10:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420093436%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-20T09:06:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420091010%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T08:58:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420090644%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T08:38:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420085812%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T08:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420083808%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T08:11:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420082824%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '+some cities in Russian'
+  },
+  {
+    'date': '2022-04-20T07:54:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420081116%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T07:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420075424%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T07:18:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420073919%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-20T02:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420071833%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for es.'
+  },
+  {
+    'date': '2022-04-20T01:27:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420020529%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for es.'
+  },
+  {
+    'date': '2022-04-19T20:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220420012740%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-19T19:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419203733%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-19T18:37:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419190253%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-19T18:25:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419183738%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for fr.'
+  },
+  {
+    'date': '2022-04-19T15:43:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419182516%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix bad coordinate'
+  },
+  {
+    'date': '2022-04-19T11:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419154307%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update Kreminna, https://www.reuters.com/world/europe/russian-forces-seize-city-kreminna-east-ukraine-regional-governor-says-2022-04-19/'
+  },
+  {
+    'date': '2022-04-19T04:21:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419111550%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'sea ports as symbols'
+  },
+  {
+    'date': '2022-04-19T03:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419042147%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'outline nuclear plants; remove gradient on Russian controlled plant'
+  },
+  {
+    'date': '2022-04-18T22:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220419034424%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'dates now use text-anchor="middle"'
+  },
+  {
+    'date': '2022-04-18T21:40:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418221531%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'work on centering date text'
+  },
+  {
+    'date': '2022-04-18T20:04:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418214056%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-04-18T19:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418200424%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for it.'
+  },
+  {
+    'date': '2022-04-18T16:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418194519%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for it.'
+  },
+  {
+    'date': '2022-04-18T15:32:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418163337%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for it.'
+  },
+  {
+    'date': '2022-04-18T05:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418153241%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'pair label boxes and their dates in preparation for centering text'
+  },
+  {
+    'date': '2022-04-18T03:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418053328%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'center some text; group labels; use symbols'
+  },
+  {
+    'date': '2022-04-17T11:01:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220418032023%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for tr.'
+  },
+  {
+    'date': '2022-04-17T05:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220417110157%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'air base with symbols'
+  },
+  {
+    'date': '2022-04-17T01:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220417050501%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'finish French dates'
+  },
+  {
+    'date': '2022-04-17T00:24:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220417012939%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'half fr dates fixed'
+  },
+  {
+    'date': '2022-04-16T23:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220417002408%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'cleaning up language - french slightly broken now but fixing it'
+  },
+  {
+    'date': '2022-04-16T02:48:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220416231930%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ms.'
+  },
+  {
+    'date': '2022-04-16T02:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220416024810%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ms.'
+  },
+  {
+    'date': '2022-04-15T23:29:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220416024432%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'extract more bombardment symbols'
+  },
+  {
+    'date': '2022-04-15T11:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220415232920%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update changes in Luhansk/Kharkiv bulge per ISW'
+  },
+  {
+    'date': '2022-04-14T20:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220415114545%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'remove duplicated scale numbers'
+  },
+  {
+    'date': '2022-04-14T19:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220414200748%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'pull out legend; use symbol for some bombardments'
+  },
+  {
+    'date': '2022-04-13T13:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220414190023%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '+fr ; + partly de;  + partly es'
+  },
+  {
+    'date': '2022-04-13T12:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220413123536%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': '(edit summary removed)'
+  },
+  {
+    'date': '2022-04-13T12:23:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220413123258%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'removed  systemLanguage="es"'
+  },
+  {
+    'date': '2022-04-13T12:20:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220413122356%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'no visiual change, except 1) text above other objects 2) for local rendering  font-family="Arial" replaced by  font-family="Liberation Sans,Arial", to be more similar to wikimedia-rendering'
+  },
+  {
+    'date': '2022-04-12T20:06:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220413095237%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'for those who do not know Help:SVG#systemLanguage_processing'
+  },
+  {
+    'date': '2022-04-12T19:33:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220412194213%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'I don\'t know what you\'re trying to do but your edits have simply removed all text from the file.'
+  },
+  {
+    'date': '2022-04-12T16:54:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220412193312%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'corrected double text in french'
+  },
+  {
+    'date': '2022-04-12T16:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220412165400%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'added french and replaced fonts according to https://meta.wikimedia.org/wiki/SVG_fonts'
+  },
+  {
+    'date': '2022-04-11T13:31:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220412164253%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update changes in Kharkiv and Kherson per ISW'
+  },
+  {
+    'date': '2022-04-10T11:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220410110342%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Yes, this is my map. I also hope everyone likes this one. Also bugs fixed.'
+  },
+  {
+    'date': '2022-04-10T10:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220410110251%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Look at the new version of the map. The map is suitable for both color blind people (8 out of 8 types of color blindness) and good for ordinary people. I hope you enjoy the new version of the map.'
+  },
+  {
+    'date': '2022-04-09T11:14:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220409113108%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Voting majority for B by two.'
+  },
+  {
+    'date': '2022-04-08T19:46:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220408211324%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Airstrike at Taganrog, older shellings greyed out, compromise colorblind friendly version'
+  },
+  {
+    'date': '2022-04-08T11:54:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220408145330%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Mark Popasna as contested per enwiki map and article'
+  },
+  {
+    'date': '2022-04-06T23:46:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220408115433%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Adding bombardment icon for Millerovo air base and Attack on Belgorod (whether it was friendly fire or from Ukraine, Belgorod was Belgorod still fits the criteria)'
+  },
+  {
+    'date': '2022-04-06T18:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406185906%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Yes! Now I can a edit the map. Changces: Update in the North'
+  },
+  {
+    'date': '2022-04-06T17:41:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406185512%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'No consensus for the new colors. There is a different map here for the colorblind-friendly version - please edit that one instead if you want to use different colors: https://commons.wikimedia.org/wiki/File:2022_Russian_invasion_of_Ukraine_colorblind_friendly.svg'
+  },
+  {
+    'date': '2022-04-06T15:38:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406154805%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Ukrainian resources reported the complete deoccupation of Chernihiv and Sumy oblasts. (https://novynarnia.com/2022/04/04/na-sumshhyni-ne-lyshylosya-okupovanyh-naselenyh-punktiv-zalyshky-rosiyan-pry-vidstupi-potrapyly-v-pastku/)'
+  },
+  {
+    'date': '2022-04-06T12:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406130231%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Descriptions of edits in the topic (April 6th).'
+  },
+  {
+    'date': '2022-04-06T11:17:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406123457%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'There appears to be consensus for this color scheme at the talk page.'
+  },
+  {
+    'date': '2022-04-06T11:10:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406111738%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Update per ISW and the template map'
+  },
+  {
+    'date': '2022-04-04T22:24:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220406041814%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'restore pre-edit-war version before protect'
+  },
+  {
+    'date': '2022-04-03T23:32:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220404065655%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'There are enough changes to describe everything here. See the explanation of the changes here: https://commons.m.wikimedia.org/wiki/File_talk:2022_Russian_invasion_of_Ukraine.svg in the April 4 changes topic.'
+  },
+  {
+    'date': '2022-04-02T03:36:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220402042035%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'https://www.independent.co.uk/news/world/americas/us-politics/russia-ukraine-kyiv-zelensky-pentagon-b2046773.html https://www.telegraph.co.uk/world-news/2022/03/31/russia-forced-humiliating-retreat-ukraine-airport-key-battle/ https://www.atlanticcouncil.org/blogs/ukrainealert/russia-in-retreat-putin-appears-to-admit-defeat-in-the-battle-for-kyiv/ Sorry iuf these sources are considered unreliable.'
+  },
+  {
+    'date': '2022-04-01T18:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220401190437%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Arrows, Russia has completely withdrawn from Kyiv Oblast per Ukraine. Update North West Kherson, Ukrainian counterattack claimed recapturing villages in the northern border.'
+  },
+  {
+    'date': '2022-04-01T17:56:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220401183955%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Kyiv and Chernihiv regions'
+  },
+  {
+    'date': '2022-04-01T14:13:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220401175606%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Izium occupied by Russians (https://twitter.com/mil_in_ua/status/1509858207732322325)'
+  },
+  {
+    'date': '2022-03-30T13:26:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220401141323%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Snovsk, Pechenihy, Kharkiv-Chuguev road'
+  },
+  {
+    'date': '2022-03-30T10:18:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220330103009%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Kharkiv'
+  },
+  {
+    'date': '2022-03-30T09:58:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220330101759%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix Kozelets, Nizhyn, Snovsk'
+  },
+  {
+    'date': '2022-03-30T07:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220330095812%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fixes'
+  },
+  {
+    'date': '2022-03-29T15:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220329234809%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'fix Shevshenkove and Antonov Airport'
+  },
+  {
+    'date': '2022-03-29T12:26:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220329150719%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Vuhledar, Horlivka'
+  },
+  {
+    'date': '2022-03-29T12:03:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220329122613%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Irpin, Brovary'
+  },
+  {
+    'date': '2022-03-28T16:35:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220329120315%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Add counteroffensive arrow to Trostianets'
+  },
+  {
+    'date': '2022-03-28T13:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220328154907%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'motorway Borodianka-Malyn, Byshiv, Makariv'
+  },
+  {
+    'date': '2022-03-28T10:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220328133916%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Okhtyrka, Trostianets, Krasnopillya, Slavutych'
+  },
+  {
+    'date': '2022-03-27T13:10:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220328105212%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'My fault, you guys can keep the discussion'
+  },
+  {
+    'date': '2022-03-26T13:30:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326133445%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Read my previous comment.'
+  },
+  {
+    'date': '2022-03-26T13:24:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326132928%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'How am I not following procedures and have no sources? It’s literally on the detailed map! Shostka and North West Kherson Oblast are under Russian control on the detailed map. Siege of Chernihiv is also there. I think you are not following the procedure, as it was said that we need to used the detailed map as a source.'
+  },
+  {
+    'date': '2022-03-26T13:13:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326131551%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Northwest Kherson Oblast is under Russian control. See detailed map.'
+  },
+  {
+    'date': '2022-03-26T11:38:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326115720%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix dates near Izium. Thanks to Argut for this edit, forgot to change!'
+  },
+  {
+    'date': '2022-03-26T11:16:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326112026%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Izium is under RF control and no longer contested. Capture label added. Source: https://function.mil.ru/news_page/country/more.htm?id=12414538.  Source: https://function.mil.ru/news_page/country/more.htm?id=12414732.  Source: Template:Russo-Ukrainian_War_detailed_map'
+  },
+  {
+    'date': '2022-03-26T11:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326111539%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Slavutych is not under complete siege (exits from it are controlled by the Armed Forces of Ukraine). There was a Russian advance in the Donetsk region. Novovorontsov under the control of the Armed Forces of Ukraine according to Ukraine. Let\'s change the north, the pront is not so stretched, there are sieges.'
+  },
+  {
+    'date': '2022-03-26T10:13:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326110207%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Rubizhne fixed'
+  },
+  {
+    'date': '2022-03-26T10:06:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326100802%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Rubizhne, Vuhledar, Velyka Novosilka, Horlivka fixed'
+  },
+  {
+    'date': '2022-03-26T09:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326100631%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Revert claimed Russian control in north west Kherson and north of Mariupol.'
+  },
+  {
+    'date': '2022-03-26T08:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326090222%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix Sumy'
+  },
+  {
+    'date': '2022-03-26T08:32:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220326084548%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Revert changes citing Russian telegram channels.'
+  },
+  {
+    'date': '2022-03-25T19:23:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325202733%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'We can\'t rely on Ukranian sources. Previous uptade was overwritten.'
+  },
+  {
+    'date': '2022-03-25T19:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325192341%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Trostaniets is contested; Ukrainian forces are counterattacking + attempting to take back control of the town; sources -- 1.https://www.ukrinform.ua/rubric-ato/3439764-zsu-vedut-boi-za-zvilnenna-trostanca.html 2. https://24tv.ua/za-trostyanets-trivayut-silni-boyi-misto-trimayetsya-ostannih_n1918940'
+  },
+  {
+    'date': '2022-03-25T19:19:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325191948%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Uptades according to the detailed map.'
+  },
+  {
+    'date': '2022-03-25T16:28:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325163011%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Minor changes – Correction of ILitky>Litky, Stepavnivka>Stepanivka, Blyznyuki>Blyzniuky'
+  },
+  {
+    'date': '2022-03-25T15:34:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325162857%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'north fixed'
+  },
+  {
+    'date': '2022-03-25T07:43:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325153401%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Corrected north by Template:Russo-Ukrainian War detailed map'
+  },
+  {
+    'date': '2022-03-24T21:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220325074306%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bugs fixed.'
+  },
+  {
+    'date': '2022-03-24T20:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220324215542%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Ukrainian dates are yellow, not red.'
+  },
+  {
+    'date': '2022-03-24T18:00:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220324204230%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Ukrainian advances near Mykolaiv, per detailed map & Control of cities'
+  },
+  {
+    'date': '2022-03-23T21:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220324180033%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added some settlements around the Northern and Southern fronts.'
+  },
+  {
+    'date': '2022-03-23T20:04:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220323213903%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Settlements in Crimea removed: Olenivka, Mizhvodne, Rozdol\'ne, Pervomais\'ke, Novoozerne, Zaozerne, Nizhnegorskiy, Novyi Svit, Lenino. Plus Strilkove and Shchaslyvtseve.  Reason: population below 10K, no warfare.  Below 10K not removed: Hurzuf Reason: resort, Staryi Krym (label added) Reason: historical landmark Source: Ukraine 2014 census, Wikipedia'
+  },
+  {
+    'date': '2022-03-23T15:22:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220323200456%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Airfield signs in Crimea changed: Yevpatoriia (N45.226 E33.376) removed. Reason: small general aviation airport.  North of Yevpatoriia removed. Reason: does not exist.  Saky (N45.094 E33.603) added. Reason: military airbase.  SW of Simferopol removed. Reason: does not exist.  Kerch (N45.373 E36.401) removed. Reason: small general aviation airport.  Kirovskoye (N45.165 E35.185) added. Reason: military airbase.  NB: The shape of the icon supposes an airbase. If so, more icons will be removed.'
+  },
+  {
+    'date': '2022-03-23T08:58:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220323152232%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Slight front line change between Velyka Novosilka and Vuhledar Reason: March, 13 and 18 RF MoD briefings https://function.mil.ru/news_page/country/more.htm?id=12412840 , and id=12413441'
+  },
+  {
+    'date': '2022-03-23T08:31:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220323085836%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Bug Fix: rect352325-8-9-2-0-1-8-0 and switch4074 moved from layer8 to layer5'
+  },
+  {
+    'date': '2022-03-23T07:15:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220323083130%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix: Nikolske capture date of March, 13 and the red arrow nearby removed. Reason: The "correct" Nikolske is located 21 km northwest of Volnovakha at N47.750 E37.304'
+  },
+  {
+    'date': '2022-03-22T23:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220323071552%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Daily Mail is not a reliable source. See: https://en.m.wikipedia.org/wiki/Wikipedia:Reliable_sources/Perennial_sources#Daily_Mail'
+  },
+  {
+    'date': '2022-03-22T23:16:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322235245%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Ukraine advances on Borodyanka, Irpin, Bucha, Hostomel, Berezivka and Myla (last two not on map) (e.g. source https://www.dailymail.co.uk/news/article-10639673/Ukraine-war-Russian-troops-supplies-no-three-days.html)'
+  },
+  {
+    'date': '2022-03-22T19:51:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322231612%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Explosions in Pavlohrad, Dnipropetrovsk Oblast. Source: https://liveuamap.com/en/2022/22-march-explosions-reported-in-pavlohrad-dnipropetrovsk. Your source: https://www.wsj.com/articles/ukrainian-counteroffensive-near-mykolaiv-relieves-strategic-port-city-11647605489 never said that Yavkyne, for example was taken by the Russians. When they said that "past the boundary between the Mykolaiv and Kherson regions", they were refering to Luch, Shevchenkove and Ukrainka, not the region around Yavkyne.'
+  },
+  {
+    'date': '2022-03-22T19:05:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322193126%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'liveuamap.com never said that Ukraine had a counter offensive in those regions in Mykolaiv Oblast. The Russian army probably never took them in the first place.'
+  },
+  {
+    'date': '2022-03-22T17:41:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322190505%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Russian Ministry of Defense claims control over Verkhniotoretske. Source: https://liveuamap.com/en/2022/22-march-russian-ministry-of-defense-claims-control-over'
+  },
+  {
+    'date': '2022-03-22T17:12:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322174142%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Marinka and Popasna are under Russian control. Sources: https://t.me/rian_ru/154910; https://ru.m.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%8C%D0%B8%D0%BD%D0%BA%D0%B0. Counterattack of the Ukrainian troops in the Nikolaev region on March 17. Source: https://liveuamap.com.'
+  },
+  {
+    'date': '2022-03-22T12:45:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322171237%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Popasna has not yet been taken by Russia.'
+  },
+  {
+    'date': '2022-03-22T12:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322124534%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Ok, I\'m sorry. But based on w:Control of cities during the Russo-Ukrainian War and w:Template:Russo-Ukrainian War detailed map - Kherson region is completely under Russian control. I removed the changes on March 22. :)'
+  },
+  {
+    'date': '2022-03-22T09:56:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322120552%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added front and dates in Sumy, Zaporozhye, Kherson, Chernihiv regions, DPR and LPR. Bugs fixed.'
+  },
+  {
+    'date': '2022-03-22T09:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322095613%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Kherson region is completely under the control of Russia. Source: https://t.me/istorijaoruzija/43889; The advance of the troops of the Luhansk PR in the area of Popasna. Popasna is under the control of the Luhansk PR and Russia. The advance of the troops of the Donetsk PR and Russia in the Maryinka area. The transition of the territory under the control of the DPR and Russia. Source: https://t.me/istorijaoruzija/46994; Added front and dates in Sumy, Zaporozhye, Kherson, Chernihiv regions, DPR...'
+  },
+  {
+    'date': '2022-03-21T16:23:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220322095251%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'The front was added and the main front was merged in the Kharkiv region.'
+  },
+  {
+    'date': '2022-03-21T10:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321162352%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Curve advance arrows for Voznesensk & Izium'
+  },
+  {
+    'date': '2022-03-21T03:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321104201%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Added more cities. Especially inside Russian controlled areas.'
+  },
+  {
+    'date': '2022-03-20T22:52:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321030215%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'added naval bases with anchor logo'
+  },
+  {
+    'date': '2022-03-20T20:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320225216%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Fix scale'
+  },
+  {
+    'date': '2022-03-20T18:54:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320204426%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Changed a few bugs.'
+  },
+  {
+    'date': '2022-03-20T18:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320185414%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Under the control of Russia and the Luhansk PR is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295; Vuhledar under the control of Russia and Donetsk PR. Source: https://ru.m.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%80; Added exact dates, added front.'
+  },
+  {
+    'date': '2022-03-20T17:55:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320180230%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Under the control of Russia and the Luhansk People\'s Republic is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295'
+  },
+  {
+    'date': '2022-03-20T15:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320175504%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Shevchenkove and Bohdanivka under Russian control. Source: https://www.france24.com/en/live-news/20220309-russian-tanks-advance-towards-kyiv-from-east. Fixed the border around Mariupol according to this map: https://commons.wikimedia.org/wiki/File:Situation_in_Mariupol.svg'
+  },
+  {
+    'date': '2022-03-20T08:26:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320123839%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for tr.'
+  },
+  {
+    'date': '2022-03-20T00:13:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320082610%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/'
+  },
+  {
+    'date': '2022-03-19T23:44:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320001353%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Changed frontlines near Mykolaiv in order to match the announcments from the Ukrainian government saying where the Russian troops have stopped. https://t.me/spravdi/2867'
+  },
+  {
+    'date': '2022-03-19T21:14:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319234431%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-03-19T21:09:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319211421%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-03-19T21:07:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319210932%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for ru.'
+  },
+  {
+    'date': '2022-03-19T16:42:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220319210711%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'File uploaded using svgtranslate tool (https://svgtranslate.toolforge.org/). Added translation for es.'
+  },
+  {
+    'date': '2022-03-20T18:02:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220321030215%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Under the control of Russia and the Luhansk PR is 90% of the Luhansk region. Source: https://t.me/istorijaoruzija/45295; Vuhledar under the control of Russia and Donetsk PR. Source: https://ru.m.wikipedia.org/wiki/%D0%A3%D0%B3%D0%BB%D0%B5%D0%B4%D0%B0%D1%80; Added exact dates, added front.'
+  },
+  {
+    'date': '2022-03-20T15:39:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320175504%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Shevchenkove and Bohdanivka under Russian control. Source: https://www.france24.com/en/live-news/20220309-russian-tanks-advance-towards-kyiv-from-east. Fixed the border around Mariupol according to this map: https://commons.wikimedia.org/wiki/File:Situation_in_Mariupol.svg'
+  },
+  {
+    'date': '2022-03-20T00:13:00.000Z',
+    'url': 'https://upload.wikimedia.org/wikipedia/commons/archive/4/4f/20220320082610%212022_Russian_invasion_of_Ukraine.svg',
+    'comment': 'Chkalovske was taken by Russia. Source: https://suspilne.media/218298-moralno-ludi-prigniceni-golova-okupovanogo-ckalovskogo-na-harkivsini-pro-situaciu-v-gromadi/. Vysokopilska taken by Russia. Source: https://suspilne.media/219360-ponad-70-naselenih-punktiv-bez-elektroenergii-zakincuutsa-liki-aka-situacia-v-rajonah-hersonsini/'
   },
   {
     'date': '2022-03-19T23:44:00.000Z',

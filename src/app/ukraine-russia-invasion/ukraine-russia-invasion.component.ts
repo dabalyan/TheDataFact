@@ -11,12 +11,13 @@ export class UkraineRussiaInvasionComponent implements OnInit, OnDestroy {
   invasionImages = INVASION_IMAGES().reverse();
   selectedImageIndex = this.invasionImages.length - 1;
 
-  showAllUpdates = true;
+  showAllUpdates = false;
   showComment = true;
   playIntervalRef: number;
 
   ngOnInit(): void {
     document.body.classList.add('flex-app');
+    this.initResetImages();
   }
 
   selectImage(i: number, auto = false): void {
@@ -41,7 +42,10 @@ export class UkraineRussiaInvasionComponent implements OnInit, OnDestroy {
 
   toggleTimeSpan(): void {
     this.showAllUpdates = !this.showAllUpdates;
+    this.initResetImages();
+  }
 
+  initResetImages(): void {
     if (this.showAllUpdates) {
       this.invasionImages = INVASION_IMAGES().reverse();
     }
